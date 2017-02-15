@@ -1,0 +1,885 @@
+2017-02-15 11:12:46,149 
+<> client   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000002937D868E28>]
+   
+</>
+2017-02-15 11:12:46,149 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002937D868E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:12:46,149 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002937D868E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:12:54,154 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002937D868E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:12:54,154 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002937D868E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:13:02,170 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002937D868E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:13:02,174 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002937D868E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:13:10,179 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002937D868E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:13:10,195 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002937D868E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:13:18,224 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002937D868E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:13:18,246 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002937D868E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:13:26,287 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002937D868E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:13:26,309 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002937D868E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:14:17,108 
+<> client   #established connection
+   [<zmq.sugar.socket.Socket object at 0x00000223AF139E28>]
+   
+</>
+2017-02-15 11:14:17,109 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x00000223AF139E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:14:25,127 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x00000223AF139E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:14:33,141 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x00000223AF139E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:14:41,152 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x00000223AF139E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:14:49,166 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x00000223AF139E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:14:57,178 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x00000223AF139E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:16:01,527 
+<> client   #established connection
+   [<zmq.sugar.socket.Socket object at 0x00000159B289EE28>]
+   
+</>
+2017-02-15 11:16:01,527 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x00000159B289EE28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:16:09,531 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x00000159B289EE28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:16:17,532 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x00000159B289EE28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:16:25,533 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x00000159B289EE28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:16:33,535 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x00000159B289EE28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:16:41,537 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x00000159B289EE28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:16:49,546 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x00000159B289EE28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:16:57,559 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x00000159B289EE28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:17:57,219 
+<> client   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   
+</>
+2017-02-15 11:17:57,220 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:17:57,226 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:18:05,228 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:18:05,233 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:18:13,233 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:18:13,233 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:18:21,246 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:18:21,279 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:18:29,316 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:18:29,331 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:18:37,379 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:18:37,379 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:18:45,392 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:18:45,423 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:18:53,445 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:18:53,461 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:18:59,073 
+<> client   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000002458E739E28>]
+   
+</>
+2017-02-15 11:18:59,074 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002458E739E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:18:59,080 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002458E739E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:19:01,481 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:19:01,501 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:19:07,090 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002458E739E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:19:07,090 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002458E739E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:19:09,533 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:19:09,564 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:19:15,091 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002458E739E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:19:15,097 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002458E739E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:19:17,589 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:19:17,605 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:19:23,117 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002458E739E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:19:23,125 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002458E739E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:19:25,631 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:19:25,638 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:19:31,175 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002458E739E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:19:31,186 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002458E739E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:19:33,672 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:19:33,687 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:19:39,206 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002458E739E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:19:39,220 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002458E739E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:19:41,726 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:19:41,741 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:19:47,251 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002458E739E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:19:47,251 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002458E739E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:19:49,780 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:19:49,780 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:19:55,299 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002458E739E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:19:55,315 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002458E739E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:19:57,791 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:19:57,792 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:20:03,360 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002458E739E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:20:03,364 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002458E739E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:20:05,814 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:20:05,814 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:20:11,406 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002458E739E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:20:11,422 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002458E739E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:20:13,864 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:20:13,871 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:20:19,443 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002458E739E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:20:19,443 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002458E739E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:20:21,873 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:20:21,873 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:20:27,471 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002458E739E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:20:27,471 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002458E739E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:20:29,890 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:20:29,890 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:20:32,158 
+<> client   #established connection
+   [<zmq.sugar.socket.Socket object at 0x00000242F9E28E28>]
+   
+</>
+2017-02-15 11:20:32,158 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x00000242F9E28E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:20:32,158 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x00000242F9E28E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:20:35,492 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002458E739E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:20:35,507 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002458E739E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:20:37,914 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:20:37,930 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:20:40,160 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x00000242F9E28E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:20:40,160 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x00000242F9E28E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:20:43,537 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002458E739E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:20:43,553 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002458E739E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:20:45,945 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:20:45,945 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:20:48,165 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x00000242F9E28E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:20:48,165 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x00000242F9E28E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:20:51,587 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002458E739E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:20:51,603 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002458E739E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:20:53,976 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:20:53,991 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002B29FFE7E28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:23:22,304 
+<> client   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000001960FDACE28>]
+   
+</>
+2017-02-15 11:23:22,304 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001960FDACE28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:47:13,856 
+<> client   #established connection
+   [<zmq.sugar.socket.Socket object at 0x0000019AD4CCDE28>]
+   
+</>
+2017-02-15 11:47:13,856 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x0000019AD4CCDE28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:47:13,856 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x0000019AD4CCDE28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:47:21,870 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x0000019AD4CCDE28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:47:21,894 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x0000019AD4CCDE28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:47:29,900 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x0000019AD4CCDE28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:47:29,948 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x0000019AD4CCDE28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:47:37,955 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x0000019AD4CCDE28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:47:38,021 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x0000019AD4CCDE28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:47:46,043 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x0000019AD4CCDE28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:47:46,090 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x0000019AD4CCDE28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:47:54,113 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x0000019AD4CCDE28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:47:54,170 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x0000019AD4CCDE28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:48:02,191 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x0000019AD4CCDE28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:48:02,219 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x0000019AD4CCDE28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:48:10,239 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x0000019AD4CCDE28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:48:10,277 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x0000019AD4CCDE28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:48:18,305 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x0000019AD4CCDE28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:48:18,358 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x0000019AD4CCDE28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 11:48:26,381 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x0000019AD4CCDE28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 11:48:26,412 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x0000019AD4CCDE28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 12:01:37,922 
+<> client   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000001A0B0ECCE28>]
+   
+</>
+2017-02-15 12:01:37,924 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001A0B0ECCE28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 12:01:37,931 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001A0B0ECCE28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 12:01:45,947 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001A0B0ECCE28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 12:01:45,963 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001A0B0ECCE28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 12:01:53,971 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001A0B0ECCE28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 12:01:54,002 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001A0B0ECCE28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 12:02:02,009 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001A0B0ECCE28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 12:02:02,040 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001A0B0ECCE28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 12:02:10,081 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001A0B0ECCE28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 12:02:10,113 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001A0B0ECCE28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 12:25:51,719 
+<> client   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000002063021FE28>]
+   
+</>
+2017-02-15 12:25:51,719 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002063021FE28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 12:25:51,719 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002063021FE28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 12:25:59,736 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002063021FE28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 12:25:59,767 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002063021FE28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 12:26:07,784 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002063021FE28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 12:26:07,816 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002063021FE28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 12:26:15,823 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002063021FE28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 12:26:15,875 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002063021FE28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 12:26:23,920 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002063021FE28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 12:26:23,967 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002063021FE28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 12:26:31,985 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002063021FE28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 12:26:32,054 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002063021FE28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 12:26:40,090 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002063021FE28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 12:26:40,153 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002063021FE28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 12:26:48,204 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002063021FE28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 12:26:48,257 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002063021FE28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 12:26:56,278 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002063021FE28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 12:26:56,343 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002063021FE28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 12:27:04,366 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002063021FE28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 12:27:04,398 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002063021FE28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 12:27:12,429 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002063021FE28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 12:27:12,460 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002063021FE28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 12:27:20,478 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002063021FE28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 12:27:20,509 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002063021FE28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 12:27:28,532 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002063021FE28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 12:27:28,554 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002063021FE28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-15 12:27:36,567 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002063021FE28>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-15 12:27:36,614 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002063021FE28>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
