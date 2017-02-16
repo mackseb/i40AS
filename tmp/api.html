@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Asset Administration Shell of Industrie 4.0</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css')}}" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src= {{ url_for('static', filename ='images/avatar.jpg') }} alt="" /></span>
+					<h1 id="logo"><a href="#">i40AS</a></h1>
+					<p>Asset Administration Shell v0.4
+						<br />Technische Universität Darmstadt - DiK
+
+					</p>
+				</header>
+				<nav id="nav">
+					<ul>
+            <li><a href="/" class="nonactive">main</a></li>
+						<li><a href="#one" class="active">API - {{api_name}} </a></li>
+						<li><a href="#five" class="active">contact</a></li>
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+				</footer>
+			</section>
+
+			<!-- Wrapper -->
+				<div id="wrapper">
+
+					<!-- Main -->
+						<div id="main">
+
+							<!-- One -->
+								<section id="one">
+									<div class="container">
+										<header class="major">
+											<h2>i4.0 Verwaltungsschale</h2>
+											<p>Ein Forschungsprojekt des DiK<br />
+											</p>
+										</header>
+										<p>Eine Verwaltungsschale soll Daten und Funktionen zu den verschiedensten Anwendungsszenarien aufnehmen können und den verschiedensten Systemen und Lebenszyklusphasen der Fabrik zur Verfügung stellen können.</p>
+									</div>
+								</section>
+
+							<!-- Two -->
+								<section id="two">
+
+									<div class="container">
+
+
+										<h3>Header</h3>
+
+										<p> Im „Header“ sorgt eine Liste von Merkmalen für eine Identifikation und Bezeichnung der konkreten Gegenstände und der Verwaltungsschale im jeweiligen Kontext und verweist gegebenenfalls auf ausgewählte
+											Fähigkeiten der Gegenstände und Sichten.</p>
+
+										{% for element in path %}
+											findall
+										<h4>{{element[0].tag}}</h4>
+										<p></p>
+										<ul class="feature-icons">
+												{% for subelement in element %}
+												<li class="fa-code">{{subelement[0].tag}}: {{subelement[0].text}}</li>
+												{% endfor %}
+										</ul>
+										{% endfor %}
+									</div>
+
+								</section>
+
+								<!-- three -->
+									<section id="three">
+										<div class="container">
+											<h3>Body</h3>
+											<p>Im „Body“ findet sich der Komponenten-Manager, welcher einzelne Teilmodelle innerhalb der Verwaltungsschale verwaltet. Jedes Teilmodell verfügt über hierarchisch organisierte Merkmale, welche auf individuelle Daten und
+												Funktionen referenzieren. Die Gesamtheit der Merkmale aller Teilmodelle bildet somit das Manifest der Verwaltungsschale, welches damit als eindeutig aufzufindendes Inhaltsverzeichnis aller Daten und
+												Funktionen dienen kann. </p>
+
+										</div>
+									</section>
+
+							<!-- four -->
+								<section id="four">
+									<div class="container">
+										<h3>Partner</h3>
+										<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
+										<div class="features">
+											<article>
+												<a href="http://www.plattform-i40.de/I40/Navigation/DE/Home/home.html" class="image"><img src= {{ url_for('static', filename ='images/pic01.jpg') }} alt="" /></a>
+												<div class="inner">
+													<h4>Plattform Industrie 4.0</h4>
+													<p>Je mehr sich die Wirtschaft digitalisiert und vernetzt, desto mehr Schnittstellen ergeben sich – in Entwicklung, Produktion und Vertrieb, national und global. Mit der Plattform Industrie 4.0 wird der Austausch und die Beteiligung aller relevanten Akteure ermöglicht.</p>
+												</div>
+											</article>
+											<article>
+												<a href="#" class="image"><img src= {{ url_for('static', filename ='images/pic02.jpg') }} alt="" /></a>
+												<div class="inner">
+													<h4>Bundesministerien</h4>
+													<p><a href="http://www.bmwi.de/">Bundesministerium für Wirtschaft und Energie</a></p>
+													<p><a href="https://www.bmbf.de/">Bundesministerium für Bildung und Forschung</a></p>
+												</div>
+											</article>
+											<article>
+												<a href="https://www.tu-darmstadt.de/" class="image"><img src= {{ url_for('static', filename ='images/pic03.jpg') }} alt="" /></a>
+												<div class="inner">
+													<h4>Technische Universität Darmstadt</h4>
+													<p>Seit ihrer Gründung im Jahre 1877 trägt die TU Darmstadt mit Pionierleistungen und mit herausragender Forschung und Lehre zur Lösung drängender Zukunftsfragen bei.</p>
+												</div>
+											</article>
+										</div>
+									</div>
+								</section>
+
+							<!-- Five -->
+								<section id="five">
+									<div class="container">
+										<h3>Kontakt</h3>
+										<p>In der Forschung vernetzt das DiK die vier Forschungslinien „Informationsmodellierung“, „Virtuelle Produktentstehung“, „Verteiltes und Kooperatives Arbeiten“ und „Digitale Fabrik“. Durch die Entwicklung in der Informations- und Kommunikationstechnologie steht die Wirtschaft an der Schwelle zur vierten Industriellen Revolution. Die deutsche Bundesregierung unterstützt dies durch die Forschungsinitiative Industrie 4.0 im Rahmen ihrer High-Tech Strategie 2020. Die Industrie 4.0 ist durch vier fundamentale Ansätze charakterisiert: Einsatz cyber-physischer Systeme, Vernetzung und Kommunikation auf Basis moderner Internettechnologien, Bauteile und Betriebsmittel als Informationsträger und ganzheitliche Sicherheitskultur. Dies ermöglicht den Einsatz intelligenter, vernetzter Produkte und Betriebsmittel im kompletten Produktlebenszyklus in intelligenten Umgebungen. Zur Sicherung des Produktionsstandorts Deutschlands und zur Steigerung der Wettbewerbsfähigkeit wurde die Plattform Industrie 4.0 ins Leben gerufen, dessen Sprecher des wissenschaftlichen Beirats Prof. Dr.-Ing. Reiner Anderl ist. Das DiK beteiligt sich in diesem Kontext am Wissenstransfer aus Wissenschaft und Forschung in das industrielle Umfeld. Hierbei wird die wissenschaftliche Expertise des DiKs durch zahlreiche Forschungsprojekte und Industriekooperationen stetig weiterentwickelt. Bei Interesse am Thema Industrie 4.0 fungiert das DiK als kompetenter Ansprechpartner.
+
+											</p>
+										<form method="post" action="#">
+											<div class="row uniform">
+												<div class="6u 12u(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
+												<div class="6u 12u(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
+											</div>
+											<div class="row uniform">
+												<div class="12u"><input type="text" name="subject" id="subject" placeholder="Betreff" /></div>
+											</div>
+											<div class="row uniform">
+												<div class="12u"><textarea name="message" id="message" placeholder="Nachricht" rows="6"></textarea></div>
+											</div>
+											<div class="row uniform">
+												<div class="12u">
+													<ul class="actions">
+														<li><input type="submit" class="special" value="Senden" /></li>
+														<li><input type="reset" value="Zurücksetzen" /></li>
+													</ul>
+												</div>
+											</div>
+										</form>
+									</div>
+								</section>
+
+
+						</div>
+
+					<!-- Footer -->
+						<section id="footer">
+							<div class="container">
+								<ul class="copyright">
+									<li>&copy; DiK TU Darmstadt. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								</ul>
+							</div>
+						</section>
+
+				</div>
+
+		<!-- Scripts -->
+		<script src="{{ url_for('static', filename='assets/js/jquery.min.js')}}"></script>
+		<script src="{{ url_for('static', filename='assets/js/jquery.scrollzer.min.js')}}"></script>
+		<script src="{{ url_for('static', filename='assets/js/jquery.scrolly.min.js')}}"></script>
+		<script src="{{ url_for('static', filename='assets/js/skel.min.js')}}"></script>
+		<script src="{{ url_for('static', filename='assets/js/util.js')}}"></script>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script src="{{ url_for('static', filename='assets/js/main.js')}}"></script>
+
+
+	</body>
+</html>

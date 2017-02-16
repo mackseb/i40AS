@@ -1,22 +1,40 @@
-from multiprocessing import Process
-
+import zmq
+from flask import Flask, jsonify, request, render_template
 from structure import configuration_shell, structure_client
 
-from client import shell_client_database
-from client import shell_client_io_asset
+
+
+app = Flask(__name__)
+shell_client = structure_client.entity(configuration_shell.data)
 
 
 
-def main(client_database = True, client_io_asset = False):
+@app.route('/')
+def index():
+    return render_template("index.html")
 
 
-    if client_database:
-        Process(target=shell_client_database.main, name = 'shell_client_database', args=(configuration_shell.data,)).start()
+@app.route('/api/<string:api_name>', methods=['POST'])
+def api(api_name):
 
 
-    if client_io_asset:
-        Process(target=shell_client_io_asset.main, name = 'shell_client_io_asset', args=(configuration_shell.data,)).start()
+    if configuration_shell.data.get(api_name, False):
+
+        MESSAGE = shell_client.create_message(TO = configuration_shell.data[api_name]['identity'], CORE_pyobj = request.get_json())
+        shell_client.send(MESSAGE)
+        MESSAGE = shell_client.receive()
+
+        return jsonify(shell_client.extract_core(MESSAGE))
+
+    else:
+
+        response = {'response' : 'unknown api'}
+
+        return jsonify(response)
 
 
-if __name__ == '__main__':
-    main()
+
+
+
+if __name__ == "__main__":
+    app.run()

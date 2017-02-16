@@ -6,25 +6,25 @@ from structure import structure_module
 
 def main(name, info):
 
-    shell_IO_asset = structure_module.entity(name, info)
+    shell_io_asset = structure_module.entity(name, info)
 
 
     while True:
         try:
 
-            MESSAGE = shell_IO_asset.receive()
+            MESSAGE = shell_io_asset.receive()
 
-            CORE_pyobj = shell_IO_asset.extract_core(MESSAGE)
+            CORE_pyobj = shell_io_asset.extract_core(MESSAGE)
 
 
 
             payload = CORE_pyobj["payload"]
 
-            result = "ICH fahre nach links rechts unten"
+            result = "ICH fahre nach links dann nach oben"
 
-            MESSAGE = shell_IO_asset.create_message(CORE_pyobj = {payload : result}, MESSAGE_received = MESSAGE )
-            print(MESSAGE)
-            shell_IO_asset.send(MESSAGE)
+            MESSAGE = shell_io_asset.create_message(CORE_pyobj = {payload : result}, MESSAGE_received = MESSAGE )
+
+            shell_io_asset.send(MESSAGE)
 
 
         except KeyboardInterrupt:
