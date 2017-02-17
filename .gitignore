@@ -1,6 +1,7 @@
 __pycache__/
 project_env
-app/__pycache__/
+log
+
 
 # Windows image file caches
 Thumbs.db

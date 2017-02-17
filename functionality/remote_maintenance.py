@@ -20,9 +20,20 @@ def main(name, info):
 
             payload = CORE_pyobj["payload"]
 
-            result = "ich habe etwas gewartet"
+            if payload == "warte irgendwas":
 
-            MESSAGE = remote_maintenance.create_message(CORE_pyobj = {payload : result}, MESSAGE_received = MESSAGE )
+                result = "ich habe etwas gewartet"
+
+            elif payload == "checke datenhistory":
+
+                MESSAGE_2 = remote_maintenance.create_message(TO = b'database', CORE_pyobj = {"payload":"school"})
+                remote_maintenance.send(MESSAGE_2)
+
+                MESSAGE_2 = remote_maintenance.receive()
+
+                result = {"datenhistory" :  remote_maintenance.extract_core(MESSAGE_2)}
+
+            MESSAGE = remote_maintenance.create_message(CORE_pyobj = result, MESSAGE_received = MESSAGE)
 
             remote_maintenance.send(MESSAGE)
 
