@@ -1,0 +1,13 @@
+[Unit]
+
+Description= uWSGI server instance i40AS
+
+
+
+[Service]
+ExecStart=/home/s3mac/i40AS/project_env/bin/python3.5 /home/s3mac/i40AS/control.py
+
+
+
+[Install]
+WantedBy=multi-user.target
