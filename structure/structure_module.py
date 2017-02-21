@@ -18,6 +18,9 @@ class entity(object):
         self.url_control = self.info[key]['url']
         self.socket_control = self.context.socket(zmq.DEALER)
         self.establish_connection()
+        self.poller = zmq.Poller()
+        self.poller.register(self.socket_control, zmq.POLLIN)
+
 
 
 
