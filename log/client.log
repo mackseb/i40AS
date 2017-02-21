@@ -5051,3 +5051,96 @@
    [b'client', b'remote_maintenance', b'{"datenhistory": {"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}}']
 </>
 2017-02-17 11:41:52,903 127.0.0.1 - - [17/Feb/2017 11:41:52] "POST /api/remote_maintenance HTTP/1.1" 200 -
+2017-02-21 10:10:48,254 
+<> client   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000001A4AF43C2E8>]
+   
+</>
+2017-02-21 10:10:48,654  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-02-21 10:11:34,683 127.0.0.1 - - [21/Feb/2017 10:11:34] "GET / HTTP/1.1" 200 -
+2017-02-21 10:11:54,224 127.0.0.1 - - [21/Feb/2017 10:11:54] "GET / HTTP/1.1" 200 -
+2017-02-21 10:11:54,704 127.0.0.1 - - [21/Feb/2017 10:11:54] "GET /static/assets/css/main.css HTTP/1.1" 304 -
+2017-02-21 10:11:54,723 127.0.0.1 - - [21/Feb/2017 10:11:54] "GET /static/images/avatar.jpg HTTP/1.1" 200 -
+2017-02-21 10:11:55,000 127.0.0.1 - - [21/Feb/2017 10:11:55] "GET /static/assets/js/jquery.min.js HTTP/1.1" 200 -
+2017-02-21 10:11:55,352 127.0.0.1 - - [21/Feb/2017 10:11:55] "GET /static/assets/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-02-21 10:11:55,360 127.0.0.1 - - [21/Feb/2017 10:11:55] "GET /static/assets/js/jquery.scrollzer.min.js HTTP/1.1" 200 -
+2017-02-21 10:11:55,366 127.0.0.1 - - [21/Feb/2017 10:11:55] "GET /static/assets/js/jquery.scrolly.min.js HTTP/1.1" 200 -
+2017-02-21 10:11:55,372 127.0.0.1 - - [21/Feb/2017 10:11:55] "GET /static/assets/js/skel.min.js HTTP/1.1" 200 -
+2017-02-21 10:11:55,379 127.0.0.1 - - [21/Feb/2017 10:11:55] "GET /static/assets/js/util.js HTTP/1.1" 200 -
+2017-02-21 10:11:55,386 127.0.0.1 - - [21/Feb/2017 10:11:55] "GET /static/assets/js/main.js HTTP/1.1" 200 -
+2017-02-21 10:11:55,707 127.0.0.1 - - [21/Feb/2017 10:11:55] "GET /static/assets/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 200 -
+2017-02-21 10:11:55,727 127.0.0.1 - - [21/Feb/2017 10:11:55] "GET /static/images/rami.png HTTP/1.1" 200 -
+2017-02-21 10:11:56,388 127.0.0.1 - - [21/Feb/2017 10:11:56] "GET /static/images/pic01.jpg HTTP/1.1" 304 -
+2017-02-21 10:11:56,394 127.0.0.1 - - [21/Feb/2017 10:11:56] "GET /static/images/pic02.jpg HTTP/1.1" 304 -
+2017-02-21 10:11:56,399 127.0.0.1 - - [21/Feb/2017 10:11:56] "GET /static/images/pic03.jpg HTTP/1.1" 304 -
+2017-02-21 10:11:56,405 127.0.0.1 - - [21/Feb/2017 10:11:56] "GET /static/images/banner.jpg HTTP/1.1" 200 -
+2017-02-21 10:11:57,808 127.0.0.1 - - [21/Feb/2017 10:11:57] "GET /favicon.ico HTTP/1.1" 404 -
+2017-02-21 10:12:20,194 127.0.0.1 - - [21/Feb/2017 10:12:20] "POST /api/unknown HTTP/1.1" 200 -
+2017-02-21 10:13:31,990 127.0.0.1 - - [21/Feb/2017 10:13:31] "GET / HTTP/1.1" 200 -
+2017-02-21 10:13:32,234 127.0.0.1 - - [21/Feb/2017 10:13:32] "POST /api/unknown HTTP/1.1" 200 -
+2017-02-21 10:13:32,461 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001A4AF43C2E8>]
+   [b'database', b'client', b'{"payload": "school"}']
+</>
+2017-02-21 10:13:32,493 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001A4AF43C2E8>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-21 10:13:32,493 127.0.0.1 - - [21/Feb/2017 10:13:32] "POST /api/database HTTP/1.1" 200 -
+2017-02-21 10:13:32,707 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001A4AF43C2E8>]
+   [b'io_asset', b'client', b'{"payload": "bewege dich irgendwie"}']
+</>
+2017-02-21 10:13:32,730 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001A4AF43C2E8>]
+   [b'client', b'io_asset', b'{"bewege dich irgendwie": "ICH fahre nach links dann nach oben"}']
+</>
+2017-02-21 10:13:32,732 127.0.0.1 - - [21/Feb/2017 10:13:32] "POST /api/io_asset HTTP/1.1" 200 -
+2017-02-21 10:13:32,958 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001A4AF43C2E8>]
+   [b'communication', b'client', b'{"payload": "sende irgendwas"}']
+</>
+2017-02-21 10:13:33,005 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001A4AF43C2E8>]
+   [b'client', b'communication', b'{"sende irgendwas": "ICH schicke eine http Anfrage"}']
+</>
+2017-02-21 10:13:33,006 127.0.0.1 - - [21/Feb/2017 10:13:33] "POST /api/communication HTTP/1.1" 200 -
+2017-02-21 10:13:33,191 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001A4AF43C2E8>]
+   [b'remote_maintenance', b'client', b'{"payload": "warte irgendwas"}']
+</>
+2017-02-21 10:13:33,228 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001A4AF43C2E8>]
+   [b'client', b'remote_maintenance', b'"ich habe etwas gewartet"']
+</>
+2017-02-21 10:13:33,229 127.0.0.1 - - [21/Feb/2017 10:13:33] "POST /api/remote_maintenance HTTP/1.1" 200 -
+2017-02-21 10:13:33,471 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001A4AF43C2E8>]
+   [b'worker', b'client', b'{"payload": "fuehre irgendeine Funktion aus"}']
+</>
+2017-02-21 10:13:33,529 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001A4AF43C2E8>]
+   [b'client', b'worker', b'{"fuehre irgendeine Funktion aus": "ICH habe eine funktion aufgerufen"}']
+</>
+2017-02-21 10:13:33,530 127.0.0.1 - - [21/Feb/2017 10:13:33] "POST /api/worker HTTP/1.1" 200 -
+2017-02-21 10:13:33,695 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001A4AF43C2E8>]
+   [b'remote_maintenance', b'client', b'{"payload": "checke datenhistory"}']
+</>
+2017-02-21 10:13:33,817 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001A4AF43C2E8>]
+   [b'client', b'remote_maintenance', b'{"datenhistory": {"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}}']
+</>
+2017-02-21 10:13:33,820 127.0.0.1 - - [21/Feb/2017 10:13:33] "POST /api/remote_maintenance HTTP/1.1" 200 -
