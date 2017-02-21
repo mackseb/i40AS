@@ -5344,3 +5344,97 @@
    [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
 </>
 2017-02-21 10:44:11,104 127.0.0.1 - - [21/Feb/2017 10:44:11] "POST /api/database HTTP/1.1" 200 -
+2017-02-21 11:00:20,193 
+<> client   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000001C3BC475288>]
+   
+</>
+2017-02-21 11:00:21,888  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-02-21 11:00:58,175 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001C3BC475288>]
+   [b'remote_maintenance', b'client', b'{"request": "run maintenance protocol A1"}']
+</>
+2017-02-21 11:00:58,203 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001C3BC475288>]
+   [b'client', b'remote_maintenance', b'{"run maintenance protocol A1": "the maintenance protocol was successfully completed"}']
+</>
+2017-02-21 11:00:58,204 127.0.0.1 - - [21/Feb/2017 11:00:58] "POST /api/remote_maintenance HTTP/1.1" 200 -
+2017-02-21 11:01:05,166 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001C3BC475288>]
+   [b'remote_maintenance', b'client', b'{"request": "run maintenance protocol C3"}']
+</>
+2017-02-21 11:01:05,315 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001C3BC475288>]
+   [b'client', b'remote_maintenance', b'{"run maintenance protocol C3": {"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}}']
+</>
+2017-02-21 11:01:05,318 127.0.0.1 - - [21/Feb/2017 11:01:05] "POST /api/remote_maintenance HTTP/1.1" 200 -
+2017-02-21 11:01:54,194 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001C3BC475288>]
+   [b'communication', b'client', b'{"payload": "sende irgendwas"}']
+</>
+2017-02-21 11:01:54,250 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001C3BC475288>]
+   [b'client', b'communication', b'{"sende irgendwas": "ICH schicke eine http Anfrage"}']
+</>
+2017-02-21 11:01:54,251 127.0.0.1 - - [21/Feb/2017 11:01:54] "POST /api/communication HTTP/1.1" 200 -
+2017-02-21 11:02:26,787 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001C3BC475288>]
+   [b'communication', b'client', b'{"payload": "sende irgendwas"}']
+</>
+2017-02-21 11:02:26,842 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001C3BC475288>]
+   [b'client', b'communication', b'{"sende irgendwas": "ICH schicke eine http Anfrage"}']
+</>
+2017-02-21 11:02:26,843 127.0.0.1 - - [21/Feb/2017 11:02:26] "POST /api/communication HTTP/1.1" 200 -
+2017-02-21 11:02:40,846 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001C3BC475288>]
+   [b'database', b'client', b'{"request": "Fjob"}']
+</>
+2017-02-21 11:02:40,926 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001C3BC475288>]
+   [b'client', b'database', b'{"Fjob": "{0: \'teacher\', 1: \'other\', 2: \'other\', 3: \'services\', 4: \'other\', 5: \'other\', 6: \'other\', 7: \'teacher\', 8: \'other\'}"}']
+</>
+2017-02-21 11:02:40,928 127.0.0.1 - - [21/Feb/2017 11:02:40] "POST /api/database HTTP/1.1" 200 -
+2017-02-21 11:02:44,599 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001C3BC475288>]
+   [b'database', b'client', b'{"request": "school"}']
+</>
+2017-02-21 11:02:44,646 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001C3BC475288>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-02-21 11:02:44,647 127.0.0.1 - - [21/Feb/2017 11:02:44] "POST /api/database HTTP/1.1" 200 -
+2017-02-21 11:02:48,295 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001C3BC475288>]
+   [b'database', b'client', b'{"request": "address"}']
+</>
+2017-02-21 11:02:48,417 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001C3BC475288>]
+   [b'client', b'database', b'{"address": "{0: \'U\', 1: \'U\', 2: \'U\', 3: \'U\', 4: \'U\', 5: \'U\', 6: \'U\', 7: \'U\', 8: \'U\'}"}']
+</>
+2017-02-21 11:02:48,419 127.0.0.1 - - [21/Feb/2017 11:02:48] "POST /api/database HTTP/1.1" 200 -
+2017-02-21 11:02:51,540 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001C3BC475288>]
+   [b'database', b'client', b'{"request": "age"}']
+</>
+2017-02-21 11:02:51,584 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001C3BC475288>]
+   [b'client', b'database', b'{"age": "{0: 18, 1: 17, 2: 15, 3: 15, 4: 16, 5: 16, 6: 16, 7: 17, 8: 15}"}']
+</>
+2017-02-21 11:02:51,586 127.0.0.1 - - [21/Feb/2017 11:02:51] "POST /api/database HTTP/1.1" 200 -

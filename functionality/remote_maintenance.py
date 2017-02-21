@@ -13,28 +13,26 @@ def main(name, info):
         try:
 
             MESSAGE = remote_maintenance.receive()
-
             CORE_pyobj = remote_maintenance.extract_core(MESSAGE)
 
 
+            request = CORE_pyobj["request"]
 
-            payload = CORE_pyobj["payload"]
+            if request == "run maintenance protocol A1":
 
-            if payload == "warte irgendwas":
+                response = "the maintenance protocol was successfully completed"
 
-                result = "ich habe etwas gewartet"
+            elif request == "run maintenance protocol C3":
 
-            elif payload == "checke datenhistory":
-
-                MESSAGE_2 = remote_maintenance.create_message(TO = b'database', CORE_pyobj = {"payload":"school"})
+                MESSAGE_2 = remote_maintenance.create_message(TO = b'database', CORE_pyobj = {"request":"school"})
                 remote_maintenance.send(MESSAGE_2)
 
                 MESSAGE_2 = remote_maintenance.receive()
 
-                result = {"datenhistory" :  remote_maintenance.extract_core(MESSAGE_2)}
+                response = remote_maintenance.extract_core(MESSAGE_2)
 
-            MESSAGE = remote_maintenance.create_message(CORE_pyobj = result, MESSAGE_received = MESSAGE)
 
+            MESSAGE = remote_maintenance.create_message(CORE_pyobj = {request : response}, MESSAGE_received = MESSAGE)
             remote_maintenance.send(MESSAGE)
 
 
