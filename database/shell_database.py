@@ -16,18 +16,16 @@ def main(name, info):
         try:
 
             MESSAGE = shell_database.receive()
-
             CORE_pyobj = shell_database.extract_core(MESSAGE)
 
 
-            payload = CORE_pyobj["payload"]
-            result = data[payload].to_dict()
-            for key in result:
-                result = str(result)
+            request = CORE_pyobj["request"]
+            response = data[request].to_dict()
+            for key in response:
+                response = str(response)
 
 
-            MESSAGE = shell_database.create_message(CORE_pyobj = {payload : result}, MESSAGE_received = MESSAGE )
-            print(MESSAGE)
+            MESSAGE = shell_database.create_message(CORE_pyobj = {request : response}, MESSAGE_received = MESSAGE )
             shell_database.send(MESSAGE)
 
 
