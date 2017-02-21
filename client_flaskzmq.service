@@ -1,14 +1,3 @@
-[Unit]
-
-Description= uWSGI server instance i40AS
-
-
-
-[Service]
-ExecStart=/home/s3mac/i40AS/project_env/bin/uwsgi --ini /home/s3mac/i40AS/wsgi.ini
-
-
-
 [Install]
 WantedBy=multi-user.target
 

@@ -1,0 +1,9 @@
+server {
+    listen 80;
+    server_name 207.154.210.110;
+
+    location / {
+        include uwsgi_params;
+        uwsgi_pass unix:/home/s3mac/i40AS/i40AS.sock;
+    }
+}
