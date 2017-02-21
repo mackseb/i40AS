@@ -1,0 +1,13 @@
+
+[Unit]
+Description=python instance to serve module
+
+[Service]
+User=s3mac
+Group=www-data
+WorkingDirectory=/home/s3mac/i40AS
+Environment="PATH=/home/s3mac/i40AS/projectenv/bin"
+ExecStart=/home/s3mac/i40AS/projectenv/bin/python3.5 /home/s3mac/i40AS/module_start.py
+
+[Install]
+WantedBy=multi-user.target
