@@ -17058,3 +17058,248 @@
    []
    18
 </>
+2017-02-21 11:27:31,474 
+<> control   #established socket
+   []
+   {'identity': b'client', 'url': 'tcp://127.0.0.1:5555', 'socket': <zmq.sugar.socket.Socket object at 0x000001745CFCC9A8>}
+</>
+2017-02-21 11:27:31,475 
+<> control   #established socket
+   []
+   {'identity': b'database', 'url': 'tcp://127.0.0.1:5556', 'socket': <zmq.sugar.socket.Socket object at 0x000001745D05C408>}
+</>
+2017-02-21 11:27:31,476 
+<> control   #established socket
+   []
+   {'identity': b'io_asset', 'url': 'tcp://127.0.0.1:5557', 'socket': <zmq.sugar.socket.Socket object at 0x000001745D05C468>}
+</>
+2017-02-21 11:27:31,477 
+<> control   #established socket
+   []
+   {'identity': b'communication', 'url': 'tcp://127.0.0.1:5558', 'socket': <zmq.sugar.socket.Socket object at 0x000001745D05C4C8>}
+</>
+2017-02-21 11:27:31,477 
+<> control   #established socket
+   []
+   {'identity': b'remote_maintenance', 'url': 'tcp://127.0.0.1:5559', 'socket': <zmq.sugar.socket.Socket object at 0x000001745D05C528>}
+</>
+2017-02-21 11:27:31,478 
+<> control   #established socket
+   []
+   {'identity': b'worker', 'url': 'tcp://127.0.0.1:6000', 'socket': <zmq.sugar.socket.Socket object at 0x000001745D05C588>}
+</>
+2017-02-21 11:27:31,478 
+<> control   #completed loop
+   []
+   
+</>
+2017-02-21 11:28:06,799 
+<> control   #established socket
+   []
+   {'identity': b'client', 'url': 'tcp://127.0.0.1:5555', 'socket': <zmq.sugar.socket.Socket object at 0x000001A67830E9A8>}
+</>
+2017-02-21 11:28:06,800 
+<> control   #established socket
+   []
+   {'identity': b'database', 'url': 'tcp://127.0.0.1:5556', 'socket': <zmq.sugar.socket.Socket object at 0x000001A67839B408>}
+</>
+2017-02-21 11:28:06,801 
+<> control   #established socket
+   []
+   {'identity': b'io_asset', 'url': 'tcp://127.0.0.1:5557', 'socket': <zmq.sugar.socket.Socket object at 0x000001A67839B468>}
+</>
+2017-02-21 11:28:06,801 
+<> control   #established socket
+   []
+   {'identity': b'communication', 'url': 'tcp://127.0.0.1:5558', 'socket': <zmq.sugar.socket.Socket object at 0x000001A67839B4C8>}
+</>
+2017-02-21 11:28:06,802 
+<> control   #established socket
+   []
+   {'identity': b'remote_maintenance', 'url': 'tcp://127.0.0.1:5559', 'socket': <zmq.sugar.socket.Socket object at 0x000001A67839B528>}
+</>
+2017-02-21 11:28:06,802 
+<> control   #established socket
+   []
+   {'identity': b'worker', 'url': 'tcp://127.0.0.1:6000', 'socket': <zmq.sugar.socket.Socket object at 0x000001A67839B588>}
+</>
+2017-02-21 11:28:06,804 
+<> control   #completed loop
+   []
+   
+</>
+2017-02-21 11:31:58,381 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001A67830E9A8>]
+   [b'\x00\x80\x00\x00)', b'communication', b'client', b'{"request": {"main_api": "http://maps.googleapis.com/maps/api/geocode/json?", "address": "Darmstadt"}}']
+</>
+2017-02-21 11:31:58,387 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001A67839B4C8>]
+   [b'\x00\x80\x00\x00)', b'communication', b'client', b'{"request": {"main_api": "http://maps.googleapis.com/maps/api/geocode/json?", "address": "Darmstadt"}}']
+</>
+2017-02-21 11:31:58,464 
+<> control   #completed loop
+   []
+   1
+</>
+2017-02-21 11:35:36,975 
+<> control   #established socket
+   []
+   {'identity': b'client', 'url': 'tcp://127.0.0.1:5555', 'socket': <zmq.sugar.socket.Socket object at 0x00000260D4ECF9A8>}
+</>
+2017-02-21 11:35:36,976 
+<> control   #established socket
+   []
+   {'identity': b'database', 'url': 'tcp://127.0.0.1:5556', 'socket': <zmq.sugar.socket.Socket object at 0x00000260D4F5C408>}
+</>
+2017-02-21 11:35:36,977 
+<> control   #established socket
+   []
+   {'identity': b'io_asset', 'url': 'tcp://127.0.0.1:5557', 'socket': <zmq.sugar.socket.Socket object at 0x00000260D4F5C468>}
+</>
+2017-02-21 11:35:36,977 
+<> control   #established socket
+   []
+   {'identity': b'communication', 'url': 'tcp://127.0.0.1:5558', 'socket': <zmq.sugar.socket.Socket object at 0x00000260D4F5C4C8>}
+</>
+2017-02-21 11:35:36,978 
+<> control   #established socket
+   []
+   {'identity': b'remote_maintenance', 'url': 'tcp://127.0.0.1:5559', 'socket': <zmq.sugar.socket.Socket object at 0x00000260D4F5C528>}
+</>
+2017-02-21 11:35:36,980 
+<> control   #established socket
+   []
+   {'identity': b'worker', 'url': 'tcp://127.0.0.1:6000', 'socket': <zmq.sugar.socket.Socket object at 0x00000260D4F5C588>}
+</>
+2017-02-21 11:35:36,980 
+<> control   #completed loop
+   []
+   
+</>
+2017-02-21 11:36:11,811 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x00000260D4ECF9A8>]
+   [b'\x00\x80\x00\x00)', b'communication', b'client', b'{"request": {"main_api": "http://maps.googleapis.com/maps/api/geocode/json?", "address": "Darmstadt"}}']
+</>
+2017-02-21 11:36:11,812 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x00000260D4F5C4C8>]
+   [b'\x00\x80\x00\x00)', b'communication', b'client', b'{"request": {"main_api": "http://maps.googleapis.com/maps/api/geocode/json?", "address": "Darmstadt"}}']
+</>
+2017-02-21 11:36:11,815 
+<> control   #completed loop
+   []
+   1
+</>
+2017-02-21 11:36:12,058 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x00000260D4F5C4C8>]
+   [b'\x00\x80\x00\x00)', b'client', b'communication', b'{"results": [{"address_components": [{"long_name": "Darmstadt", "short_name": "Darmstadt", "types": ["locality", "political"]}, {"long_name": "Darmstadt", "short_name": "DA", "types": ["administrative_area_level_2", "political"]}, {"long_name": "Hesse", "short_name": "HE", "types": ["administrative_area_level_1", "political"]}, {"long_name": "Germany", "short_name": "DE", "types": ["country", "political"]}], "formatted_address": "Darmstadt, Germany", "geometry": {"bounds": {"northeast": {"lat": 49.9538799, "lng": 8.7497188}, "southwest": {"lat": 49.7956409, "lng": 8.5599238}}, "location": {"lat": 49.8728253, "lng": 8.6511929}, "location_type": "APPROXIMATE", "viewport": {"northeast": {"lat": 49.9538799, "lng": 8.7497188}, "southwest": {"lat": 49.7956409, "lng": 8.5599238}}}, "place_id": "ChIJ2c1zEWRwvUcR8MWwKVBDIgQ", "types": ["locality", "political"]}], "status": "OK"}']
+</>
+2017-02-21 11:36:12,083 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x00000260D4ECF9A8>]
+   [b'\x00\x80\x00\x00)', b'client', b'communication', b'{"results": [{"address_components": [{"long_name": "Darmstadt", "short_name": "Darmstadt", "types": ["locality", "political"]}, {"long_name": "Darmstadt", "short_name": "DA", "types": ["administrative_area_level_2", "political"]}, {"long_name": "Hesse", "short_name": "HE", "types": ["administrative_area_level_1", "political"]}, {"long_name": "Germany", "short_name": "DE", "types": ["country", "political"]}], "formatted_address": "Darmstadt, Germany", "geometry": {"bounds": {"northeast": {"lat": 49.9538799, "lng": 8.7497188}, "southwest": {"lat": 49.7956409, "lng": 8.5599238}}, "location": {"lat": 49.8728253, "lng": 8.6511929}, "location_type": "APPROXIMATE", "viewport": {"northeast": {"lat": 49.9538799, "lng": 8.7497188}, "southwest": {"lat": 49.7956409, "lng": 8.5599238}}}, "place_id": "ChIJ2c1zEWRwvUcR8MWwKVBDIgQ", "types": ["locality", "political"]}], "status": "OK"}']
+</>
+2017-02-21 11:36:12,097 
+<> control   #completed loop
+   []
+   2
+</>
+2017-02-21 11:39:03,117 
+<> control   #established socket
+   []
+   {'identity': b'client', 'url': 'tcp://127.0.0.1:5555', 'socket': <zmq.sugar.socket.Socket object at 0x000002EA3562F9A8>}
+</>
+2017-02-21 11:39:03,118 
+<> control   #established socket
+   []
+   {'identity': b'database', 'url': 'tcp://127.0.0.1:5556', 'socket': <zmq.sugar.socket.Socket object at 0x000002EA356BC408>}
+</>
+2017-02-21 11:39:03,119 
+<> control   #established socket
+   []
+   {'identity': b'io_asset', 'url': 'tcp://127.0.0.1:5557', 'socket': <zmq.sugar.socket.Socket object at 0x000002EA356BC468>}
+</>
+2017-02-21 11:39:03,120 
+<> control   #established socket
+   []
+   {'identity': b'communication', 'url': 'tcp://127.0.0.1:5558', 'socket': <zmq.sugar.socket.Socket object at 0x000002EA356BC4C8>}
+</>
+2017-02-21 11:39:03,121 
+<> control   #established socket
+   []
+   {'identity': b'remote_maintenance', 'url': 'tcp://127.0.0.1:5559', 'socket': <zmq.sugar.socket.Socket object at 0x000002EA356BC528>}
+</>
+2017-02-21 11:39:03,121 
+<> control   #established socket
+   []
+   {'identity': b'worker', 'url': 'tcp://127.0.0.1:6000', 'socket': <zmq.sugar.socket.Socket object at 0x000002EA356BC588>}
+</>
+2017-02-21 11:39:03,122 
+<> control   #completed loop
+   []
+   
+</>
+2017-02-21 11:39:38,736 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002EA3562F9A8>]
+   [b'\x00\x80\x00\x00)', b'communication', b'client', b'{"request": {"main_api": "http://maps.googleapis.com/maps/api/geocode/json?", "address": "Darmstadt"}}']
+</>
+2017-02-21 11:39:38,743 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002EA356BC4C8>]
+   [b'\x00\x80\x00\x00)', b'communication', b'client', b'{"request": {"main_api": "http://maps.googleapis.com/maps/api/geocode/json?", "address": "Darmstadt"}}']
+</>
+2017-02-21 11:39:38,755 
+<> control   #completed loop
+   []
+   1
+</>
+2017-02-21 11:39:39,010 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002EA356BC4C8>]
+   [b'\x00\x80\x00\x00)', b'client', b'communication', b'{"results": [{"address_components": [{"long_name": "Darmstadt", "short_name": "Darmstadt", "types": ["locality", "political"]}, {"long_name": "Darmstadt", "short_name": "DA", "types": ["administrative_area_level_2", "political"]}, {"long_name": "Hesse", "short_name": "HE", "types": ["administrative_area_level_1", "political"]}, {"long_name": "Germany", "short_name": "DE", "types": ["country", "political"]}], "formatted_address": "Darmstadt, Germany", "geometry": {"bounds": {"northeast": {"lat": 49.9538799, "lng": 8.7497188}, "southwest": {"lat": 49.7956409, "lng": 8.5599238}}, "location": {"lat": 49.8728253, "lng": 8.6511929}, "location_type": "APPROXIMATE", "viewport": {"northeast": {"lat": 49.9538799, "lng": 8.7497188}, "southwest": {"lat": 49.7956409, "lng": 8.5599238}}}, "place_id": "ChIJ2c1zEWRwvUcR8MWwKVBDIgQ", "types": ["locality", "political"]}], "status": "OK"}']
+</>
+2017-02-21 11:39:39,025 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002EA3562F9A8>]
+   [b'\x00\x80\x00\x00)', b'client', b'communication', b'{"results": [{"address_components": [{"long_name": "Darmstadt", "short_name": "Darmstadt", "types": ["locality", "political"]}, {"long_name": "Darmstadt", "short_name": "DA", "types": ["administrative_area_level_2", "political"]}, {"long_name": "Hesse", "short_name": "HE", "types": ["administrative_area_level_1", "political"]}, {"long_name": "Germany", "short_name": "DE", "types": ["country", "political"]}], "formatted_address": "Darmstadt, Germany", "geometry": {"bounds": {"northeast": {"lat": 49.9538799, "lng": 8.7497188}, "southwest": {"lat": 49.7956409, "lng": 8.5599238}}, "location": {"lat": 49.8728253, "lng": 8.6511929}, "location_type": "APPROXIMATE", "viewport": {"northeast": {"lat": 49.9538799, "lng": 8.7497188}, "southwest": {"lat": 49.7956409, "lng": 8.5599238}}}, "place_id": "ChIJ2c1zEWRwvUcR8MWwKVBDIgQ", "types": ["locality", "political"]}], "status": "OK"}']
+</>
+2017-02-21 11:39:39,029 
+<> control   #completed loop
+   []
+   2
+</>
+2017-02-21 11:39:53,843 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002EA3562F9A8>]
+   [b'\x00\x80\x00\x00)', b'communication', b'client', b'{"request": {"main_api": "http://maps.googleapis.com/maps/api/geocode/json?", "address": "Frankfurt"}}']
+</>
+2017-02-21 11:39:53,855 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002EA356BC4C8>]
+   [b'\x00\x80\x00\x00)', b'communication', b'client', b'{"request": {"main_api": "http://maps.googleapis.com/maps/api/geocode/json?", "address": "Frankfurt"}}']
+</>
+2017-02-21 11:39:53,863 
+<> control   #completed loop
+   []
+   3
+</>
+2017-02-21 11:39:54,005 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002EA356BC4C8>]
+   [b'\x00\x80\x00\x00)', b'client', b'communication', b'{"results": [{"address_components": [{"long_name": "Frankfurt", "short_name": "Frankfurt", "types": ["locality", "political"]}, {"long_name": "Darmstadt", "short_name": "DA", "types": ["administrative_area_level_2", "political"]}, {"long_name": "Hesse", "short_name": "HE", "types": ["administrative_area_level_1", "political"]}, {"long_name": "Germany", "short_name": "DE", "types": ["country", "political"]}], "formatted_address": "Frankfurt, Germany", "geometry": {"bounds": {"northeast": {"lat": 50.2272095, "lng": 8.8003977}, "southwest": {"lat": 50.0152145, "lng": 8.4727299}}, "location": {"lat": 50.1109221, "lng": 8.6821267}, "location_type": "APPROXIMATE", "viewport": {"northeast": {"lat": 50.2272095, "lng": 8.8003977}, "southwest": {"lat": 50.0152145, "lng": 8.4727299}}}, "place_id": "ChIJxZZwR28JvUcRAMawKVBDIgQ", "types": ["locality", "political"]}], "status": "OK"}']
+</>
+2017-02-21 11:39:54,017 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002EA3562F9A8>]
+   [b'\x00\x80\x00\x00)', b'client', b'communication', b'{"results": [{"address_components": [{"long_name": "Frankfurt", "short_name": "Frankfurt", "types": ["locality", "political"]}, {"long_name": "Darmstadt", "short_name": "DA", "types": ["administrative_area_level_2", "political"]}, {"long_name": "Hesse", "short_name": "HE", "types": ["administrative_area_level_1", "political"]}, {"long_name": "Germany", "short_name": "DE", "types": ["country", "political"]}], "formatted_address": "Frankfurt, Germany", "geometry": {"bounds": {"northeast": {"lat": 50.2272095, "lng": 8.8003977}, "southwest": {"lat": 50.0152145, "lng": 8.4727299}}, "location": {"lat": 50.1109221, "lng": 8.6821267}, "location_type": "APPROXIMATE", "viewport": {"northeast": {"lat": 50.2272095, "lng": 8.8003977}, "southwest": {"lat": 50.0152145, "lng": 8.4727299}}}, "place_id": "ChIJxZZwR28JvUcRAMawKVBDIgQ", "types": ["locality", "political"]}], "status": "OK"}']
+</>
+2017-02-21 11:39:54,026 
+<> control   #completed loop
+   []
+   4
+</>

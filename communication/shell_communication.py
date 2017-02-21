@@ -1,4 +1,6 @@
 import json
+import urllib.parse
+import requests
 
 from structure import structure_module
 
@@ -13,24 +15,23 @@ def main(name, info):
         try:
 
             MESSAGE = shell_communication.receive()
-
             CORE_pyobj = shell_communication.extract_core(MESSAGE)
 
 
+            request = CORE_pyobj["request"]
+            main_api = request['main_api']
+            address = request["address"]
+            url = main_api + urllib.parse.urlencode({'address':address})
+            response = requests.get(url).json()
+            print(response)
 
-            payload = CORE_pyobj["payload"]
 
-            result = "ICH schicke eine http Anfrage"
-
-            MESSAGE = shell_communication.create_message(CORE_pyobj = {payload : result}, MESSAGE_received = MESSAGE )
-
+            MESSAGE = shell_communication.create_message(CORE_pyobj = response, MESSAGE_received = MESSAGE )
             shell_communication.send(MESSAGE)
 
 
         except KeyboardInterrupt:
             break
-
-
 
 
 

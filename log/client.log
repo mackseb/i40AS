@@ -5438,3 +5438,59 @@
    [b'client', b'database', b'{"age": "{0: 18, 1: 17, 2: 15, 3: 15, 4: 16, 5: 16, 6: 16, 7: 17, 8: 15}"}']
 </>
 2017-02-21 11:02:51,586 127.0.0.1 - - [21/Feb/2017 11:02:51] "POST /api/database HTTP/1.1" 200 -
+2017-02-21 11:28:46,752 
+<> client   #established connection
+   [<zmq.sugar.socket.Socket object at 0x0000027DFD71F2E8>]
+   
+</>
+2017-02-21 11:28:47,433  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-02-21 11:31:58,380 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x0000027DFD71F2E8>]
+   [b'communication', b'client', b'{"request": {"main_api": "http://maps.googleapis.com/maps/api/geocode/json?", "address": "Darmstadt"}}']
+</>
+2017-02-21 11:35:53,472 
+<> client   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000001F30E68F2E8>]
+   
+</>
+2017-02-21 11:35:55,574  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-02-21 11:36:11,810 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001F30E68F2E8>]
+   [b'communication', b'client', b'{"request": {"main_api": "http://maps.googleapis.com/maps/api/geocode/json?", "address": "Darmstadt"}}']
+</>
+2017-02-21 11:36:12,063 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001F30E68F2E8>]
+   [b'client', b'communication', b'{"results": [{"address_components": [{"long_name": "Darmstadt", "short_name": "Darmstadt", "types": ["locality", "political"]}, {"long_name": "Darmstadt", "short_name": "DA", "types": ["administrative_area_level_2", "political"]}, {"long_name": "Hesse", "short_name": "HE", "types": ["administrative_area_level_1", "political"]}, {"long_name": "Germany", "short_name": "DE", "types": ["country", "political"]}], "formatted_address": "Darmstadt, Germany", "geometry": {"bounds": {"northeast": {"lat": 49.9538799, "lng": 8.7497188}, "southwest": {"lat": 49.7956409, "lng": 8.5599238}}, "location": {"lat": 49.8728253, "lng": 8.6511929}, "location_type": "APPROXIMATE", "viewport": {"northeast": {"lat": 49.9538799, "lng": 8.7497188}, "southwest": {"lat": 49.7956409, "lng": 8.5599238}}}, "place_id": "ChIJ2c1zEWRwvUcR8MWwKVBDIgQ", "types": ["locality", "political"]}], "status": "OK"}']
+</>
+2017-02-21 11:36:12,067 127.0.0.1 - - [21/Feb/2017 11:36:12] "POST /api/communication HTTP/1.1" 200 -
+2017-02-21 11:39:24,211 
+<> client   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000002650908F2E8>]
+   
+</>
+2017-02-21 11:39:25,303  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-02-21 11:39:38,733 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002650908F2E8>]
+   [b'communication', b'client', b'{"request": {"main_api": "http://maps.googleapis.com/maps/api/geocode/json?", "address": "Darmstadt"}}']
+</>
+2017-02-21 11:39:39,024 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002650908F2E8>]
+   [b'client', b'communication', b'{"results": [{"address_components": [{"long_name": "Darmstadt", "short_name": "Darmstadt", "types": ["locality", "political"]}, {"long_name": "Darmstadt", "short_name": "DA", "types": ["administrative_area_level_2", "political"]}, {"long_name": "Hesse", "short_name": "HE", "types": ["administrative_area_level_1", "political"]}, {"long_name": "Germany", "short_name": "DE", "types": ["country", "political"]}], "formatted_address": "Darmstadt, Germany", "geometry": {"bounds": {"northeast": {"lat": 49.9538799, "lng": 8.7497188}, "southwest": {"lat": 49.7956409, "lng": 8.5599238}}, "location": {"lat": 49.8728253, "lng": 8.6511929}, "location_type": "APPROXIMATE", "viewport": {"northeast": {"lat": 49.9538799, "lng": 8.7497188}, "southwest": {"lat": 49.7956409, "lng": 8.5599238}}}, "place_id": "ChIJ2c1zEWRwvUcR8MWwKVBDIgQ", "types": ["locality", "political"]}], "status": "OK"}']
+</>
+2017-02-21 11:39:39,028 127.0.0.1 - - [21/Feb/2017 11:39:39] "POST /api/communication HTTP/1.1" 200 -
+2017-02-21 11:39:53,840 
+<> client   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002650908F2E8>]
+   [b'communication', b'client', b'{"request": {"main_api": "http://maps.googleapis.com/maps/api/geocode/json?", "address": "Frankfurt"}}']
+</>
+2017-02-21 11:39:54,009 
+<> client   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002650908F2E8>]
+   [b'client', b'communication', b'{"results": [{"address_components": [{"long_name": "Frankfurt", "short_name": "Frankfurt", "types": ["locality", "political"]}, {"long_name": "Darmstadt", "short_name": "DA", "types": ["administrative_area_level_2", "political"]}, {"long_name": "Hesse", "short_name": "HE", "types": ["administrative_area_level_1", "political"]}, {"long_name": "Germany", "short_name": "DE", "types": ["country", "political"]}], "formatted_address": "Frankfurt, Germany", "geometry": {"bounds": {"northeast": {"lat": 50.2272095, "lng": 8.8003977}, "southwest": {"lat": 50.0152145, "lng": 8.4727299}}, "location": {"lat": 50.1109221, "lng": 8.6821267}, "location_type": "APPROXIMATE", "viewport": {"northeast": {"lat": 50.2272095, "lng": 8.8003977}, "southwest": {"lat": 50.0152145, "lng": 8.4727299}}}, "place_id": "ChIJxZZwR28JvUcRAMawKVBDIgQ", "types": ["locality", "political"]}], "status": "OK"}']
+</>
+2017-02-21 11:39:54,012 127.0.0.1 - - [21/Feb/2017 11:39:54] "POST /api/communication HTTP/1.1" 200 -
