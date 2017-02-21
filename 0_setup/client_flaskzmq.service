@@ -11,3 +11,18 @@ ExecStart=/home/s3mac/i40AS/project_env/bin/uwsgi --ini /home/s3mac/i40AS/wsgi.i
 
 [Install]
 WantedBy=multi-user.target
+
+
+[Unit]
+Description=uWSGI instance to serve client_flaskzmq
+After=network.target
+
+[Service]
+User=s3mac
+Group=www-data
+WorkingDirectory=/home/s3mac/i40AS
+Environment="PATH=/home/s3mac/i40AS/projectenv/bin"
+ExecStart=/home/s3mac/i40AS/projectenv/bin/uwsgi --ini wsgi.ini
+
+[Install]
+WantedBy=multi-user.target
