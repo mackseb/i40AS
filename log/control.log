@@ -39378,3 +39378,1088 @@
    []
    
 </>
+2017-03-09 15:54:23,545 
+<> control   #established socket
+   []
+   {'identity': b'client', 'url': 'tcp://127.0.0.1:5555', 'socket': <zmq.sugar.socket.Socket object at 0x000001BDF88FE9A8>}
+</>
+2017-03-09 15:54:23,545 
+<> control   #established socket
+   []
+   {'identity': b'database', 'url': 'tcp://127.0.0.1:5556', 'socket': <zmq.sugar.socket.Socket object at 0x000001BDF898D408>}
+</>
+2017-03-09 15:54:23,546 
+<> control   #established socket
+   []
+   {'identity': b'io_asset', 'url': 'tcp://127.0.0.1:5557', 'socket': <zmq.sugar.socket.Socket object at 0x000001BDF898D468>}
+</>
+2017-03-09 15:54:23,546 
+<> control   #established socket
+   []
+   {'identity': b'communication', 'url': 'tcp://127.0.0.1:5558', 'socket': <zmq.sugar.socket.Socket object at 0x000001BDF898D4C8>}
+</>
+2017-03-09 15:54:23,546 
+<> control   #established socket
+   []
+   {'identity': b'remote_maintenance', 'url': 'tcp://127.0.0.1:5559', 'socket': <zmq.sugar.socket.Socket object at 0x000001BDF898D528>}
+</>
+2017-03-09 15:54:23,547 
+<> control   #established socket
+   []
+   {'identity': b'worker', 'url': 'tcp://127.0.0.1:6000', 'socket': <zmq.sugar.socket.Socket object at 0x000001BDF898D588>}
+</>
+2017-03-09 15:54:23,547 
+<> control   #completed loop
+   []
+   
+</>
+2017-03-09 15:55:44,162 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF88FE9A8>]
+   [b'\x00\x80\x00\x00)', b'database', b'client', b'{"request": "school"}']
+</>
+2017-03-09 15:55:44,163 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF898D408>]
+   [b'\x00\x80\x00\x00)', b'database', b'client', b'{"request": "school"}']
+</>
+2017-03-09 15:55:44,164 
+<> control   #completed loop
+   []
+   1
+</>
+2017-03-09 15:55:44,178 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF898D408>]
+   [b'\x00\x80\x00\x00)', b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-03-09 15:55:44,190 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF88FE9A8>]
+   [b'\x00\x80\x00\x00)', b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-03-09 15:55:44,198 
+<> control   #completed loop
+   []
+   2
+</>
+2017-03-09 15:57:14,096 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF88FE9A8>]
+   [b'\x00\x80\x00\x00)', b'communication', b'client', b'{"request": {"main_api": "http://maps.googleapis.com/maps/api/geocode/json?", "address": "Frankfurt"}}']
+</>
+2017-03-09 15:57:14,115 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF898D4C8>]
+   [b'\x00\x80\x00\x00)', b'communication', b'client', b'{"request": {"main_api": "http://maps.googleapis.com/maps/api/geocode/json?", "address": "Frankfurt"}}']
+</>
+2017-03-09 15:57:14,129 
+<> control   #completed loop
+   []
+   3
+</>
+2017-03-09 15:57:14,282 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF898D4C8>]
+   [b'\x00\x80\x00\x00)', b'client', b'communication', b'{"results": [{"address_components": [{"long_name": "Frankfurt", "short_name": "Frankfurt", "types": ["locality", "political"]}, {"long_name": "Darmstadt", "short_name": "DA", "types": ["administrative_area_level_2", "political"]}, {"long_name": "Hesse", "short_name": "HE", "types": ["administrative_area_level_1", "political"]}, {"long_name": "Germany", "short_name": "DE", "types": ["country", "political"]}], "formatted_address": "Frankfurt, Germany", "geometry": {"bounds": {"northeast": {"lat": 50.2272095, "lng": 8.8003977}, "southwest": {"lat": 50.0152145, "lng": 8.4727299}}, "location": {"lat": 50.1109221, "lng": 8.6821267}, "location_type": "APPROXIMATE", "viewport": {"northeast": {"lat": 50.2272095, "lng": 8.8003977}, "southwest": {"lat": 50.0152145, "lng": 8.4727299}}}, "place_id": "ChIJxZZwR28JvUcRAMawKVBDIgQ", "types": ["locality", "political"]}], "status": "OK"}']
+</>
+2017-03-09 15:57:14,313 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF88FE9A8>]
+   [b'\x00\x80\x00\x00)', b'client', b'communication', b'{"results": [{"address_components": [{"long_name": "Frankfurt", "short_name": "Frankfurt", "types": ["locality", "political"]}, {"long_name": "Darmstadt", "short_name": "DA", "types": ["administrative_area_level_2", "political"]}, {"long_name": "Hesse", "short_name": "HE", "types": ["administrative_area_level_1", "political"]}, {"long_name": "Germany", "short_name": "DE", "types": ["country", "political"]}], "formatted_address": "Frankfurt, Germany", "geometry": {"bounds": {"northeast": {"lat": 50.2272095, "lng": 8.8003977}, "southwest": {"lat": 50.0152145, "lng": 8.4727299}}, "location": {"lat": 50.1109221, "lng": 8.6821267}, "location_type": "APPROXIMATE", "viewport": {"northeast": {"lat": 50.2272095, "lng": 8.8003977}, "southwest": {"lat": 50.0152145, "lng": 8.4727299}}}, "place_id": "ChIJxZZwR28JvUcRAMawKVBDIgQ", "types": ["locality", "political"]}], "status": "OK"}']
+</>
+2017-03-09 15:57:14,317 
+<> control   #completed loop
+   []
+   4
+</>
+2017-03-09 15:57:14,442 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF88FE9A8>]
+   [b'\x00\x80\x00\x00)', b'communication', b'client', b'{"request": {"main_api": "http://maps.googleapis.com/maps/api/geocode/json?", "address": "Darmstadt"}}']
+</>
+2017-03-09 15:57:14,461 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF898D4C8>]
+   [b'\x00\x80\x00\x00)', b'communication', b'client', b'{"request": {"main_api": "http://maps.googleapis.com/maps/api/geocode/json?", "address": "Darmstadt"}}']
+</>
+2017-03-09 15:57:14,470 
+<> control   #completed loop
+   []
+   5
+</>
+2017-03-09 15:57:15,008 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF898D4C8>]
+   [b'\x00\x80\x00\x00)', b'client', b'communication', b'{"results": [{"address_components": [{"long_name": "Darmstadt", "short_name": "Darmstadt", "types": ["locality", "political"]}, {"long_name": "Darmstadt", "short_name": "DA", "types": ["administrative_area_level_2", "political"]}, {"long_name": "Hesse", "short_name": "HE", "types": ["administrative_area_level_1", "political"]}, {"long_name": "Germany", "short_name": "DE", "types": ["country", "political"]}], "formatted_address": "Darmstadt, Germany", "geometry": {"bounds": {"northeast": {"lat": 49.9538799, "lng": 8.7497188}, "southwest": {"lat": 49.7956409, "lng": 8.5599238}}, "location": {"lat": 49.8728253, "lng": 8.6511929}, "location_type": "APPROXIMATE", "viewport": {"northeast": {"lat": 49.9538799, "lng": 8.7497188}, "southwest": {"lat": 49.7956409, "lng": 8.5599238}}}, "place_id": "ChIJ2c1zEWRwvUcR8MWwKVBDIgQ", "types": ["locality", "political"]}], "status": "OK"}']
+</>
+2017-03-09 15:57:15,041 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF88FE9A8>]
+   [b'\x00\x80\x00\x00)', b'client', b'communication', b'{"results": [{"address_components": [{"long_name": "Darmstadt", "short_name": "Darmstadt", "types": ["locality", "political"]}, {"long_name": "Darmstadt", "short_name": "DA", "types": ["administrative_area_level_2", "political"]}, {"long_name": "Hesse", "short_name": "HE", "types": ["administrative_area_level_1", "political"]}, {"long_name": "Germany", "short_name": "DE", "types": ["country", "political"]}], "formatted_address": "Darmstadt, Germany", "geometry": {"bounds": {"northeast": {"lat": 49.9538799, "lng": 8.7497188}, "southwest": {"lat": 49.7956409, "lng": 8.5599238}}, "location": {"lat": 49.8728253, "lng": 8.6511929}, "location_type": "APPROXIMATE", "viewport": {"northeast": {"lat": 49.9538799, "lng": 8.7497188}, "southwest": {"lat": 49.7956409, "lng": 8.5599238}}}, "place_id": "ChIJ2c1zEWRwvUcR8MWwKVBDIgQ", "types": ["locality", "political"]}], "status": "OK"}']
+</>
+2017-03-09 15:57:15,048 
+<> control   #completed loop
+   []
+   6
+</>
+2017-03-09 15:57:15,440 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF88FE9A8>]
+   [b'\x00\x80\x00\x00)', b'database', b'client', b'{"request": "Fjob"}']
+</>
+2017-03-09 15:57:15,464 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF898D408>]
+   [b'\x00\x80\x00\x00)', b'database', b'client', b'{"request": "Fjob"}']
+</>
+2017-03-09 15:57:15,475 
+<> control   #completed loop
+   []
+   7
+</>
+2017-03-09 15:57:15,487 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF898D408>]
+   [b'\x00\x80\x00\x00)', b'client', b'database', b'{"Fjob": "{0: \'teacher\', 1: \'other\', 2: \'other\', 3: \'services\', 4: \'other\', 5: \'other\', 6: \'other\', 7: \'teacher\', 8: \'other\'}"}']
+</>
+2017-03-09 15:57:15,514 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF88FE9A8>]
+   [b'\x00\x80\x00\x00)', b'client', b'database', b'{"Fjob": "{0: \'teacher\', 1: \'other\', 2: \'other\', 3: \'services\', 4: \'other\', 5: \'other\', 6: \'other\', 7: \'teacher\', 8: \'other\'}"}']
+</>
+2017-03-09 15:57:15,519 
+<> control   #completed loop
+   []
+   8
+</>
+2017-03-09 15:57:15,689 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF88FE9A8>]
+   [b'\x00\x80\x00\x00)', b'database', b'client', b'{"request": "school"}']
+</>
+2017-03-09 15:57:15,711 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF898D408>]
+   [b'\x00\x80\x00\x00)', b'database', b'client', b'{"request": "school"}']
+</>
+2017-03-09 15:57:15,730 
+<> control   #completed loop
+   []
+   9
+</>
+2017-03-09 15:57:15,743 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF898D408>]
+   [b'\x00\x80\x00\x00)', b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-03-09 15:57:15,770 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF88FE9A8>]
+   [b'\x00\x80\x00\x00)', b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-03-09 15:57:15,787 
+<> control   #completed loop
+   []
+   10
+</>
+2017-03-09 15:57:15,928 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF88FE9A8>]
+   [b'\x00\x80\x00\x00)', b'database', b'client', b'{"request": "address"}']
+</>
+2017-03-09 15:57:15,954 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF898D408>]
+   [b'\x00\x80\x00\x00)', b'database', b'client', b'{"request": "address"}']
+</>
+2017-03-09 15:57:15,969 
+<> control   #completed loop
+   []
+   11
+</>
+2017-03-09 15:57:15,984 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF898D408>]
+   [b'\x00\x80\x00\x00)', b'client', b'database', b'{"address": "{0: \'U\', 1: \'U\', 2: \'U\', 3: \'U\', 4: \'U\', 5: \'U\', 6: \'U\', 7: \'U\', 8: \'U\'}"}']
+</>
+2017-03-09 15:57:16,000 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF88FE9A8>]
+   [b'\x00\x80\x00\x00)', b'client', b'database', b'{"address": "{0: \'U\', 1: \'U\', 2: \'U\', 3: \'U\', 4: \'U\', 5: \'U\', 6: \'U\', 7: \'U\', 8: \'U\'}"}']
+</>
+2017-03-09 15:57:16,013 
+<> control   #completed loop
+   []
+   12
+</>
+2017-03-09 15:57:16,185 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF88FE9A8>]
+   [b'\x00\x80\x00\x00)', b'database', b'client', b'{"request": "age"}']
+</>
+2017-03-09 15:57:16,215 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF898D408>]
+   [b'\x00\x80\x00\x00)', b'database', b'client', b'{"request": "age"}']
+</>
+2017-03-09 15:57:16,233 
+<> control   #completed loop
+   []
+   13
+</>
+2017-03-09 15:57:16,250 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF898D408>]
+   [b'\x00\x80\x00\x00)', b'client', b'database', b'{"age": "{0: 18, 1: 17, 2: 15, 3: 15, 4: 16, 5: 16, 6: 16, 7: 17, 8: 15}"}']
+</>
+2017-03-09 15:57:16,266 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF88FE9A8>]
+   [b'\x00\x80\x00\x00)', b'client', b'database', b'{"age": "{0: 18, 1: 17, 2: 15, 3: 15, 4: 16, 5: 16, 6: 16, 7: 17, 8: 15}"}']
+</>
+2017-03-09 15:57:16,282 
+<> control   #completed loop
+   []
+   14
+</>
+2017-03-09 15:57:16,421 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF88FE9A8>]
+   [b'\x00\x80\x00\x00)', b'remote_maintenance', b'client', b'{"request": "run maintenance protocol A1"}']
+</>
+2017-03-09 15:57:16,478 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF898D528>]
+   [b'\x00\x80\x00\x00)', b'remote_maintenance', b'client', b'{"request": "run maintenance protocol A1"}']
+</>
+2017-03-09 15:57:16,485 
+<> control   #completed loop
+   []
+   15
+</>
+2017-03-09 15:57:16,499 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF898D528>]
+   [b'\x00\x80\x00\x00)', b'client', b'remote_maintenance', b'{"run maintenance protocol A1": "the maintenance protocol was successfully completed"}']
+</>
+2017-03-09 15:57:16,517 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF88FE9A8>]
+   [b'\x00\x80\x00\x00)', b'client', b'remote_maintenance', b'{"run maintenance protocol A1": "the maintenance protocol was successfully completed"}']
+</>
+2017-03-09 15:57:16,530 
+<> control   #completed loop
+   []
+   16
+</>
+2017-03-09 15:57:16,686 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF88FE9A8>]
+   [b'\x00\x80\x00\x00)', b'remote_maintenance', b'client', b'{"request": "run maintenance protocol C3"}']
+</>
+2017-03-09 15:57:16,714 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF898D528>]
+   [b'\x00\x80\x00\x00)', b'remote_maintenance', b'client', b'{"request": "run maintenance protocol C3"}']
+</>
+2017-03-09 15:57:16,721 
+<> control   #completed loop
+   []
+   17
+</>
+2017-03-09 15:57:16,733 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF898D528>]
+   [b'database', b'remote_maintenance', b'{"request": "school"}']
+</>
+2017-03-09 15:57:16,750 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF898D408>]
+   [b'database', b'remote_maintenance', b'{"request": "school"}']
+</>
+2017-03-09 15:57:16,762 
+<> control   #completed loop
+   []
+   18
+</>
+2017-03-09 15:57:16,776 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF898D408>]
+   [b'remote_maintenance', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-03-09 15:57:16,799 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF898D528>]
+   [b'remote_maintenance', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-03-09 15:57:16,816 
+<> control   #completed loop
+   []
+   19
+</>
+2017-03-09 15:57:16,826 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF898D528>]
+   [b'\x00\x80\x00\x00)', b'client', b'remote_maintenance', b'{"run maintenance protocol C3": {"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}}']
+</>
+2017-03-09 15:57:16,837 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF88FE9A8>]
+   [b'\x00\x80\x00\x00)', b'client', b'remote_maintenance', b'{"run maintenance protocol C3": {"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}}']
+</>
+2017-03-09 15:57:16,852 
+<> control   #completed loop
+   []
+   20
+</>
+2017-03-09 15:57:17,015 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF88FE9A8>]
+   [b'\x00\x80\x00\x00)', b'io_asset', b'client', b'{"request": "current position"}']
+</>
+2017-03-09 15:57:17,022 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF898D468>]
+   [b'\x00\x80\x00\x00)', b'io_asset', b'client', b'{"request": "current position"}']
+</>
+2017-03-09 15:57:17,033 
+<> control   #completed loop
+   []
+   21
+</>
+2017-03-09 15:57:19,068 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF898D468>]
+   [b'\x00\x80\x00\x00)', b'client', b'io_asset', b'{"current position": "82\\u00b0", "current loop": 78}']
+</>
+2017-03-09 15:57:19,145 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF88FE9A8>]
+   [b'\x00\x80\x00\x00)', b'client', b'io_asset', b'{"current position": "82\\u00b0", "current loop": 78}']
+</>
+2017-03-09 15:57:19,180 
+<> control   #completed loop
+   []
+   22
+</>
+2017-03-09 15:57:19,615 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF88FE9A8>]
+   [b'\x00\x80\x00\x00)', b'worker', b'client', b'{"request": "A"}']
+</>
+2017-03-09 15:57:19,673 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF898D588>]
+   [b'\x00\x80\x00\x00)', b'worker', b'client', b'{"request": "A"}']
+</>
+2017-03-09 15:57:19,708 
+<> control   #completed loop
+   []
+   23
+</>
+2017-03-09 15:57:19,741 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF898D588>]
+   [b'\x00\x80\x00\x00)', b'client', b'worker', b'{"A": "function has been executed"}']
+</>
+2017-03-09 15:57:19,778 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF88FE9A8>]
+   [b'\x00\x80\x00\x00)', b'client', b'worker', b'{"A": "function has been executed"}']
+</>
+2017-03-09 15:57:19,813 
+<> control   #completed loop
+   []
+   24
+</>
+2017-03-09 15:57:19,942 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF88FE9A8>]
+   [b'\x00\x80\x00\x00)', b'worker', b'client', b'{"request": "B"}']
+</>
+2017-03-09 15:57:20,019 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF898D588>]
+   [b'\x00\x80\x00\x00)', b'worker', b'client', b'{"request": "B"}']
+</>
+2017-03-09 15:57:20,071 
+<> control   #completed loop
+   []
+   25
+</>
+2017-03-09 15:57:20,094 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF898D588>]
+   [b'\x00\x80\x00\x00)', b'client', b'worker', b'{"B": "function has been executed"}']
+</>
+2017-03-09 15:57:20,147 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF88FE9A8>]
+   [b'\x00\x80\x00\x00)', b'client', b'worker', b'{"B": "function has been executed"}']
+</>
+2017-03-09 15:57:20,171 
+<> control   #completed loop
+   []
+   26
+</>
+2017-03-09 15:57:20,602 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF88FE9A8>]
+   [b'\x00\x80\x00\x00)', b'worker', b'client', b'{"request": "C"}']
+</>
+2017-03-09 15:57:20,645 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF898D588>]
+   [b'\x00\x80\x00\x00)', b'worker', b'client', b'{"request": "C"}']
+</>
+2017-03-09 15:57:20,678 
+<> control   #completed loop
+   []
+   27
+</>
+2017-03-09 15:57:20,708 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF898D588>]
+   [b'\x00\x80\x00\x00)', b'client', b'worker', b'{"C": "function has been executed"}']
+</>
+2017-03-09 15:57:20,757 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001BDF88FE9A8>]
+   [b'\x00\x80\x00\x00)', b'client', b'worker', b'{"C": "function has been executed"}']
+</>
+2017-03-09 15:57:20,770 
+<> control   #completed loop
+   []
+   28
+</>
+2017-03-09 17:41:12,480 
+<> control   #established socket
+   []
+   {'identity': b'client', 'url': 'tcp://127.0.0.1:5555', 'socket': <zmq.sugar.socket.Socket object at 0x00000259B145E9A8>}
+</>
+2017-03-09 17:41:12,482 
+<> control   #established socket
+   []
+   {'identity': b'database', 'url': 'tcp://127.0.0.1:5556', 'socket': <zmq.sugar.socket.Socket object at 0x00000259B14ED408>}
+</>
+2017-03-09 17:41:12,482 
+<> control   #established socket
+   []
+   {'identity': b'io_asset', 'url': 'tcp://127.0.0.1:5557', 'socket': <zmq.sugar.socket.Socket object at 0x00000259B14ED468>}
+</>
+2017-03-09 17:41:12,483 
+<> control   #established socket
+   []
+   {'identity': b'communication', 'url': 'tcp://127.0.0.1:5558', 'socket': <zmq.sugar.socket.Socket object at 0x00000259B14ED4C8>}
+</>
+2017-03-09 17:41:12,483 
+<> control   #established socket
+   []
+   {'identity': b'remote_maintenance', 'url': 'tcp://127.0.0.1:5559', 'socket': <zmq.sugar.socket.Socket object at 0x00000259B14ED528>}
+</>
+2017-03-09 17:41:12,483 
+<> control   #established socket
+   []
+   {'identity': b'worker', 'url': 'tcp://127.0.0.1:6000', 'socket': <zmq.sugar.socket.Socket object at 0x00000259B14ED588>}
+</>
+2017-03-09 17:41:12,484 
+<> control   #completed loop
+   []
+   
+</>
+2017-03-09 17:42:25,218 
+<> control   #established socket
+   []
+   {'identity': b'client', 'url': 'tcp://127.0.0.1:5555', 'socket': <zmq.sugar.socket.Socket object at 0x0000019069E7E9A8>}
+</>
+2017-03-09 17:42:25,219 
+<> control   #established socket
+   []
+   {'identity': b'database', 'url': 'tcp://127.0.0.1:5556', 'socket': <zmq.sugar.socket.Socket object at 0x0000019069F0D408>}
+</>
+2017-03-09 17:42:25,219 
+<> control   #established socket
+   []
+   {'identity': b'io_asset', 'url': 'tcp://127.0.0.1:5557', 'socket': <zmq.sugar.socket.Socket object at 0x0000019069F0D468>}
+</>
+2017-03-09 17:42:25,220 
+<> control   #established socket
+   []
+   {'identity': b'communication', 'url': 'tcp://127.0.0.1:5558', 'socket': <zmq.sugar.socket.Socket object at 0x0000019069F0D4C8>}
+</>
+2017-03-09 17:42:25,220 
+<> control   #established socket
+   []
+   {'identity': b'remote_maintenance', 'url': 'tcp://127.0.0.1:5559', 'socket': <zmq.sugar.socket.Socket object at 0x0000019069F0D528>}
+</>
+2017-03-09 17:42:25,221 
+<> control   #established socket
+   []
+   {'identity': b'worker', 'url': 'tcp://127.0.0.1:6000', 'socket': <zmq.sugar.socket.Socket object at 0x0000019069F0D588>}
+</>
+2017-03-09 17:42:25,221 
+<> control   #completed loop
+   []
+   
+</>
+2017-03-09 17:43:28,232 
+<> control   #established socket
+   []
+   {'identity': b'client', 'url': 'tcp://127.0.0.1:5555', 'socket': <zmq.sugar.socket.Socket object at 0x000001F4DBF5E9A8>}
+</>
+2017-03-09 17:43:28,248 
+<> control   #established socket
+   []
+   {'identity': b'database', 'url': 'tcp://127.0.0.1:5556', 'socket': <zmq.sugar.socket.Socket object at 0x000001F4DBFED408>}
+</>
+2017-03-09 17:43:28,248 
+<> control   #established socket
+   []
+   {'identity': b'io_asset', 'url': 'tcp://127.0.0.1:5557', 'socket': <zmq.sugar.socket.Socket object at 0x000001F4DBFED468>}
+</>
+2017-03-09 17:43:28,248 
+<> control   #established socket
+   []
+   {'identity': b'communication', 'url': 'tcp://127.0.0.1:5558', 'socket': <zmq.sugar.socket.Socket object at 0x000001F4DBFED4C8>}
+</>
+2017-03-09 17:43:28,248 
+<> control   #established socket
+   []
+   {'identity': b'remote_maintenance', 'url': 'tcp://127.0.0.1:5559', 'socket': <zmq.sugar.socket.Socket object at 0x000001F4DBFED528>}
+</>
+2017-03-09 17:43:28,248 
+<> control   #established socket
+   []
+   {'identity': b'worker', 'url': 'tcp://127.0.0.1:6000', 'socket': <zmq.sugar.socket.Socket object at 0x000001F4DBFED588>}
+</>
+2017-03-09 17:43:28,248 
+<> control   #completed loop
+   []
+   
+</>
+2017-03-09 17:49:37,350 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001F4DBF5E9A8>]
+   [b'\x00\x80\x00\x00)', b'database', b'client', b'{"request": "school"}']
+</>
+2017-03-09 17:49:37,351 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001F4DBFED408>]
+   [b'\x00\x80\x00\x00)', b'database', b'client', b'{"request": "school"}']
+</>
+2017-03-09 17:49:37,353 
+<> control   #completed loop
+   []
+   1
+</>
+2017-03-09 17:49:37,378 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x000001F4DBFED408>]
+   [b'\x00\x80\x00\x00)', b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-03-09 17:49:37,397 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001F4DBF5E9A8>]
+   [b'\x00\x80\x00\x00)', b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-03-09 17:49:37,401 
+<> control   #completed loop
+   []
+   2
+</>
+2017-03-09 17:53:24,469 
+<> control   #established socket
+   []
+   {'identity': b'client', 'url': 'tcp://127.0.0.1:5555', 'socket': <zmq.sugar.socket.Socket object at 0x0000017D127BE9A8>}
+</>
+2017-03-09 17:53:24,469 
+<> control   #established socket
+   []
+   {'identity': b'database', 'url': 'tcp://127.0.0.1:5556', 'socket': <zmq.sugar.socket.Socket object at 0x0000017D1284D408>}
+</>
+2017-03-09 17:53:24,469 
+<> control   #established socket
+   []
+   {'identity': b'io_asset', 'url': 'tcp://127.0.0.1:5557', 'socket': <zmq.sugar.socket.Socket object at 0x0000017D1284D468>}
+</>
+2017-03-09 17:53:24,470 
+<> control   #established socket
+   []
+   {'identity': b'communication', 'url': 'tcp://127.0.0.1:5558', 'socket': <zmq.sugar.socket.Socket object at 0x0000017D1284D4C8>}
+</>
+2017-03-09 17:53:24,471 
+<> control   #established socket
+   []
+   {'identity': b'remote_maintenance', 'url': 'tcp://127.0.0.1:5559', 'socket': <zmq.sugar.socket.Socket object at 0x0000017D1284D528>}
+</>
+2017-03-09 17:53:24,471 
+<> control   #established socket
+   []
+   {'identity': b'worker', 'url': 'tcp://127.0.0.1:6000', 'socket': <zmq.sugar.socket.Socket object at 0x0000017D1284D588>}
+</>
+2017-03-09 17:53:24,472 
+<> control   #completed loop
+   []
+   
+</>
+2017-03-09 17:53:52,277 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x0000017D127BE9A8>]
+   [b'\x00\x80\x00\x00)', b'database', b'client', b'{"request": "Fjob"}']
+</>
+2017-03-09 17:53:52,294 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x0000017D1284D408>]
+   [b'\x00\x80\x00\x00)', b'database', b'client', b'{"request": "Fjob"}']
+</>
+2017-03-09 17:53:52,296 
+<> control   #completed loop
+   []
+   1
+</>
+2017-03-09 17:53:52,310 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x0000017D1284D408>]
+   [b'\x00\x80\x00\x00)', b'client', b'database', b'{"Fjob": "{0: \'teacher\', 1: \'other\', 2: \'other\', 3: \'services\', 4: \'other\', 5: \'other\', 6: \'other\', 7: \'teacher\', 8: \'other\'}"}']
+</>
+2017-03-09 17:53:52,324 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x0000017D127BE9A8>]
+   [b'\x00\x80\x00\x00)', b'client', b'database', b'{"Fjob": "{0: \'teacher\', 1: \'other\', 2: \'other\', 3: \'services\', 4: \'other\', 5: \'other\', 6: \'other\', 7: \'teacher\', 8: \'other\'}"}']
+</>
+2017-03-09 17:53:52,329 
+<> control   #completed loop
+   []
+   2
+</>
+2017-03-09 17:55:53,079 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x0000017D127BE9A8>]
+   [b'\x00\x80\x00\x00)', b'database', b'client', b'{"request": "run maintenance protocol C3"}']
+</>
+2017-03-09 17:55:53,094 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x0000017D1284D408>]
+   [b'\x00\x80\x00\x00)', b'database', b'client', b'{"request": "run maintenance protocol C3"}']
+</>
+2017-03-09 17:55:53,111 
+<> control   #completed loop
+   []
+   3
+</>
+2017-03-09 20:54:26,684 
+<> control   #established socket
+   []
+   {'identity': b'client', 'url': 'tcp://127.0.0.1:5555', 'socket': <zmq.sugar.socket.Socket object at 0x0000029AB4EDA9A8>}
+</>
+2017-03-09 20:54:26,688 
+<> control   #established socket
+   []
+   {'identity': b'database', 'url': 'tcp://127.0.0.1:5556', 'socket': <zmq.sugar.socket.Socket object at 0x0000029AB4F6B408>}
+</>
+2017-03-09 20:54:26,688 
+<> control   #established socket
+   []
+   {'identity': b'io_asset', 'url': 'tcp://127.0.0.1:5557', 'socket': <zmq.sugar.socket.Socket object at 0x0000029AB4F6B468>}
+</>
+2017-03-09 20:54:26,688 
+<> control   #established socket
+   []
+   {'identity': b'communication', 'url': 'tcp://127.0.0.1:5558', 'socket': <zmq.sugar.socket.Socket object at 0x0000029AB4F6B4C8>}
+</>
+2017-03-09 20:54:26,688 
+<> control   #established socket
+   []
+   {'identity': b'remote_maintenance', 'url': 'tcp://127.0.0.1:5559', 'socket': <zmq.sugar.socket.Socket object at 0x0000029AB4F6B528>}
+</>
+2017-03-09 20:54:26,688 
+<> control   #established socket
+   []
+   {'identity': b'worker', 'url': 'tcp://127.0.0.1:6000', 'socket': <zmq.sugar.socket.Socket object at 0x0000029AB4F6B588>}
+</>
+2017-03-09 20:54:26,688 
+<> control   #completed loop
+   []
+   
+</>
+2017-03-09 20:58:33,224 
+<> control   #established socket
+   []
+   {'identity': b'client', 'url': 'tcp://127.0.0.1:5555', 'socket': <zmq.sugar.socket.Socket object at 0x000002167733C9A8>}
+</>
+2017-03-09 20:58:33,225 
+<> control   #established socket
+   []
+   {'identity': b'database', 'url': 'tcp://127.0.0.1:5556', 'socket': <zmq.sugar.socket.Socket object at 0x00000216773CB408>}
+</>
+2017-03-09 20:58:33,225 
+<> control   #established socket
+   []
+   {'identity': b'io_asset', 'url': 'tcp://127.0.0.1:5557', 'socket': <zmq.sugar.socket.Socket object at 0x00000216773CB468>}
+</>
+2017-03-09 20:58:33,226 
+<> control   #established socket
+   []
+   {'identity': b'communication', 'url': 'tcp://127.0.0.1:5558', 'socket': <zmq.sugar.socket.Socket object at 0x00000216773CB4C8>}
+</>
+2017-03-09 20:58:33,227 
+<> control   #established socket
+   []
+   {'identity': b'remote_maintenance', 'url': 'tcp://127.0.0.1:5559', 'socket': <zmq.sugar.socket.Socket object at 0x00000216773CB528>}
+</>
+2017-03-09 20:58:33,227 
+<> control   #established socket
+   []
+   {'identity': b'worker', 'url': 'tcp://127.0.0.1:6000', 'socket': <zmq.sugar.socket.Socket object at 0x00000216773CB588>}
+</>
+2017-03-09 20:58:33,228 
+<> control   #completed loop
+   []
+   
+</>
+2017-03-09 21:00:27,528 
+<> control   #established socket
+   []
+   {'identity': b'client', 'url': 'tcp://127.0.0.1:5555', 'socket': <zmq.sugar.socket.Socket object at 0x000002223013A9A8>}
+</>
+2017-03-09 21:00:27,528 
+<> control   #established socket
+   []
+   {'identity': b'database', 'url': 'tcp://127.0.0.1:5556', 'socket': <zmq.sugar.socket.Socket object at 0x00000222301CB408>}
+</>
+2017-03-09 21:00:27,528 
+<> control   #established socket
+   []
+   {'identity': b'io_asset', 'url': 'tcp://127.0.0.1:5557', 'socket': <zmq.sugar.socket.Socket object at 0x00000222301CB468>}
+</>
+2017-03-09 21:00:27,528 
+<> control   #established socket
+   []
+   {'identity': b'communication', 'url': 'tcp://127.0.0.1:5558', 'socket': <zmq.sugar.socket.Socket object at 0x00000222301CB4C8>}
+</>
+2017-03-09 21:00:27,536 
+<> control   #established socket
+   []
+   {'identity': b'remote_maintenance', 'url': 'tcp://127.0.0.1:5559', 'socket': <zmq.sugar.socket.Socket object at 0x00000222301CB528>}
+</>
+2017-03-09 21:00:27,536 
+<> control   #established socket
+   []
+   {'identity': b'worker', 'url': 'tcp://127.0.0.1:6000', 'socket': <zmq.sugar.socket.Socket object at 0x00000222301CB588>}
+</>
+2017-03-09 21:00:27,536 
+<> control   #completed loop
+   []
+   
+</>
+2017-03-09 21:44:42,838 
+<> control   #established socket
+   []
+   {'identity': b'client', 'url': 'tcp://127.0.0.1:5555', 'socket': <zmq.sugar.socket.Socket object at 0x000001D44522A9A8>}
+</>
+2017-03-09 21:44:42,838 
+<> control   #established socket
+   []
+   {'identity': b'database', 'url': 'tcp://127.0.0.1:5556', 'socket': <zmq.sugar.socket.Socket object at 0x000001D4452BB408>}
+</>
+2017-03-09 21:44:42,838 
+<> control   #established socket
+   []
+   {'identity': b'io_asset', 'url': 'tcp://127.0.0.1:5557', 'socket': <zmq.sugar.socket.Socket object at 0x000001D4452BB468>}
+</>
+2017-03-09 21:44:42,838 
+<> control   #established socket
+   []
+   {'identity': b'communication', 'url': 'tcp://127.0.0.1:5558', 'socket': <zmq.sugar.socket.Socket object at 0x000001D4452BB4C8>}
+</>
+2017-03-09 21:44:42,853 
+<> control   #established socket
+   []
+   {'identity': b'remote_maintenance', 'url': 'tcp://127.0.0.1:5559', 'socket': <zmq.sugar.socket.Socket object at 0x000001D4452BB528>}
+</>
+2017-03-09 21:44:42,853 
+<> control   #established socket
+   []
+   {'identity': b'worker', 'url': 'tcp://127.0.0.1:6000', 'socket': <zmq.sugar.socket.Socket object at 0x000001D4452BB588>}
+</>
+2017-03-09 21:44:42,855 
+<> control   #completed loop
+   []
+   
+</>
+2017-03-09 21:45:32,187 
+<> control   #established socket
+   []
+   {'identity': b'client', 'url': 'tcp://127.0.0.1:5555', 'socket': <zmq.sugar.socket.Socket object at 0x0000029026FDA9A8>}
+</>
+2017-03-09 21:45:32,188 
+<> control   #established socket
+   []
+   {'identity': b'database', 'url': 'tcp://127.0.0.1:5556', 'socket': <zmq.sugar.socket.Socket object at 0x000002902706B408>}
+</>
+2017-03-09 21:45:32,189 
+<> control   #established socket
+   []
+   {'identity': b'io_asset', 'url': 'tcp://127.0.0.1:5557', 'socket': <zmq.sugar.socket.Socket object at 0x000002902706B468>}
+</>
+2017-03-09 21:45:32,189 
+<> control   #established socket
+   []
+   {'identity': b'communication', 'url': 'tcp://127.0.0.1:5558', 'socket': <zmq.sugar.socket.Socket object at 0x000002902706B4C8>}
+</>
+2017-03-09 21:45:32,190 
+<> control   #established socket
+   []
+   {'identity': b'remote_maintenance', 'url': 'tcp://127.0.0.1:5559', 'socket': <zmq.sugar.socket.Socket object at 0x000002902706B528>}
+</>
+2017-03-09 21:45:32,191 
+<> control   #established socket
+   []
+   {'identity': b'worker', 'url': 'tcp://127.0.0.1:6000', 'socket': <zmq.sugar.socket.Socket object at 0x000002902706B588>}
+</>
+2017-03-09 21:45:32,191 
+<> control   #completed loop
+   []
+   
+</>
+2017-03-09 21:47:02,929 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x0000029026FDA9A8>]
+   [b'\x00\x80\x00\x00)', b'remote_maintenance', b'client', b'{"request": "run maintenance protocol C3"}']
+</>
+2017-03-09 21:47:02,929 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002902706B528>]
+   [b'\x00\x80\x00\x00)', b'remote_maintenance', b'client', b'{"request": "run maintenance protocol C3"}']
+</>
+2017-03-09 21:47:02,945 
+<> control   #completed loop
+   []
+   1
+</>
+2017-03-09 21:47:02,974 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002902706B528>]
+   [b'database', b'remote_maintenance', b'{"request": "school"}']
+</>
+2017-03-09 21:47:02,998 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002902706B408>]
+   [b'database', b'remote_maintenance', b'{"request": "school"}']
+</>
+2017-03-09 21:47:03,014 
+<> control   #completed loop
+   []
+   2
+</>
+2017-03-09 21:47:03,050 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002902706B408>]
+   [b'remote_maintenance', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-03-09 21:47:03,068 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002902706B528>]
+   [b'remote_maintenance', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-03-09 21:47:03,082 
+<> control   #completed loop
+   []
+   3
+</>
+2017-03-09 21:47:03,098 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x000002902706B528>]
+   [b'\x00\x80\x00\x00)', b'client', b'remote_maintenance', b'{"run maintenance protocol C3": {"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}}']
+</>
+2017-03-09 21:47:03,113 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x0000029026FDA9A8>]
+   [b'\x00\x80\x00\x00)', b'client', b'remote_maintenance', b'{"run maintenance protocol C3": {"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}}']
+</>
+2017-03-09 21:47:03,130 
+<> control   #completed loop
+   []
+   4
+</>
+2017-03-09 23:23:15,087 
+<> control   #established socket
+   []
+   {'identity': b'client', 'url': 'tcp://127.0.0.1:5555', 'socket': <zmq.sugar.socket.Socket object at 0x000001E37755A9A8>}
+</>
+2017-03-09 23:23:15,088 
+<> control   #established socket
+   []
+   {'identity': b'database', 'url': 'tcp://127.0.0.1:5556', 'socket': <zmq.sugar.socket.Socket object at 0x000001E3775EB408>}
+</>
+2017-03-09 23:23:15,089 
+<> control   #established socket
+   []
+   {'identity': b'io_asset', 'url': 'tcp://127.0.0.1:5557', 'socket': <zmq.sugar.socket.Socket object at 0x000001E3775EB468>}
+</>
+2017-03-09 23:23:15,089 
+<> control   #established socket
+   []
+   {'identity': b'communication', 'url': 'tcp://127.0.0.1:5558', 'socket': <zmq.sugar.socket.Socket object at 0x000001E3775EB4C8>}
+</>
+2017-03-09 23:23:15,090 
+<> control   #established socket
+   []
+   {'identity': b'remote_maintenance', 'url': 'tcp://127.0.0.1:5559', 'socket': <zmq.sugar.socket.Socket object at 0x000001E3775EB528>}
+</>
+2017-03-09 23:23:15,090 
+<> control   #established socket
+   []
+   {'identity': b'worker', 'url': 'tcp://127.0.0.1:6000', 'socket': <zmq.sugar.socket.Socket object at 0x000001E3775EB588>}
+</>
+2017-03-09 23:23:15,091 
+<> control   #completed loop
+   []
+   
+</>
+2017-03-09 23:32:36,918 
+<> control   #established socket
+   []
+   {'identity': b'client', 'url': 'tcp://127.0.0.1:5555', 'socket': <zmq.sugar.socket.Socket object at 0x00000267D1B5A9A8>}
+</>
+2017-03-09 23:32:36,918 
+<> control   #established socket
+   []
+   {'identity': b'database', 'url': 'tcp://127.0.0.1:5556', 'socket': <zmq.sugar.socket.Socket object at 0x00000267D1BEB408>}
+</>
+2017-03-09 23:32:36,918 
+<> control   #established socket
+   []
+   {'identity': b'io_asset', 'url': 'tcp://127.0.0.1:5557', 'socket': <zmq.sugar.socket.Socket object at 0x00000267D1BEB468>}
+</>
+2017-03-09 23:32:36,918 
+<> control   #established socket
+   []
+   {'identity': b'communication', 'url': 'tcp://127.0.0.1:5558', 'socket': <zmq.sugar.socket.Socket object at 0x00000267D1BEB4C8>}
+</>
+2017-03-09 23:32:36,918 
+<> control   #established socket
+   []
+   {'identity': b'remote_maintenance', 'url': 'tcp://127.0.0.1:5559', 'socket': <zmq.sugar.socket.Socket object at 0x00000267D1BEB528>}
+</>
+2017-03-09 23:32:36,918 
+<> control   #established socket
+   []
+   {'identity': b'worker', 'url': 'tcp://127.0.0.1:6000', 'socket': <zmq.sugar.socket.Socket object at 0x00000267D1BEB588>}
+</>
+2017-03-09 23:32:36,918 
+<> control   #completed loop
+   []
+   
+</>
+2017-03-09 23:38:46,069 
+<> control   #established socket
+   []
+   {'identity': b'client', 'url': 'tcp://127.0.0.1:5555', 'socket': <zmq.sugar.socket.Socket object at 0x0000021F5AE9A9A8>}
+</>
+2017-03-09 23:38:46,070 
+<> control   #established socket
+   []
+   {'identity': b'database', 'url': 'tcp://127.0.0.1:5556', 'socket': <zmq.sugar.socket.Socket object at 0x0000021F5AF2B408>}
+</>
+2017-03-09 23:38:46,071 
+<> control   #established socket
+   []
+   {'identity': b'io_asset', 'url': 'tcp://127.0.0.1:5557', 'socket': <zmq.sugar.socket.Socket object at 0x0000021F5AF2B468>}
+</>
+2017-03-09 23:38:46,071 
+<> control   #established socket
+   []
+   {'identity': b'communication', 'url': 'tcp://127.0.0.1:5558', 'socket': <zmq.sugar.socket.Socket object at 0x0000021F5AF2B4C8>}
+</>
+2017-03-09 23:38:46,072 
+<> control   #established socket
+   []
+   {'identity': b'remote_maintenance', 'url': 'tcp://127.0.0.1:5559', 'socket': <zmq.sugar.socket.Socket object at 0x0000021F5AF2B528>}
+</>
+2017-03-09 23:38:46,073 
+<> control   #established socket
+   []
+   {'identity': b'worker', 'url': 'tcp://127.0.0.1:6000', 'socket': <zmq.sugar.socket.Socket object at 0x0000021F5AF2B588>}
+</>
+2017-03-09 23:38:46,073 
+<> control   #completed loop
+   []
+   
+</>
+2017-03-09 23:39:05,183 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x0000021F5AE9A9A8>]
+   [b'\x00\x80\x00\x00)', b'database', b'client', b'{"request": "school"}']
+</>
+2017-03-09 23:39:08,428 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x0000021F5AF2B408>]
+   [b'\x00\x80\x00\x00)', b'database', b'client', b'{"request": "school"}']
+</>
+2017-03-09 23:39:08,429 
+<> control   #completed loop
+   []
+   1
+</>
+2017-03-09 23:39:08,442 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x0000021F5AF2B408>]
+   [b'\x00\x80\x00\x00)', b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-03-09 23:39:08,456 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x0000021F5AE9A9A8>]
+   [b'\x00\x80\x00\x00)', b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-03-09 23:39:08,459 
+<> control   #completed loop
+   []
+   2
+</>
+2017-03-09 23:40:48,811 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x0000021F5AE9A9A8>]
+   [b'\x00\x80\x00\x00)', b'database', b'client', b'{"request": "school"}']
+</>
+2017-03-09 23:40:48,851 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x0000021F5AF2B408>]
+   [b'\x00\x80\x00\x00)', b'database', b'client', b'{"request": "school"}']
+</>
+2017-03-09 23:40:48,877 
+<> control   #completed loop
+   []
+   3
+</>
+2017-03-09 23:40:48,916 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x0000021F5AF2B408>]
+   [b'\x00\x80\x00\x00)', b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-03-09 23:40:48,933 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x0000021F5AE9A9A8>]
+   [b'\x00\x80\x00\x00)', b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-03-09 23:40:48,937 
+<> control   #completed loop
+   []
+   4
+</>
+2017-03-09 23:41:08,004 
+<> control   #received message
+   [<zmq.sugar.socket.Socket object at 0x0000021F5AE9A9A8>]
+   [b'\x00\x80\x00\x00)', b'database', b'client', b'{"request": "FJob"}']
+</>
+2017-03-09 23:41:08,051 
+<> control   #send message
+   [<zmq.sugar.socket.Socket object at 0x0000021F5AF2B408>]
+   [b'\x00\x80\x00\x00)', b'database', b'client', b'{"request": "FJob"}']
+</>
+2017-03-09 23:41:08,067 
+<> control   #completed loop
+   []
+   5
+</>

@@ -14737,3 +14737,881 @@
    [<zmq.sugar.socket.Socket object at 0x000001DF4C4B9A08>]
    
 </>
+2017-03-09 15:54:24,387 
+<> b'client'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000002EF7251A2E8>]
+   
+</>
+2017-03-09 15:54:24,834  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-03-09 15:54:41,432 
+<> b'io_asset'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x0000014D412EBA08>]
+   
+</>
+2017-03-09 15:54:41,451 
+<> b'communication'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000001FBD621BA08>]
+   
+</>
+2017-03-09 15:54:41,515 
+<> b'remote_maintenance'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000001FC325EBA08>]
+   
+</>
+2017-03-09 15:54:41,591 
+<> b'database'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000001B907C1BA08>]
+   
+</>
+2017-03-09 15:54:41,632 
+<> b'worker'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000001D6952DBA08>]
+   
+</>
+2017-03-09 15:55:44,162 
+<> b'client'   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002EF7251A2E8>]
+   [b'database', b'client', b'{"request": "school"}']
+</>
+2017-03-09 15:55:44,171 
+<> b'database'   #receive message
+   [<zmq.sugar.socket.Socket object at 0x000001B907C1BA08>]
+   [b'\x00\x80\x00\x00)', b'database', b'client', b'{"request": "school"}']
+</>
+2017-03-09 15:55:44,181 
+<> b'database'   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001B907C1BA08>]
+   [b'\x00\x80\x00\x00)', b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-03-09 15:55:44,184 
+<> b'client'   #receive message
+   [<zmq.sugar.socket.Socket object at 0x000002EF7251A2E8>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-03-09 15:55:44,186 127.0.0.1 - - [09/Mar/2017 15:55:44] "POST /api/database HTTP/1.1" 200 -
+2017-03-09 15:57:14,091 
+<> b'client'   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002EF7251A2E8>]
+   [b'communication', b'client', b'{"request": {"main_api": "http://maps.googleapis.com/maps/api/geocode/json?", "address": "Frankfurt"}}']
+</>
+2017-03-09 15:57:14,115 
+<> b'communication'   #receive message
+   [<zmq.sugar.socket.Socket object at 0x000001FBD621BA08>]
+   [b'\x00\x80\x00\x00)', b'communication', b'client', b'{"request": {"main_api": "http://maps.googleapis.com/maps/api/geocode/json?", "address": "Frankfurt"}}']
+</>
+2017-03-09 15:57:14,284 
+<> b'client'   #receive message
+   [<zmq.sugar.socket.Socket object at 0x000002EF7251A2E8>]
+   [b'client', b'communication', b'{"results": [{"address_components": [{"long_name": "Frankfurt", "short_name": "Frankfurt", "types": ["locality", "political"]}, {"long_name": "Darmstadt", "short_name": "DA", "types": ["administrative_area_level_2", "political"]}, {"long_name": "Hesse", "short_name": "HE", "types": ["administrative_area_level_1", "political"]}, {"long_name": "Germany", "short_name": "DE", "types": ["country", "political"]}], "formatted_address": "Frankfurt, Germany", "geometry": {"bounds": {"northeast": {"lat": 50.2272095, "lng": 8.8003977}, "southwest": {"lat": 50.0152145, "lng": 8.4727299}}, "location": {"lat": 50.1109221, "lng": 8.6821267}, "location_type": "APPROXIMATE", "viewport": {"northeast": {"lat": 50.2272095, "lng": 8.8003977}, "southwest": {"lat": 50.0152145, "lng": 8.4727299}}}, "place_id": "ChIJxZZwR28JvUcRAMawKVBDIgQ", "types": ["locality", "political"]}], "status": "OK"}']
+</>
+2017-03-09 15:57:14,289 127.0.0.1 - - [09/Mar/2017 15:57:14] "POST /api/communication HTTP/1.1" 200 -
+2017-03-09 15:57:14,300 
+<> b'communication'   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001FBD621BA08>]
+   [b'\x00\x80\x00\x00)', b'client', b'communication', b'{"results": [{"address_components": [{"long_name": "Frankfurt", "short_name": "Frankfurt", "types": ["locality", "political"]}, {"long_name": "Darmstadt", "short_name": "DA", "types": ["administrative_area_level_2", "political"]}, {"long_name": "Hesse", "short_name": "HE", "types": ["administrative_area_level_1", "political"]}, {"long_name": "Germany", "short_name": "DE", "types": ["country", "political"]}], "formatted_address": "Frankfurt, Germany", "geometry": {"bounds": {"northeast": {"lat": 50.2272095, "lng": 8.8003977}, "southwest": {"lat": 50.0152145, "lng": 8.4727299}}, "location": {"lat": 50.1109221, "lng": 8.6821267}, "location_type": "APPROXIMATE", "viewport": {"northeast": {"lat": 50.2272095, "lng": 8.8003977}, "southwest": {"lat": 50.0152145, "lng": 8.4727299}}}, "place_id": "ChIJxZZwR28JvUcRAMawKVBDIgQ", "types": ["locality", "political"]}], "status": "OK"}']
+</>
+2017-03-09 15:57:14,431 
+<> b'client'   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002EF7251A2E8>]
+   [b'communication', b'client', b'{"request": {"main_api": "http://maps.googleapis.com/maps/api/geocode/json?", "address": "Darmstadt"}}']
+</>
+2017-03-09 15:57:14,453 
+<> b'communication'   #receive message
+   [<zmq.sugar.socket.Socket object at 0x000001FBD621BA08>]
+   [b'\x00\x80\x00\x00)', b'communication', b'client', b'{"request": {"main_api": "http://maps.googleapis.com/maps/api/geocode/json?", "address": "Darmstadt"}}']
+</>
+2017-03-09 15:57:15,016 
+<> b'client'   #receive message
+   [<zmq.sugar.socket.Socket object at 0x000002EF7251A2E8>]
+   [b'client', b'communication', b'{"results": [{"address_components": [{"long_name": "Darmstadt", "short_name": "Darmstadt", "types": ["locality", "political"]}, {"long_name": "Darmstadt", "short_name": "DA", "types": ["administrative_area_level_2", "political"]}, {"long_name": "Hesse", "short_name": "HE", "types": ["administrative_area_level_1", "political"]}, {"long_name": "Germany", "short_name": "DE", "types": ["country", "political"]}], "formatted_address": "Darmstadt, Germany", "geometry": {"bounds": {"northeast": {"lat": 49.9538799, "lng": 8.7497188}, "southwest": {"lat": 49.7956409, "lng": 8.5599238}}, "location": {"lat": 49.8728253, "lng": 8.6511929}, "location_type": "APPROXIMATE", "viewport": {"northeast": {"lat": 49.9538799, "lng": 8.7497188}, "southwest": {"lat": 49.7956409, "lng": 8.5599238}}}, "place_id": "ChIJ2c1zEWRwvUcR8MWwKVBDIgQ", "types": ["locality", "political"]}], "status": "OK"}']
+</>
+2017-03-09 15:57:15,019 127.0.0.1 - - [09/Mar/2017 15:57:15] "POST /api/communication HTTP/1.1" 200 -
+2017-03-09 15:57:15,029 
+<> b'communication'   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001FBD621BA08>]
+   [b'\x00\x80\x00\x00)', b'client', b'communication', b'{"results": [{"address_components": [{"long_name": "Darmstadt", "short_name": "Darmstadt", "types": ["locality", "political"]}, {"long_name": "Darmstadt", "short_name": "DA", "types": ["administrative_area_level_2", "political"]}, {"long_name": "Hesse", "short_name": "HE", "types": ["administrative_area_level_1", "political"]}, {"long_name": "Germany", "short_name": "DE", "types": ["country", "political"]}], "formatted_address": "Darmstadt, Germany", "geometry": {"bounds": {"northeast": {"lat": 49.9538799, "lng": 8.7497188}, "southwest": {"lat": 49.7956409, "lng": 8.5599238}}, "location": {"lat": 49.8728253, "lng": 8.6511929}, "location_type": "APPROXIMATE", "viewport": {"northeast": {"lat": 49.9538799, "lng": 8.7497188}, "southwest": {"lat": 49.7956409, "lng": 8.5599238}}}, "place_id": "ChIJ2c1zEWRwvUcR8MWwKVBDIgQ", "types": ["locality", "political"]}], "status": "OK"}']
+</>
+2017-03-09 15:57:15,444 
+<> b'client'   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002EF7251A2E8>]
+   [b'database', b'client', b'{"request": "Fjob"}']
+</>
+2017-03-09 15:57:15,468 
+<> b'database'   #receive message
+   [<zmq.sugar.socket.Socket object at 0x000001B907C1BA08>]
+   [b'\x00\x80\x00\x00)', b'database', b'client', b'{"request": "Fjob"}']
+</>
+2017-03-09 15:57:15,483 
+<> b'database'   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001B907C1BA08>]
+   [b'\x00\x80\x00\x00)', b'client', b'database', b'{"Fjob": "{0: \'teacher\', 1: \'other\', 2: \'other\', 3: \'services\', 4: \'other\', 5: \'other\', 6: \'other\', 7: \'teacher\', 8: \'other\'}"}']
+</>
+2017-03-09 15:57:15,504 
+<> b'client'   #receive message
+   [<zmq.sugar.socket.Socket object at 0x000002EF7251A2E8>]
+   [b'client', b'database', b'{"Fjob": "{0: \'teacher\', 1: \'other\', 2: \'other\', 3: \'services\', 4: \'other\', 5: \'other\', 6: \'other\', 7: \'teacher\', 8: \'other\'}"}']
+</>
+2017-03-09 15:57:15,506 127.0.0.1 - - [09/Mar/2017 15:57:15] "POST /api/database HTTP/1.1" 200 -
+2017-03-09 15:57:15,698 
+<> b'client'   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002EF7251A2E8>]
+   [b'database', b'client', b'{"request": "school"}']
+</>
+2017-03-09 15:57:15,721 
+<> b'database'   #receive message
+   [<zmq.sugar.socket.Socket object at 0x000001B907C1BA08>]
+   [b'\x00\x80\x00\x00)', b'database', b'client', b'{"request": "school"}']
+</>
+2017-03-09 15:57:15,731 
+<> b'database'   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001B907C1BA08>]
+   [b'\x00\x80\x00\x00)', b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-03-09 15:57:15,765 
+<> b'client'   #receive message
+   [<zmq.sugar.socket.Socket object at 0x000002EF7251A2E8>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-03-09 15:57:15,766 127.0.0.1 - - [09/Mar/2017 15:57:15] "POST /api/database HTTP/1.1" 200 -
+2017-03-09 15:57:15,931 
+<> b'client'   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002EF7251A2E8>]
+   [b'database', b'client', b'{"request": "address"}']
+</>
+2017-03-09 15:57:15,933 
+<> b'database'   #receive message
+   [<zmq.sugar.socket.Socket object at 0x000001B907C1BA08>]
+   [b'\x00\x80\x00\x00)', b'database', b'client', b'{"request": "address"}']
+</>
+2017-03-09 15:57:15,953 
+<> b'database'   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001B907C1BA08>]
+   [b'\x00\x80\x00\x00)', b'client', b'database', b'{"address": "{0: \'U\', 1: \'U\', 2: \'U\', 3: \'U\', 4: \'U\', 5: \'U\', 6: \'U\', 7: \'U\', 8: \'U\'}"}']
+</>
+2017-03-09 15:57:16,000 
+<> b'client'   #receive message
+   [<zmq.sugar.socket.Socket object at 0x000002EF7251A2E8>]
+   [b'client', b'database', b'{"address": "{0: \'U\', 1: \'U\', 2: \'U\', 3: \'U\', 4: \'U\', 5: \'U\', 6: \'U\', 7: \'U\', 8: \'U\'}"}']
+</>
+2017-03-09 15:57:16,001 127.0.0.1 - - [09/Mar/2017 15:57:16] "POST /api/database HTTP/1.1" 200 -
+2017-03-09 15:57:16,185 
+<> b'client'   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002EF7251A2E8>]
+   [b'database', b'client', b'{"request": "age"}']
+</>
+2017-03-09 15:57:16,220 
+<> b'database'   #receive message
+   [<zmq.sugar.socket.Socket object at 0x000001B907C1BA08>]
+   [b'\x00\x80\x00\x00)', b'database', b'client', b'{"request": "age"}']
+</>
+2017-03-09 15:57:16,240 
+<> b'database'   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001B907C1BA08>]
+   [b'\x00\x80\x00\x00)', b'client', b'database', b'{"age": "{0: 18, 1: 17, 2: 15, 3: 15, 4: 16, 5: 16, 6: 16, 7: 17, 8: 15}"}']
+</>
+2017-03-09 15:57:16,263 
+<> b'client'   #receive message
+   [<zmq.sugar.socket.Socket object at 0x000002EF7251A2E8>]
+   [b'client', b'database', b'{"age": "{0: 18, 1: 17, 2: 15, 3: 15, 4: 16, 5: 16, 6: 16, 7: 17, 8: 15}"}']
+</>
+2017-03-09 15:57:16,264 127.0.0.1 - - [09/Mar/2017 15:57:16] "POST /api/database HTTP/1.1" 200 -
+2017-03-09 15:57:16,437 
+<> b'client'   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002EF7251A2E8>]
+   [b'remote_maintenance', b'client', b'{"request": "run maintenance protocol A1"}']
+</>
+2017-03-09 15:57:16,457 
+<> b'remote_maintenance'   #receive message
+   [<zmq.sugar.socket.Socket object at 0x000001FC325EBA08>]
+   [b'\x00\x80\x00\x00)', b'remote_maintenance', b'client', b'{"request": "run maintenance protocol A1"}']
+</>
+2017-03-09 15:57:16,470 
+<> b'remote_maintenance'   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001FC325EBA08>]
+   [b'\x00\x80\x00\x00)', b'client', b'remote_maintenance', b'{"run maintenance protocol A1": "the maintenance protocol was successfully completed"}']
+</>
+2017-03-09 15:57:16,518 
+<> b'client'   #receive message
+   [<zmq.sugar.socket.Socket object at 0x000002EF7251A2E8>]
+   [b'client', b'remote_maintenance', b'{"run maintenance protocol A1": "the maintenance protocol was successfully completed"}']
+</>
+2017-03-09 15:57:16,520 127.0.0.1 - - [09/Mar/2017 15:57:16] "POST /api/remote_maintenance HTTP/1.1" 200 -
+2017-03-09 15:57:16,686 
+<> b'client'   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002EF7251A2E8>]
+   [b'remote_maintenance', b'client', b'{"request": "run maintenance protocol C3"}']
+</>
+2017-03-09 15:57:16,700 
+<> b'remote_maintenance'   #receive message
+   [<zmq.sugar.socket.Socket object at 0x000001FC325EBA08>]
+   [b'\x00\x80\x00\x00)', b'remote_maintenance', b'client', b'{"request": "run maintenance protocol C3"}']
+</>
+2017-03-09 15:57:16,717 
+<> b'remote_maintenance'   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001FC325EBA08>]
+   [b'database', b'remote_maintenance', b'{"request": "school"}']
+</>
+2017-03-09 15:57:16,743 
+<> b'database'   #receive message
+   [<zmq.sugar.socket.Socket object at 0x000001B907C1BA08>]
+   [b'database', b'remote_maintenance', b'{"request": "school"}']
+</>
+2017-03-09 15:57:16,761 
+<> b'database'   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001B907C1BA08>]
+   [b'remote_maintenance', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-03-09 15:57:16,794 
+<> b'remote_maintenance'   #receive message
+   [<zmq.sugar.socket.Socket object at 0x000001FC325EBA08>]
+   [b'remote_maintenance', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-03-09 15:57:16,809 
+<> b'remote_maintenance'   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001FC325EBA08>]
+   [b'\x00\x80\x00\x00)', b'client', b'remote_maintenance', b'{"run maintenance protocol C3": {"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}}']
+</>
+2017-03-09 15:57:16,837 
+<> b'client'   #receive message
+   [<zmq.sugar.socket.Socket object at 0x000002EF7251A2E8>]
+   [b'client', b'remote_maintenance', b'{"run maintenance protocol C3": {"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}}']
+</>
+2017-03-09 15:57:16,839 127.0.0.1 - - [09/Mar/2017 15:57:16] "POST /api/remote_maintenance HTTP/1.1" 200 -
+2017-03-09 15:57:16,983 
+<> b'client'   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002EF7251A2E8>]
+   [b'io_asset', b'client', b'{"request": "current position"}']
+</>
+2017-03-09 15:57:19,008 
+<> b'io_asset'   #receive message
+   [<zmq.sugar.socket.Socket object at 0x0000014D412EBA08>]
+   [b'\x00\x80\x00\x00)', b'io_asset', b'client', b'{"request": "current position"}']
+</>
+2017-03-09 15:57:19,095 
+<> b'io_asset'   #send message
+   [<zmq.sugar.socket.Socket object at 0x0000014D412EBA08>]
+   [b'\x00\x80\x00\x00)', b'client', b'io_asset', b'{"current position": "82\\u00b0", "current loop": 78}']
+</>
+2017-03-09 15:57:19,142 
+<> b'client'   #receive message
+   [<zmq.sugar.socket.Socket object at 0x000002EF7251A2E8>]
+   [b'client', b'io_asset', b'{"current position": "82\\u00b0", "current loop": 78}']
+</>
+2017-03-09 15:57:19,146 127.0.0.1 - - [09/Mar/2017 15:57:19] "POST /api/io_asset HTTP/1.1" 200 -
+2017-03-09 15:57:19,615 
+<> b'client'   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002EF7251A2E8>]
+   [b'worker', b'client', b'{"request": "A"}']
+</>
+2017-03-09 15:57:19,659 
+<> b'worker'   #receive message
+   [<zmq.sugar.socket.Socket object at 0x000001D6952DBA08>]
+   [b'\x00\x80\x00\x00)', b'worker', b'client', b'{"request": "A"}']
+</>
+2017-03-09 15:57:19,698 
+<> b'worker'   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001D6952DBA08>]
+   [b'\x00\x80\x00\x00)', b'client', b'worker', b'{"A": "function has been executed"}']
+</>
+2017-03-09 15:57:19,758 
+<> b'client'   #receive message
+   [<zmq.sugar.socket.Socket object at 0x000002EF7251A2E8>]
+   [b'client', b'worker', b'{"A": "function has been executed"}']
+</>
+2017-03-09 15:57:19,760 127.0.0.1 - - [09/Mar/2017 15:57:19] "POST /api/worker HTTP/1.1" 200 -
+2017-03-09 15:57:19,951 
+<> b'client'   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002EF7251A2E8>]
+   [b'worker', b'client', b'{"request": "B"}']
+</>
+2017-03-09 15:57:20,008 
+<> b'worker'   #receive message
+   [<zmq.sugar.socket.Socket object at 0x000001D6952DBA08>]
+   [b'\x00\x80\x00\x00)', b'worker', b'client', b'{"request": "B"}']
+</>
+2017-03-09 15:57:20,076 
+<> b'worker'   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001D6952DBA08>]
+   [b'\x00\x80\x00\x00)', b'client', b'worker', b'{"B": "function has been executed"}']
+</>
+2017-03-09 15:57:20,116 
+<> b'client'   #receive message
+   [<zmq.sugar.socket.Socket object at 0x000002EF7251A2E8>]
+   [b'client', b'worker', b'{"B": "function has been executed"}']
+</>
+2017-03-09 15:57:20,120 127.0.0.1 - - [09/Mar/2017 15:57:20] "POST /api/worker HTTP/1.1" 200 -
+2017-03-09 15:57:20,585 
+<> b'client'   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002EF7251A2E8>]
+   [b'worker', b'client', b'{"request": "C"}']
+</>
+2017-03-09 15:57:20,633 
+<> b'worker'   #receive message
+   [<zmq.sugar.socket.Socket object at 0x000001D6952DBA08>]
+   [b'\x00\x80\x00\x00)', b'worker', b'client', b'{"request": "C"}']
+</>
+2017-03-09 15:57:20,674 
+<> b'worker'   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001D6952DBA08>]
+   [b'\x00\x80\x00\x00)', b'client', b'worker', b'{"C": "function has been executed"}']
+</>
+2017-03-09 15:57:20,734 
+<> b'client'   #receive message
+   [<zmq.sugar.socket.Socket object at 0x000002EF7251A2E8>]
+   [b'client', b'worker', b'{"C": "function has been executed"}']
+</>
+2017-03-09 15:57:20,736 127.0.0.1 - - [09/Mar/2017 15:57:20] "POST /api/worker HTTP/1.1" 200 -
+2017-03-09 15:57:20,941 127.0.0.1 - - [09/Mar/2017 15:57:20] "GET / HTTP/1.1" 200 -
+2017-03-09 15:57:21,367 127.0.0.1 - - [09/Mar/2017 15:57:21] "POST /api/unknown HTTP/1.1" 200 -
+2017-03-09 17:41:13,339 
+<> b'client'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x00000266C6C0E2E8>]
+   
+</>
+2017-03-09 17:41:30,874 
+<> b'communication'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000002F0CFA6BA08>]
+   
+</>
+2017-03-09 17:41:30,939 
+<> b'database'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000001BC65BFBA08>]
+   
+</>
+2017-03-09 17:41:31,006 
+<> b'remote_maintenance'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000002335F74BA08>]
+   
+</>
+2017-03-09 17:41:31,190 
+<> b'worker'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000002339AD7BA08>]
+   
+</>
+2017-03-09 17:41:31,245 
+<> b'io_asset'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x0000026BE9C2BA08>]
+   
+</>
+2017-03-09 17:42:26,027 
+<> b'client'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x00000294A37EB288>]
+   
+</>
+2017-03-09 17:42:42,898 
+<> b'communication'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000001E32778BA08>]
+   
+</>
+2017-03-09 17:42:42,911 
+<> b'io_asset'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000001C86E5ABA08>]
+   
+</>
+2017-03-09 17:42:42,944 
+<> b'database'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000001E84F07BA08>]
+   
+</>
+2017-03-09 17:42:43,009 
+<> b'worker'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000001A72D3CBA08>]
+   
+</>
+2017-03-09 17:42:43,018 
+<> b'remote_maintenance'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x00000187C552BA08>]
+   
+</>
+2017-03-09 17:43:28,996 
+<> b'client'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000002C8A5B6D2E8>]
+   
+</>
+2017-03-09 17:43:29,440  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-03-09 17:43:46,320 
+<> b'remote_maintenance'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x0000018B1064BA08>]
+   
+</>
+2017-03-09 17:43:46,464 
+<> b'communication'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000002994E0FBA08>]
+   
+</>
+2017-03-09 17:43:46,484 
+<> b'database'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x00000219CEFDBA08>]
+   
+</>
+2017-03-09 17:43:46,500 
+<> b'io_asset'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x0000023681E1BA08>]
+   
+</>
+2017-03-09 17:43:46,519 
+<> b'worker'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000001FF2E96BA08>]
+   
+</>
+2017-03-09 17:45:06,981 127.0.0.1 - - [09/Mar/2017 17:45:06] "POST /apis HTTP/1.1" 400 -
+2017-03-09 17:46:51,357 127.0.0.1 - - [09/Mar/2017 17:46:51] "POST /apis/ HTTP/1.1" 404 -
+2017-03-09 17:48:43,086 127.0.0.1 - - [09/Mar/2017 17:48:43] "POST /apis/ HTTP/1.1" 404 -
+2017-03-09 17:49:09,027 127.0.0.1 - - [09/Mar/2017 17:49:09] "POST /apis/ HTTP/1.1" 404 -
+2017-03-09 17:49:37,348 
+<> b'client'   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002C8A5B6D2E8>]
+   [b'database', b'client', b'{"request": "school"}']
+</>
+2017-03-09 17:49:37,367 
+<> b'database'   #receive message
+   [<zmq.sugar.socket.Socket object at 0x00000219CEFDBA08>]
+   [b'\x00\x80\x00\x00)', b'database', b'client', b'{"request": "school"}']
+</>
+2017-03-09 17:49:37,381 
+<> b'client'   #receive message
+   [<zmq.sugar.socket.Socket object at 0x000002C8A5B6D2E8>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-03-09 17:49:37,383 127.0.0.1 - - [09/Mar/2017 17:49:37] "POST /api/database HTTP/1.1" 200 -
+2017-03-09 17:49:37,385 
+<> b'database'   #send message
+   [<zmq.sugar.socket.Socket object at 0x00000219CEFDBA08>]
+   [b'\x00\x80\x00\x00)', b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-03-09 17:50:50,453 127.0.0.1 - - [09/Mar/2017 17:50:50] "POST /apis/ HTTP/1.1" 404 -
+2017-03-09 17:51:52,491 127.0.0.1 - - [09/Mar/2017 17:51:52] "POST /apis/ HTTP/1.1" 404 -
+2017-03-09 17:52:18,892 127.0.0.1 - - [09/Mar/2017 17:52:18] "POST /apis/ HTTP/1.1" 404 -
+2017-03-09 17:53:25,329 
+<> b'client'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000002691652F2E8>]
+   
+</>
+2017-03-09 17:53:25,762  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-03-09 17:53:43,747 
+<> b'remote_maintenance'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x0000021E27E5BA08>]
+   
+</>
+2017-03-09 17:53:43,796 
+<> b'database'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000002F52012BA08>]
+   
+</>
+2017-03-09 17:53:43,864 
+<> b'io_asset'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x0000021CAB24BA08>]
+   
+</>
+2017-03-09 17:53:44,072 
+<> b'communication'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000001D9A8FABA08>]
+   
+</>
+2017-03-09 17:53:44,102 
+<> b'worker'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000001EDE6F4BA08>]
+   
+</>
+2017-03-09 17:53:52,277 
+<> b'client'   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002691652F2E8>]
+   [b'database', b'client', b'{"request": "Fjob"}']
+</>
+2017-03-09 17:53:52,297 
+<> b'database'   #receive message
+   [<zmq.sugar.socket.Socket object at 0x000002F52012BA08>]
+   [b'\x00\x80\x00\x00)', b'database', b'client', b'{"request": "Fjob"}']
+</>
+2017-03-09 17:53:52,302 
+<> b'database'   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002F52012BA08>]
+   [b'\x00\x80\x00\x00)', b'client', b'database', b'{"Fjob": "{0: \'teacher\', 1: \'other\', 2: \'other\', 3: \'services\', 4: \'other\', 5: \'other\', 6: \'other\', 7: \'teacher\', 8: \'other\'}"}']
+</>
+2017-03-09 17:53:52,315 
+<> b'client'   #receive message
+   [<zmq.sugar.socket.Socket object at 0x000002691652F2E8>]
+   [b'client', b'database', b'{"Fjob": "{0: \'teacher\', 1: \'other\', 2: \'other\', 3: \'services\', 4: \'other\', 5: \'other\', 6: \'other\', 7: \'teacher\', 8: \'other\'}"}']
+</>
+2017-03-09 17:53:52,317 127.0.0.1 - - [09/Mar/2017 17:53:52] "POST /test HTTP/1.1" 200 -
+2017-03-09 17:55:53,063 
+<> b'client'   #send message
+   [<zmq.sugar.socket.Socket object at 0x000002691652F2E8>]
+   [b'database', b'client', b'{"request": "run maintenance protocol C3"}']
+</>
+2017-03-09 17:55:53,094 
+<> b'database'   #receive message
+   [<zmq.sugar.socket.Socket object at 0x000002F52012BA08>]
+   [b'\x00\x80\x00\x00)', b'database', b'client', b'{"request": "run maintenance protocol C3"}']
+</>
+2017-03-09 20:54:27,568 
+<> b'client'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x00000239BF069828>]
+   
+</>
+2017-03-09 20:54:28,009  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-03-09 20:54:44,966 
+<> b'database'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x00000217EB88BA08>]
+   
+</>
+2017-03-09 20:54:45,205 
+<> b'communication'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x00000172D4C3BA08>]
+   
+</>
+2017-03-09 20:54:45,216 
+<> b'worker'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000001A8EDBDBA08>]
+   
+</>
+2017-03-09 20:54:45,226 
+<> b'io_asset'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x0000020635C3BA08>]
+   
+</>
+2017-03-09 20:54:45,486 
+<> b'remote_maintenance'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000002302B40BA08>]
+   
+</>
+2017-03-09 20:55:48,074 127.0.0.1 - - [09/Mar/2017 20:55:48] "GET / HTTP/1.1" 200 -
+2017-03-09 20:55:48,122 127.0.0.1 - - [09/Mar/2017 20:55:48] "GET /static/assets/css/main.css HTTP/1.1" 200 -
+2017-03-09 20:55:48,258 127.0.0.1 - - [09/Mar/2017 20:55:48] "GET /static/images/avatar.jpg HTTP/1.1" 200 -
+2017-03-09 20:55:48,582 127.0.0.1 - - [09/Mar/2017 20:55:48] "GET /static/assets/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-03-09 20:55:48,586 127.0.0.1 - - [09/Mar/2017 20:55:48] "GET /static/assets/js/jquery.min.js HTTP/1.1" 200 -
+2017-03-09 20:55:48,594 127.0.0.1 - - [09/Mar/2017 20:55:48] "GET /static/assets/js/jquery.scrollzer.min.js HTTP/1.1" 200 -
+2017-03-09 20:55:48,602 127.0.0.1 - - [09/Mar/2017 20:55:48] "GET /static/assets/js/jquery.scrolly.min.js HTTP/1.1" 200 -
+2017-03-09 20:55:48,606 127.0.0.1 - - [09/Mar/2017 20:55:48] "GET /static/assets/js/skel.min.js HTTP/1.1" 200 -
+2017-03-09 20:55:48,616 127.0.0.1 - - [09/Mar/2017 20:55:48] "GET /static/assets/js/util.js HTTP/1.1" 200 -
+2017-03-09 20:55:48,890 127.0.0.1 - - [09/Mar/2017 20:55:48] "GET /static/assets/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 200 -
+2017-03-09 20:55:48,910 127.0.0.1 - - [09/Mar/2017 20:55:48] "GET /static/images/banner.jpg HTTP/1.1" 200 -
+2017-03-09 20:55:48,921 127.0.0.1 - - [09/Mar/2017 20:55:48] "GET /static/assets/js/main.js HTTP/1.1" 200 -
+2017-03-09 20:55:48,927 127.0.0.1 - - [09/Mar/2017 20:55:48] "GET /static/images/rami.png HTTP/1.1" 200 -
+2017-03-09 20:55:49,174 127.0.0.1 - - [09/Mar/2017 20:55:49] "GET /static/images/pic01.jpg HTTP/1.1" 200 -
+2017-03-09 20:55:49,178 127.0.0.1 - - [09/Mar/2017 20:55:49] "GET /static/images/pic02.jpg HTTP/1.1" 200 -
+2017-03-09 20:55:49,202 127.0.0.1 - - [09/Mar/2017 20:55:49] "GET /static/images/pic03.jpg HTTP/1.1" 200 -
+2017-03-09 20:55:49,470 127.0.0.1 - - [09/Mar/2017 20:55:49] "GET /favicon.ico HTTP/1.1" 404 -
+2017-03-09 20:55:57,420 127.0.0.1 - - [09/Mar/2017 20:55:57] "POST / HTTP/1.1" 405 -
+2017-03-09 20:58:33,931 
+<> b'client'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x00000180896CC2E8>]
+   
+</>
+2017-03-09 20:58:34,379  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-03-09 20:58:52,101 
+<> b'io_asset'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x0000016F4685BA08>]
+   
+</>
+2017-03-09 20:58:52,195 
+<> b'remote_maintenance'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x0000027C8684BA08>]
+   
+</>
+2017-03-09 20:58:52,296 
+<> b'communication'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000001EE1E68BA08>]
+   
+</>
+2017-03-09 20:58:52,363 
+<> b'worker'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x0000025E07DCBA08>]
+   
+</>
+2017-03-09 20:58:52,423 
+<> b'database'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x00000267AE1CBA08>]
+   
+</>
+2017-03-09 21:00:29,088 
+<> b'client'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x00000255F2D69288>]
+   
+</>
+2017-03-09 21:00:30,106  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-03-09 21:00:45,094 127.0.0.1 - - [09/Mar/2017 21:00:45] "GET / HTTP/1.1" 200 -
+2017-03-09 21:00:53,558 
+<> b'io_asset'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x00000223FE36BA08>]
+   
+</>
+2017-03-09 21:00:53,573 
+<> b'database'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x0000025320FBBA08>]
+   
+</>
+2017-03-09 21:00:53,622 
+<> b'communication'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000001FDA5B3BA08>]
+   
+</>
+2017-03-09 21:00:53,626 127.0.0.1 - - [09/Mar/2017 21:00:53] "POST /hello/ HTTP/1.1" 200 -
+2017-03-09 21:00:53,722 
+<> b'remote_maintenance'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x0000022872F4BA08>]
+   
+</>
+2017-03-09 21:00:53,913 
+<> b'worker'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x00000165369ABA08>]
+   
+</>
+2017-03-09 21:00:53,923 127.0.0.1 - - [09/Mar/2017 21:00:53] "GET /static/style.css HTTP/1.1" 404 -
+2017-03-09 21:45:07,567 
+<> b'communication'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x00000204B10CBA08>]
+   
+</>
+2017-03-09 21:45:07,711 
+<> b'io_asset'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x00000215A421BA08>]
+   
+</>
+2017-03-09 21:45:07,761 
+<> b'remote_maintenance'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000001A7D80CBA08>]
+   
+</>
+2017-03-09 21:45:07,902 
+<> b'worker'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x0000023D45CEBA08>]
+   
+</>
+2017-03-09 21:45:08,042 
+<> b'database'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x00000256BE50BA08>]
+   
+</>
+2017-03-09 21:45:33,939 
+<> b'client'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000001D9F913D348>]
+   
+</>
+2017-03-09 21:45:34,901  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-03-09 21:45:56,957 
+<> b'io_asset'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000002277966BA08>]
+   
+</>
+2017-03-09 21:45:56,980 
+<> b'communication'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x0000026FA201BA08>]
+   
+</>
+2017-03-09 21:45:56,988 
+<> b'worker'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000002309B8FBA08>]
+   
+</>
+2017-03-09 21:45:57,000 
+<> b'database'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x0000024DAF79BA08>]
+   
+</>
+2017-03-09 21:45:57,355 
+<> b'remote_maintenance'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000001C44022BA08>]
+   
+</>
+2017-03-09 21:46:13,774 127.0.0.1 - - [09/Mar/2017 21:46:13] "GET / HTTP/1.1" 200 -
+2017-03-09 21:46:47,121 127.0.0.1 - - [09/Mar/2017 21:46:47] "POST /hello/ HTTP/1.1" 200 -
+2017-03-09 21:46:47,397 127.0.0.1 - - [09/Mar/2017 21:46:47] "GET /static/style.css HTTP/1.1" 404 -
+2017-03-09 21:47:02,929 
+<> b'client'   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001D9F913D348>]
+   [b'remote_maintenance', b'client', b'{"request": "run maintenance protocol C3"}']
+</>
+2017-03-09 21:47:02,945 
+<> b'remote_maintenance'   #receive message
+   [<zmq.sugar.socket.Socket object at 0x000001C44022BA08>]
+   [b'\x00\x80\x00\x00)', b'remote_maintenance', b'client', b'{"request": "run maintenance protocol C3"}']
+</>
+2017-03-09 21:47:03,002 
+<> b'remote_maintenance'   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001C44022BA08>]
+   [b'database', b'remote_maintenance', b'{"request": "school"}']
+</>
+2017-03-09 21:47:03,002 
+<> b'database'   #receive message
+   [<zmq.sugar.socket.Socket object at 0x0000024DAF79BA08>]
+   [b'database', b'remote_maintenance', b'{"request": "school"}']
+</>
+2017-03-09 21:47:03,042 
+<> b'database'   #send message
+   [<zmq.sugar.socket.Socket object at 0x0000024DAF79BA08>]
+   [b'remote_maintenance', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-03-09 21:47:03,075 
+<> b'remote_maintenance'   #receive message
+   [<zmq.sugar.socket.Socket object at 0x000001C44022BA08>]
+   [b'remote_maintenance', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-03-09 21:47:03,098 
+<> b'remote_maintenance'   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001C44022BA08>]
+   [b'\x00\x80\x00\x00)', b'client', b'remote_maintenance', b'{"run maintenance protocol C3": {"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}}']
+</>
+2017-03-09 21:47:03,098 
+<> b'client'   #receive message
+   [<zmq.sugar.socket.Socket object at 0x000001D9F913D348>]
+   [b'client', b'remote_maintenance', b'{"run maintenance protocol C3": {"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}}']
+</>
+2017-03-09 21:47:03,113 127.0.0.1 - - [09/Mar/2017 21:47:03] "POST /test HTTP/1.1" 200 -
+2017-03-09 23:23:15,999 
+<> b'client'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x00000278C153E288>]
+   
+</>
+2017-03-09 23:23:16,792  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-03-09 23:23:39,093 
+<> b'database'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000002AA0D74BA08>]
+   
+</>
+2017-03-09 23:23:39,132 
+<> b'worker'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x00000178852ABA08>]
+   
+</>
+2017-03-09 23:23:39,243 
+<> b'io_asset'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000001A69AF5BA08>]
+   
+</>
+2017-03-09 23:23:39,377 
+<> b'remote_maintenance'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x0000025BB418BA08>]
+   
+</>
+2017-03-09 23:23:39,431 
+<> b'communication'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x0000023E3633BA08>]
+   
+</>
+2017-03-09 23:23:43,151 127.0.0.1 - - [09/Mar/2017 23:23:43] "GET / HTTP/1.1" 200 -
+2017-03-09 23:23:48,879 127.0.0.1 - - [09/Mar/2017 23:23:48] "GET /apis HTTP/1.1" 200 -
+2017-03-09 23:24:23,728 127.0.0.1 - - [09/Mar/2017 23:24:23] "POST /apis HTTP/1.1" 200 -
+2017-03-09 23:24:24,010 127.0.0.1 - - [09/Mar/2017 23:24:24] "GET /static/style.css HTTP/1.1" 404 -
+2017-03-09 23:24:54,471 127.0.0.1 - - [09/Mar/2017 23:24:54] "GET /apis HTTP/1.1" 200 -
+2017-03-09 23:25:10,398 127.0.0.1 - - [09/Mar/2017 23:25:10] "POST /apis HTTP/1.1" 200 -
+2017-03-09 23:25:10,647 127.0.0.1 - - [09/Mar/2017 23:25:10] "GET /static/style.css HTTP/1.1" 404 -
+2017-03-09 23:32:37,934 
+<> b'client'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000001E958B1F228>]
+   
+</>
+2017-03-09 23:32:38,479  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-03-09 23:32:59,081 
+<> b'io_asset'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000001FF98F2BA08>]
+   
+</>
+2017-03-09 23:32:59,094 
+<> b'worker'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000001955C29BA08>]
+   
+</>
+2017-03-09 23:32:59,191 
+<> b'communication'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x00000258617BBA08>]
+   
+</>
+2017-03-09 23:32:59,286 
+<> b'remote_maintenance'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000001E98030BA08>]
+   
+</>
+2017-03-09 23:32:59,414 
+<> b'database'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000001C947BDBA08>]
+   
+</>
+2017-03-09 23:34:06,526 127.0.0.1 - - [09/Mar/2017 23:34:06] "GET / HTTP/1.1" 200 -
+2017-03-09 23:34:10,213 127.0.0.1 - - [09/Mar/2017 23:34:10] "GET /apis HTTP/1.1" 200 -
+2017-03-09 23:34:15,433 127.0.0.1 - - [09/Mar/2017 23:34:15] "POST /apis HTTP/1.1" 500 -
+2017-03-09 23:38:46,932 
+<> b'client'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000001380CE5F288>]
+   
+</>
+2017-03-09 23:38:47,451  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-03-09 23:38:55,979 127.0.0.1 - - [09/Mar/2017 23:38:55] "GET /apis HTTP/1.1" 200 -
+2017-03-09 23:39:05,264 
+<> b'client'   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001380CE5F288>]
+   [b'database', b'client', b'{"request": "school"}']
+</>
+2017-03-09 23:39:08,232 
+<> b'worker'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000001E9726ABA08>]
+   
+</>
+2017-03-09 23:39:08,325 
+<> b'communication'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x0000024D029FBA08>]
+   
+</>
+2017-03-09 23:39:08,366 
+<> b'io_asset'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000001988737BA08>]
+   
+</>
+2017-03-09 23:39:08,371 
+<> b'remote_maintenance'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000001C48705BA08>]
+   
+</>
+2017-03-09 23:39:08,424 
+<> b'database'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x0000027BAFF6BA08>]
+   
+</>
+2017-03-09 23:39:08,438 
+<> b'database'   #receive message
+   [<zmq.sugar.socket.Socket object at 0x0000027BAFF6BA08>]
+   [b'\x00\x80\x00\x00)', b'database', b'client', b'{"request": "school"}']
+</>
+2017-03-09 23:39:08,440 
+<> b'database'   #send message
+   [<zmq.sugar.socket.Socket object at 0x0000027BAFF6BA08>]
+   [b'\x00\x80\x00\x00)', b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-03-09 23:39:08,447 
+<> b'client'   #receive message
+   [<zmq.sugar.socket.Socket object at 0x000001380CE5F288>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-03-09 23:39:08,449 127.0.0.1 - - [09/Mar/2017 23:39:08] "POST /apis HTTP/1.1" 200 -
+2017-03-09 23:40:29,102 127.0.0.1 - - [09/Mar/2017 23:40:29] "POST /test HTTP/1.1" 404 -
+2017-03-09 23:40:48,795 
+<> b'client'   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001380CE5F288>]
+   [b'database', b'client', b'{"request": "school"}']
+</>
+2017-03-09 23:40:48,858 
+<> b'database'   #receive message
+   [<zmq.sugar.socket.Socket object at 0x0000027BAFF6BA08>]
+   [b'\x00\x80\x00\x00)', b'database', b'client', b'{"request": "school"}']
+</>
+2017-03-09 23:40:48,908 
+<> b'database'   #send message
+   [<zmq.sugar.socket.Socket object at 0x0000027BAFF6BA08>]
+   [b'\x00\x80\x00\x00)', b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-03-09 23:40:48,919 
+<> b'client'   #receive message
+   [<zmq.sugar.socket.Socket object at 0x000001380CE5F288>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-03-09 23:40:48,922 127.0.0.1 - - [09/Mar/2017 23:40:48] "POST /apis HTTP/1.1" 200 -
+2017-03-09 23:41:07,991 
+<> b'client'   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001380CE5F288>]
+   [b'database', b'client', b'{"request": "FJob"}']
+</>
+2017-03-09 23:41:08,036 
+<> b'database'   #receive message
+   [<zmq.sugar.socket.Socket object at 0x0000027BAFF6BA08>]
+   [b'\x00\x80\x00\x00)', b'database', b'client', b'{"request": "FJob"}']
+</>
