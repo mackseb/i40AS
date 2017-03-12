@@ -17,4 +17,4 @@ data_unix = {
 'worker': {'identity': b'worker','url': 'ipc://worker.ipc'}
 }
 
-data=data_windows
+data=data_unix
