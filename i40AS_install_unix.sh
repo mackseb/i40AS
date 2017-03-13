@@ -13,20 +13,20 @@ pip install -r requirements.txt
 
 deactivate
 
-sed -i -e "s/USR/{$USER}/g" control.service
-sed -i -e "s/USR/{$USER}/g" frontend.service
-sed -i -e "s/USR/{$USER}/g" backend.service
-sed -i -e "s/USR/{$USER}/g" nginx
+sed -i -e "s/USR/$USER/g" control.service
+sed -i -e "s/USR/$USER/g" frontend.service
+sed -i -e "s/USR/$USER/g" backend.service
+sed -i -e "s/USR/$USER/g" nginx
 address=`ifconfig eth0 2>/dev/null|awk '/inet addr:/ {print $2}'|sed 's/addr://'`
-sed -i -e "s/ADD/{$address}/g" nginx
+sed -i -e "s/ADD/$address/g" nginx
 
-mv control.service /etc/systemd/system
+cp control.service /etc/systemd/system
 
-mv backend.service /etc/systemd/system
+cp backend.service /etc/systemd/system
 
-mv frontend.service /etc/systemd/system
+cp frontend.service /etc/systemd/system
 
-mv nginx /etc/nginx/sites-available
+cp nginx /etc/nginx/sites-available
 ln -s /etc/nginx/sites-available/nginx /etc/nginx/sites-enabled
 
 systemctl start control
