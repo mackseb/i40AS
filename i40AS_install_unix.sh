@@ -14,7 +14,7 @@ pip install -r install/requirements.txt
 deactivate
 
 USR= who am i | awk '{print $1}'
-echo USR
+echo $USR
 
 sed -i -e "s/USR/$USR/g" install/control.service
 sed -i -e "s/USR/$USR/g" install/frontend.service
