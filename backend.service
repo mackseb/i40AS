@@ -3,11 +3,11 @@
 Description=python instance to serve module
 
 [Service]
-User=script $USER end script
+User={$USER}
 Group=www-data
-WorkingDirectory=/home/script $USER end script/i40AS
-Environment="PATH=/home/script $USER end script/i40AS/projectenv/bin"
-ExecStart=/home/script $USER end script/i40AS/projectenv/bin/python3.5 /home/script $USER end script/i40AS/backend_start.py
+WorkingDirectory=/home/{$USER}/i40AS
+Environment="PATH=/home/{$USER}/i40AS/projectenv/bin"
+ExecStart=/home/{$USER}/i40AS/projectenv/bin/python3.5 /home/{$USER}/i40AS/backend_start.py
 
 [Install]
 WantedBy=multi-user.target
