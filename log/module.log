@@ -15615,3 +15615,57 @@
    [<zmq.sugar.socket.Socket object at 0x0000027BAFF6BA08>]
    [b'\x00\x80\x00\x00)', b'database', b'client', b'{"request": "FJob"}']
 </>
+2017-03-13 11:29:56,955 
+<> b'client'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x0000028E01362228>]
+   
+</>
+2017-03-13 11:29:57,445  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2017-03-13 11:30:14,349 
+<> b'communication'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000001C326D4BA08>]
+   
+</>
+2017-03-13 11:30:14,526 
+<> b'database'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000001B80B96BA08>]
+   
+</>
+2017-03-13 11:30:14,565 
+<> b'io_asset'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x0000022CCDC2BA08>]
+   
+</>
+2017-03-13 11:30:14,577 
+<> b'worker'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x000002C0578EBA08>]
+   
+</>
+2017-03-13 11:30:14,885 
+<> b'remote_maintenance'   #established connection
+   [<zmq.sugar.socket.Socket object at 0x0000012F046DBA08>]
+   
+</>
+2017-03-13 11:30:57,030 127.0.0.1 - - [13/Mar/2017 11:30:57] "GET / HTTP/1.1" 200 -
+2017-03-13 11:31:25,806 127.0.0.1 - - [13/Mar/2017 11:31:25] "POST /api/unknown HTTP/1.1" 404 -
+2017-03-13 11:32:43,367 
+<> b'client'   #send message
+   [<zmq.sugar.socket.Socket object at 0x0000028E01362228>]
+   [b'database', b'client', b'{"request": "school"}']
+</>
+2017-03-13 11:32:43,390 
+<> b'database'   #receive message
+   [<zmq.sugar.socket.Socket object at 0x000001B80B96BA08>]
+   [b'\x00\x80\x00\x00)', b'database', b'client', b'{"request": "school"}']
+</>
+2017-03-13 11:32:43,427 
+<> b'client'   #receive message
+   [<zmq.sugar.socket.Socket object at 0x0000028E01362228>]
+   [b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>
+2017-03-13 11:32:43,428 127.0.0.1 - - [13/Mar/2017 11:32:43] "POST /apis HTTP/1.1" 200 -
+2017-03-13 11:32:43,434 
+<> b'database'   #send message
+   [<zmq.sugar.socket.Socket object at 0x000001B80B96BA08>]
+   [b'\x00\x80\x00\x00)', b'client', b'database', b'{"school": "{0: \'GP\', 1: \'GP\', 2: \'GP\', 3: \'GP\', 4: \'GP\', 5: \'GP\', 6: \'GP\', 7: \'GP\', 8: \'GP\'}"}']
+</>

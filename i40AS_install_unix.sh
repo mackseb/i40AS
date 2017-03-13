@@ -5,8 +5,8 @@ apt-get install python3-pip python3-dev nginx -y
 
 pip3 install virtualenv
 
-virtualenv myprojectenv
+virtualenv projectenv
 
-source myprojectenv/bin/activate
+source projectenv/bin/activate
 
 pip install -r requirements.txt
