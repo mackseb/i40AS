@@ -13,13 +13,12 @@ pip install -r install/requirements.txt
 
 deactivate
 
-CURRENTUSER= who am i | awk '{print $1}'
-echo $CURRENTUSER
 
-sed -i -e "s/USR/$CURRENTUSER/g" install/control.service
-sed -i -e "s/USR/$CURRENTUSER/g" install/frontend.service
-sed -i -e "s/USR/$CURRENTUSER/g" install/backend.service
-sed -i -e "s/USR/$CURRENTUSER/g" install/nginx
+
+sed -i -e "s/USR/$USER/g" install/control.service
+sed -i -e "s/USR/$USER/g" install/frontend.service
+sed -i -e "s/USR/$USER/g" install/backend.service
+sed -i -e "s/USR/$USER/g" install/nginx
 ADDRESS=`ifconfig eth0 2>/dev/null|awk '/inet addr:/ {print $2}'|sed 's/addr://'`
 sed -i -e "s/ADD/$ADDRESS/g" install/nginx
 
