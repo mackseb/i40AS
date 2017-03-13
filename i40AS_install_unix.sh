@@ -9,7 +9,7 @@ virtualenv projectenv
 
 source projectenv/bin/activate
 
-pip install -r /install/requirements.txt
+pip install -r install/requirements.txt
 
 deactivate
 
@@ -21,13 +21,13 @@ sed -i -e "s/USR/$(whoami)/g" nginx
 ADDRESS=`ifconfig eth0 2>/dev/null|awk '/inet addr:/ {print $2}'|sed 's/addr://'`
 sed -i -e "s/ADD/$ADDRESS/g" nginx
 
-cp /install/control.service /etc/systemd/system
+cp install/control.service /etc/systemd/system
 
-cp /install/backend.service /etc/systemd/system
+cp install/backend.service /etc/systemd/system
 
-cp /install/frontend.service /etc/systemd/system
+cp install/frontend.service /etc/systemd/system
 
-cp /install/nginx /etc/nginx/sites-available
+cp install/nginx /etc/nginx/sites-available
 ln -s /etc/nginx/sites-available/nginx /etc/nginx/sites-enabled
 
 systemctl start control
