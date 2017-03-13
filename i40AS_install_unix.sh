@@ -30,3 +30,5 @@ systemctl enable backend
 
 systemctl start frontend
 systemctl enable frontend
+
+sudo systemctl restart nginx
