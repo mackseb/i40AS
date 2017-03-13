@@ -7,7 +7,7 @@ pip3 install virtualenv
 
 virtualenv projectenv
 
-source /home/$USER/i40AS/projectenv/bin/activate
+source projectenv/bin/activate
 
 pip install -r requirements.txt
 
@@ -31,4 +31,4 @@ systemctl enable backend
 systemctl start frontend
 systemctl enable frontend
 
-sudo systemctl restart nginx
+systemctl restart nginx
