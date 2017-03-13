@@ -11,11 +11,16 @@ source projectenv/bin/activate
 
 pip install -r requirements.txt
 
-cp control.service /etc/systemd/system/
+deactivate
 
-cp backend.service /etc/systemd/system/
+cp control.service /etc/systemd/system
 
-cp frontend.service /etc/systemd/system/
+cp backend.service /etc/systemd/system
+
+cp frontend.service /etc/systemd/system
+
+cp nginx /etc/nginx/sites-available
+ln -s /etc/nginx/sites-available/nginx /etc/nginx/sites-enabled
 
 systemctl start control
 systemctl enable control
