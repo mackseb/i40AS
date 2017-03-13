@@ -13,12 +13,13 @@ pip install -r requirements.txt
 
 deactivate
 
-sed -i -e "s/USR/$SUDO_USER/g" control.service
-sed -i -e "s/USR/$SUDO_USER/g" frontend.service
-sed -i -e "s/USR/$SUDO_USER/g" backend.service
-sed -i -e "s/USR/$SUDO_USER/g" nginx
-address=`ifconfig eth0 2>/dev/null|awk '/inet addr:/ {print $2}'|sed 's/addr://'`
-sed -i -e "s/ADD/$address/g" nginx
+NOWUSER= who am i | awk '{print $1}'
+sed -i -e "s/USR/$NOWUSER/g" control.service
+sed -i -e "s/USR/$NOWUSER/g" frontend.service
+sed -i -e "s/USR/$NOWUSER/g" backend.service
+sed -i -e "s/USR/$NOWUSER/g" nginx
+ADDRESS=`ifconfig eth0 2>/dev/null|awk '/inet addr:/ {print $2}'|sed 's/addr://'`
+sed -i -e "s/ADD/$ADDRESS/g" nginx
 
 cp control.service /etc/systemd/system
 
