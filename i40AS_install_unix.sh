@@ -14,10 +14,10 @@ pip install -r install/requirements.txt
 deactivate
 
 
-sed -i -e "s/USR/$(whoami)/g" install/control.service
-sed -i -e "s/USR/$(whoami)/g" install/frontend.service
-sed -i -e "s/USR/$(whoami)/g" install/backend.service
-sed -i -e "s/USR/$(whoami)/g" install/nginx
+sed -i -e "s/USR/$logname/g" install/control.service
+sed -i -e "s/USR/$logname/g" install/frontend.service
+sed -i -e "s/USR/$logname/g" install/backend.service
+sed -i -e "s/USR/$logname/g" install/nginx
 ADDRESS=`ifconfig eth0 2>/dev/null|awk '/inet addr:/ {print $2}'|sed 's/addr://'`
 sed -i -e "s/ADD/$ADDRESS/g" install/nginx
 
