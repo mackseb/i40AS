@@ -4,9 +4,9 @@ Description=i40AScontrol
 [Service]
 User=USR
 Group=www-data
-WorkingDirectory=/home/USR/i40AS
-Environment="PATH=/home/USR/i40AS/projectenv/bin"
-ExecStart=/home/USR/i40AS/projectenv/bin/python3.5 /home/USR/i40AS/control_start.py
+WorkingDirectory=DIR
+Environment="PATH=DIR/projectenv/bin"
+ExecStart=DIR/projectenv/bin/python3.5 DIR/control_start.py
 
 [Install]
 WantedBy=multi-user.target

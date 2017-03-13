@@ -9,9 +9,9 @@ After=network.target
 [Service]
 User=USR
 Group=www-data
-WorkingDirectory=/home/USR/i40AS
-Environment="PATH=/home/USR/i40AS/projectenv/bin"
-ExecStart=/home/USR/i40AS/projectenv/bin/uwsgi --ini wsgi.ini
+WorkingDirectory=DIR
+Environment="PATH=DIR/projectenv/bin"
+ExecStart=DIR/projectenv/bin/uwsgi --ini wsgi.ini
 
 [Install]
 WantedBy=multi-user.target
