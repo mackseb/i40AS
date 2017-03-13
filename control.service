@@ -1,12 +1,12 @@
 [Unit]
-Description=python instance to serve control
+Description=i40AScontrol
 
 [Service]
-User=$USER
+User=USR
 Group=www-data
-WorkingDirectory=/home/$USER/i40AS
-Environment="PATH=/home/$USER/i40AS/projectenv/bin"
-ExecStart=/home/$USER/i40AS/projectenv/bin/python3.5 /home/$USER/i40AS/control_start.py
+WorkingDirectory=/home/USR/i40AS
+Environment="PATH=/home/USR/i40AS/projectenv/bin"
+ExecStart=/home/USR/i40AS/projectenv/bin/python3.5 /home/USR/i40AS/control_start.py
 
 [Install]
 WantedBy=multi-user.target
