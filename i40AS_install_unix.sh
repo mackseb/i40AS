@@ -7,7 +7,7 @@ pip3 install virtualenv
 
 virtualenv projectenv
 
-source projectenv/bin/activate
+source /home/$USER/i40AS/projectenv/bin/activate
 
 pip install -r requirements.txt
 
