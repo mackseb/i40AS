@@ -10,12 +10,14 @@ data_windows = {
 }
 
 data_unix = {
-'client': {'identity': b'client','url':'ipc://client.ipc'},
-'database': {'identity': b'database','url': 'ipc://database.ipc'},
-'io_asset': {'identity': b'io_asset','url': 'ipc://io_asset.ipc'},
-'communication': {'identity': b'communication','url': 'ipc://communication.ipc'},
-'remote_maintenance': {'identity': b'remote_maintenance','url': 'ipc://remote_maintenance.ipc'},
-'worker': {'identity': b'worker','url': 'ipc://worker.ipc'}
+'HTTPIN': {'identity': b'httpin','url':'ipc://httpin.ipc'},
+'HTTPOUT': {'identity': b'httpout','url': 'ipc://httpout.ipc'},
+'DATABASE': {'identity': b'database','url': 'ipc://database.ipc'},
+'SYSTEM': {'identity': b'system','url': 'ipc://system.ipc'},
+'INTERFACE': {'identity': b'interface','url': 'ipc://interface.ipc'},
+'API_MAINTENANCE': {'identity': b'api_maintenance','url': 'ipc://api_maintenance.ipc'},
+
 }
+
 
 data=data_windows

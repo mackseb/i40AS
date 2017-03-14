@@ -1,12 +1,14 @@
 import json
 from random import randint
-from structure import structure_module
 import time
+
+from structure import module
+
 
 
 def main(name, info):
 
-    interface_module = structure_module.entity(name, info)
+    interface_module = module.entity(name, info)
     count = 0
 
     while True:

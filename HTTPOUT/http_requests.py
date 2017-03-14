@@ -2,13 +2,13 @@ import json
 import urllib.parse
 import requests
 
-from structure import structure_module
+from structure import module
 
 
 
 def main(name, info):
 
-    httpout_module = structure_module.entity(name, info)
+    httpout_module = module.entity(name, info)
 
 
     while True:

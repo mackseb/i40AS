@@ -1,6 +1,6 @@
 import json
 
-from structure import structure_module
+from structure import module
 
 from SYSTEM import sys_function_A
 from SYSTEM import sys_function_B
@@ -10,7 +10,7 @@ from SYSTEM import sys_function_C
 
 def main(name, info):
 
-    system_module = structure_module.entity(name, info)
+    system_module = module.entity(name, info)
 
 
     while True:

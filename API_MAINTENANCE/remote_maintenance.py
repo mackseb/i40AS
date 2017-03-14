@@ -1,12 +1,12 @@
 import json
 
-from structure import structure_module
+from structure import module
 
 
 
 def main(name, info):
 
-    remote_maintenance = structure_module.entity(name, info)
+    remote_maintenance = module.entity(name, info)
 
 
     while True:

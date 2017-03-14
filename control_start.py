@@ -1,16 +1,14 @@
 from multiprocessing import Process
-import json
 
-from structure import structure_control
-from structure import configuration_shell
-
-from CONTROL import ctrl
+from structure import config
+from structure import broker
 
 
 
 def main():
 
-    Process(target=ctrl.main, name = 'CONTROL', args=(configuration_shell.data,)).start()
+    control_broker = broker.entity(config.data)
+    control_broker.mediate()
 
 
 

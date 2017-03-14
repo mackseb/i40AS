@@ -1,11 +1,12 @@
-import zmq
 from flask import Flask, jsonify, request, render_template
-from structure import configuration_shell, structure_module
 import json
+
+from structure import config
+from structure import module
 
 
 app = Flask(__name__)
-httpin_module = structure_module.entity('HTTPIN',configuration_shell.data)
+httpin_module = module.entity('HTTPIN',config.data)
 
 
 
@@ -23,9 +24,9 @@ def apis():
             api_name = postjson['api_name']
             api_data = postjson['api_data']
 
-            if configuration_shell.data.get(api_name, False):
+            if config.data.get(api_name, False):
                 try:
-                    MESSAGE = httpin_module.create_message(TO = configuration_shell.data[api_name]['identity'], CORE_pyobj = api_data)
+                    MESSAGE = httpin_module.create_message(TO = config.data[api_name]['identity'], CORE_pyobj = api_data)
                     httpin_module.send(MESSAGE)
                     MESSAGE = httpin_module.receive()
 
@@ -51,10 +52,10 @@ def apis():
             api_name = postjson['api_name']
             api_data = postjson['api_data']
 
-            if configuration_shell.data.get(api_name, False):
+            if config.data.get(api_name, False):
 
                 try:
-                    MESSAGE = httpin_module.create_message(TO = configuration_shell.data[api_name]['identity'], CORE_pyobj = api_data)
+                    MESSAGE = httpin_module.create_message(TO = config.data[api_name]['identity'], CORE_pyobj = api_data)
                     httpin_module.send(MESSAGE)
                     MESSAGE = httpin_module.receive()
 

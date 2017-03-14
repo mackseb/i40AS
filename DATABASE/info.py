@@ -1,13 +1,13 @@
 import json
 import pandas
 
-from structure import structure_module
+from structure import module
 
 
 
 def main(name, info):
 
-    database_module = structure_module.entity(name, info)
+    database_module = module.entity(name, info)
 
     data = pandas.read_csv("database/data.csv")
 
