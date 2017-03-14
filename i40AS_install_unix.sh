@@ -15,19 +15,27 @@ deactivate
 
 sed -i -e "s@DIR@$PWD@g" install/control.service
 sed -i -e "s@USR@$SUDO_USER@g" install/control.service
+
+sed -i -e "s@DIR@$PWD@g" install/wsgi.service
+sed -i -e "s@USR@$SUDO_USER@g" install/wsgi.service
+
 sed -i -e "s@DIR@$PWD@g" install/frontend.service
 sed -i -e "s@USR@$SUDO_USER@g" install/frontend.service
+
 sed -i -e "s@DIR@$PWD@g" install/backend.service
 sed -i -e "s@USR@$SUDO_USER@g" install/backend.service
+
 sed -i -e "s@DIR@$PWD@g" install/nginx
 ADDRESS=`ifconfig eth0 2>/dev/null|awk '/inet addr:/ {print $2}'|sed 's/addr://'`
 sed -i -e "s@ADD@$ADDRESS@g" install/nginx
 
 cp install/control.service /etc/systemd/system
 
-cp install/backend.service /etc/systemd/system
+cp install/wsgi.service /etc/systemd/system
 
 cp install/frontend.service /etc/systemd/system
+
+cp install/backend.service /etc/systemd/system
 
 cp install/nginx /etc/nginx/sites-available
 ln -s /etc/nginx/sites-available/nginx /etc/nginx/sites-enabled
@@ -35,11 +43,15 @@ ln -s /etc/nginx/sites-available/nginx /etc/nginx/sites-enabled
 systemctl start control
 systemctl enable control
 
-systemctl start backend
+systemctl start wsgi
+systemctl enable wsgi
 
 systemctl start frontend
 systemctl enable frontend
 
-systemctl restart nginx
+systemctl start backend
+systemctl enable backend
 
 systemctl daemon-reload
+
+systemctl restart nginx

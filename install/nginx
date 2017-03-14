@@ -4,6 +4,6 @@ server {
 
     location / {
         include uwsgi_params;
-        uwsgi_pass unix:/home/USR/i40AS/i40AS.sock;
+        uwsgi_pass unix:DIR/i40AS.sock;
     }
 }
