@@ -12,14 +12,14 @@ class entity(object):
         self.info = info
         logging.basicConfig(format='%(asctime)s %(message)s', filename='log/control.log', level=logging.INFO)
 
-        self.url_client = self.info['client']['url']
-        self.socket_client = self.context.socket(zmq.ROUTER)
-        self.info['client']['socket'] = self.socket_client
-        self.socket_client.bind(self.url_client)
+        self.url_HTTPIN = self.info['HTTPIN']['url']
+        self.socket_HTTPIN = self.context.socket(zmq.ROUTER)
+        self.info['HTTPIN']['socket'] = self.socket_HTTPIN
+        self.socket_HTTPIN.bind(self.url_HTTPIN)
 
 
         for key in self.info:
-            if key != 'client':
+            if key != 'HTTPIN':
                 exec('self.url_' + key + '=' + 'self.info[key][\'url\']')
                 exec('self.socket_' + key + '=' + 'self.context.socket(zmq.DEALER)')
                 exec('self.info[key][\'socket\']' + '=' + 'self.socket_' + key)

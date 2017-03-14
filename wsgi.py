@@ -1,4 +1,4 @@
-from frontend_start import app
+from HTTPIN.flask_server import app
 
 if __name__ == "__main__":
     app.run()

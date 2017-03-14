@@ -2,22 +2,22 @@ import json
 
 from structure import structure_module
 
-from service import sys_function_A
-from service import sys_function_B
-from service import sys_function_C
+from SYSTEM import sys_function_A
+from SYSTEM import sys_function_B
+from SYSTEM import sys_function_C
 
 
 
 def main(name, info):
 
-    shell_worker = structure_module.entity(name, info)
+    system_module = structure_module.entity(name, info)
 
 
     while True:
         try:
 
-            MESSAGE = shell_worker.receive()
-            CORE_pyobj = shell_worker.extract_core(MESSAGE)
+            MESSAGE = system_module.receive()
+            CORE_pyobj = system_module.extract_core(MESSAGE)
 
 
             request = CORE_pyobj["request"]
@@ -31,8 +31,8 @@ def main(name, info):
             response = "function has been executed"
 
 
-            MESSAGE = shell_worker.create_message(CORE_pyobj = {request : response}, MESSAGE_received = MESSAGE )
-            shell_worker.send(MESSAGE)
+            MESSAGE = system_module.create_message(CORE_pyobj = {request : response}, MESSAGE_received = MESSAGE )
+            system_module.send(MESSAGE)
 
 
         except KeyboardInterrupt:

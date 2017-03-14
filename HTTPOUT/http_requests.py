@@ -8,14 +8,14 @@ from structure import structure_module
 
 def main(name, info):
 
-    shell_communication = structure_module.entity(name, info)
+    httpout_module = structure_module.entity(name, info)
 
 
     while True:
         try:
 
-            MESSAGE = shell_communication.receive()
-            CORE_pyobj = shell_communication.extract_core(MESSAGE)
+            MESSAGE = httpout_module.receive()
+            CORE_pyobj = httpout_module.extract_core(MESSAGE)
 
 
             request = CORE_pyobj["request"]
@@ -26,8 +26,8 @@ def main(name, info):
             print(response)
 
 
-            MESSAGE = shell_communication.create_message(CORE_pyobj = response, MESSAGE_received = MESSAGE )
-            shell_communication.send(MESSAGE)
+            MESSAGE = httpout_module.create_message(CORE_pyobj = response, MESSAGE_received = MESSAGE )
+            httpout_module.send(MESSAGE)
 
 
         except KeyboardInterrupt:

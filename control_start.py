@@ -4,13 +4,13 @@ import json
 from structure import structure_control
 from structure import configuration_shell
 
-from control import shell_control
+from CONTROL import ctrl
 
 
 
 def main():
 
-    Process(target=shell_control.main, name = 'shell_control', args=(configuration_shell.data,)).start()
+    Process(target=ctrl.main, name = 'CONTROL', args=(configuration_shell.data,)).start()
 
 
 

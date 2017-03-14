@@ -7,7 +7,7 @@ from structure import structure_module
 
 def main(name, info):
 
-    shell_database = structure_module.entity(name, info)
+    database_module = structure_module.entity(name, info)
 
     data = pandas.read_csv("database/data.csv")
 
@@ -15,8 +15,8 @@ def main(name, info):
     while True:
         try:
 
-            MESSAGE = shell_database.receive()
-            CORE_pyobj = shell_database.extract_core(MESSAGE)
+            MESSAGE = database_module.receive()
+            CORE_pyobj = database_module.extract_core(MESSAGE)
 
 
             request = CORE_pyobj["request"]
@@ -25,8 +25,8 @@ def main(name, info):
                 response = str(response)
 
 
-            MESSAGE = shell_database.create_message(CORE_pyobj = {request : response}, MESSAGE_received = MESSAGE )
-            shell_database.send(MESSAGE)
+            MESSAGE = database_module.create_message(CORE_pyobj = {request : response}, MESSAGE_received = MESSAGE )
+            database_module.send(MESSAGE)
 
 
         except KeyboardInterrupt:
