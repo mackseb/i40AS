@@ -1,5 +1,7 @@
 __pycache__/
 projectenv
+*.log
+
 
 
 # Windows image file caches

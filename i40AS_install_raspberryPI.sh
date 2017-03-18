@@ -34,7 +34,7 @@ virtualenv -p python3 projectenv
 
 source projectenv/bin/activate
 
-pip install -r install/requirements.txt
+pip install -r install/requirements_raspberryPI.txt
 
 deactivate
 
@@ -84,3 +84,8 @@ systemctl enable backend
 systemctl daemon-reload
 
 systemctl restart nginx
+
+
+#install numpy and pandas manually
+#sudo ~/i40AS/projectenv/bin/pip install numpy
+#sudo ~/i40AS/projectenv/bin/pip install pandas
