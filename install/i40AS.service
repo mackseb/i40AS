@@ -1,12 +1,15 @@
 [Unit]
-Description=i40ASbackend
+Description=wsgi
+BindsTo=backend.service
+BindsTo=frontend.service
+BindsTo=control.service
+BindsTo=wsgi.service
 
 [Service]
 User=USR
 Group=www-data
 WorkingDirectory=DIR
 Environment="PATH=DIR/projectenv/bin"
-ExecStart=DIR/projectenv/bin/python3.5 DIR/backend_start.py
 
 [Install]
 WantedBy=multi-user.target
