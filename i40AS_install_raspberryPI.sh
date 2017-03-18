@@ -1,19 +1,27 @@
 #!/bin/sh
 
-#install python3.5 if necessary
-#cd ~
-#wget https://www.python.org/ftp/python/3.5.1/Python-3.5.1.tgz
-#tar -zxvf Python-3.5.1.tgz
-#cd Python-3.5.1
-#./configure && make && sudo make install
+#install python3.5.2 on raspberry pi if necessary
 
-#pip install --upgrade virtualenv
+#sudo apt-get install build-essential libc6-dev
+#sudo apt-get install libncurses5-dev libncursesw5-dev libreadline6-dev
+#sudo apt-get install libdb5.3-dev libgdbm-dev libsqlite3-dev libssl-dev
+#sudo apt-get install libbz2-dev libexpat1-dev liblzma-dev zlib1g-dev
 
-#rasp stretch update
-#sudo apt-get update
-#sudo apt-get dist-upgrade
-#sudo apt-get autoremove
+#cd $HOME
+#wget https://www.python.org/ftp/python/3.5.2/Python-3.5.2.tgz
+#tar -zxvf Python-3.5.2.tgz
 
+
+#cd Python-3.5.2
+#./configure       # 3 min 13 s
+
+#make -j4          # 8 min 29 s
+#sudo make install # ~ 4 min
+
+#sudo pip3 install -U pip
+#sudo pip3 install -U setuptools
+
+###########################################################################
 
 
 apt-get update  # To get the latest package lists
