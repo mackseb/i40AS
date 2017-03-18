@@ -25,6 +25,11 @@ sed -i -e "s@USR@$SUDO_USER@g" install/frontend.service
 sed -i -e "s@DIR@$PWD@g" install/backend.service
 sed -i -e "s@USR@$SUDO_USER@g" install/backend.service
 
+sed -i -e "s@DIR@$PWD@g" install/i40AS.service
+sed -i -e "s@USR@$SUDO_USER@g" install/i40AS.service
+
+sed -i -e "s@DIR@$PWD@g" install/reset_log.sh
+
 sed -i -e "s@DIR@$PWD@g" install/nginx
 ADDRESS=`ifconfig wlan0 2>/dev/null|awk '/inet addr:/ {print $2}'|sed 's/addr://'`
 
@@ -40,6 +45,8 @@ cp install/wsgi.service /etc/systemd/system
 cp install/frontend.service /etc/systemd/system
 
 cp install/backend.service /etc/systemd/system
+
+cp install/i40AS.service /etc/systemd/system
 
 cp install/nginx /etc/nginx/sites-available
 ln -s /etc/nginx/sites-available/nginx /etc/nginx/sites-enabled
