@@ -10,7 +10,7 @@ User=USR
 Group=www-data
 WorkingDirectory=DIR
 Environment="PATH=DIR/projectenv/bin"
-ExecStart=bash DIR/install/reset_log.sh
+ExecStart=bin/bash DIR/install/reset_log.sh
 
 [Install]
 WantedBy=multi-user.target

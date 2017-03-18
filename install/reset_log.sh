@@ -1,2 +1,3 @@
-#!/bin/sh
-rm DIR/*.log
+#!/bin/bash
+cd DIR/log
+find . -name \*.log -delete
