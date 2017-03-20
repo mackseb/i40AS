@@ -6,33 +6,33 @@ import logging
 class entity(object):
 
 
-    def __init__(self, info):
+    def __init__(self, config):
 
         self.context = zmq.Context()
-        self.info = info
+        self.config = config
         logging.basicConfig(format='%(asctime)s %(message)s', filename='log/control.log', level=logging.INFO)
 
-        self.url_HTTPIN = self.info['HTTPIN']['url']
+        self.url_HTTPIN = self.config['HTTPIN']['url']
         self.socket_HTTPIN = self.context.socket(zmq.ROUTER)
-        self.info['HTTPIN']['socket'] = self.socket_HTTPIN
+        self.config['HTTPIN']['socket'] = self.socket_HTTPIN
         self.socket_HTTPIN.bind(self.url_HTTPIN)
 
 
-        for key in self.info:
+        for key in self.config:
             if key != 'HTTPIN':
-                exec('self.url_' + key + '=' + 'self.info[key][\'url\']')
+                exec('self.url_' + key + '=' + 'self.config[key][\'url\']')
                 exec('self.socket_' + key + '=' + 'self.context.socket(zmq.DEALER)')
-                exec('self.info[key][\'socket\']' + '=' + 'self.socket_' + key)
+                exec('self.config[key][\'socket\']' + '=' + 'self.socket_' + key)
                 exec('self.socket_' + key + '.bind' + '(self.url_' + key + ')' )
 
 
         self.poller = zmq.Poller()
-        for key in info:
+        for key in config:
             exec('self.poller.register(self.socket_' + key + ', zmq.POLLIN)')
 
 
-        for key in self.info:
-            self.sysout('established socket', meta=self.info[key])
+        for key in self.config:
+            self.sysout('established socket', meta=self.config[key])
 
 
     def mediate(self):
@@ -42,20 +42,20 @@ class entity(object):
                 self.sysout('completed loop', meta= count)
                 sockets = dict(self.poller.poll())
 
-                for key in self.info:
+                for key in self.config:
 
-                    if sockets.get(self.info[key]['socket']) == zmq.POLLIN:
+                    if sockets.get(self.config[key]['socket']) == zmq.POLLIN:
 
-                        MESSAGE = self.info[key]['socket'].recv_multipart()
-                        self.sysout('received message', current_socket=self.info[key]['socket'], meta = MESSAGE)
+                        MESSAGE = self.config[key]['socket'].recv_multipart()
+                        self.sysout('received message', current_socket=self.config[key]['socket'], meta = MESSAGE)
 
                         TO = MESSAGE[-3]
 
-                        for key in self.info:
-                            if TO == self.info[key]['identity']:
+                        for key in self.config:
+                            if TO == self.config[key]['identity']:
 
-                                self.info[key]['socket'].send_multipart(MESSAGE)
-                                self.sysout('send message', current_socket=self.info[key]['socket'], meta = MESSAGE)
+                                self.config[key]['socket'].send_multipart(MESSAGE)
+                                self.sysout('send message', current_socket=self.config[key]['socket'], meta = MESSAGE)
                 count += 1
 
             except KeyboardInterrupt:

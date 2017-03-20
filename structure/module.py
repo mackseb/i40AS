@@ -9,13 +9,13 @@ class entity(object):
 
 
 
-    def __init__(self, key, info):
+    def __init__(self, key, config):
 
         self.context = zmq.Context()
-        self.info = info
+        self.config = config
         logging.basicConfig(format='%(asctime)s %(message)s', filename='log/module.log', level=logging.INFO)
-        self.identity = self.info[key]['identity']
-        self.url_control = self.info[key]['url']
+        self.identity = self.config[key]['identity']
+        self.url_control = self.config[key]['url']
         self.socket_control = self.context.socket(zmq.DEALER)
         self.establish_connection()
         self.poller = zmq.Poller()
