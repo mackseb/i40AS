@@ -1,6 +1,7 @@
 import json
 
-from structure import module
+from structure.configuration import config
+from structure.module import module
 
 from SYSTEM import sys_function_A
 from SYSTEM import sys_function_B
@@ -8,16 +9,16 @@ from SYSTEM import sys_function_C
 
 
 
-def main(name, info):
+def main():
 
-    system_module = module.entity(name, info)
+    system = module('SYSTEM', config)
 
 
     while True:
         try:
 
-            MESSAGE = system_module.receive()
-            CORE_pyobj = system_module.extract_core(MESSAGE)
+            MESSAGE = system.receive()
+            CORE_pyobj = system.extract_core(MESSAGE)
 
 
             request = CORE_pyobj["request"]
@@ -31,8 +32,8 @@ def main(name, info):
             response = "function has been executed"
 
 
-            MESSAGE = system_module.create_message(CORE_pyobj = {request : response}, MESSAGE_received = MESSAGE )
-            system_module.send(MESSAGE)
+            MESSAGE = system.create_message(CORE_pyobj = {request : response}, MESSAGE_received = MESSAGE )
+            system.send(MESSAGE)
 
 
         except KeyboardInterrupt:

@@ -2,20 +2,21 @@ import json
 import urllib.parse
 import requests
 
-from structure import module
+from structure.configuration import config
+from structure.module import module
 
 
 
-def main(name, info):
+def main():
 
-    httpout_module = module.entity(name, info)
+    httpout = module('HTTPOUT', config)
 
 
     while True:
         try:
 
-            MESSAGE = httpout_module.receive()
-            CORE_pyobj = httpout_module.extract_core(MESSAGE)
+            MESSAGE = httpout.receive()
+            CORE_pyobj = httpout.extract_core(MESSAGE)
 
 
             request = CORE_pyobj["request"]
@@ -26,8 +27,8 @@ def main(name, info):
             print(response)
 
 
-            MESSAGE = httpout_module.create_message(CORE_pyobj = response, MESSAGE_received = MESSAGE )
-            httpout_module.send(MESSAGE)
+            MESSAGE = httpout.create_message(CORE_pyobj = response, MESSAGE_received = MESSAGE )
+            httpout.send(MESSAGE)
 
 
         except KeyboardInterrupt:

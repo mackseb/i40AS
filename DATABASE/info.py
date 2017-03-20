@@ -1,32 +1,33 @@
 import json
 import pandas
 
-from structure import module
+from structure.configuration import config
+from structure.module import module
 
 
 
-def main(name, info):
+def main():
 
-    database_module = module.entity(name, info)
+    database = module('DATABASE', config)
 
-    data = pandas.read_csv("database/data.csv")
+    db_pandas = pandas.read_csv("database/data.csv")
 
 
     while True:
         try:
 
-            MESSAGE = database_module.receive()
-            CORE_pyobj = database_module.extract_core(MESSAGE)
+            MESSAGE = database.receive()
+            CORE_pyobj = database.extract_core(MESSAGE)
 
 
             request = CORE_pyobj["request"]
-            response = data[request].to_dict()
+            response = db_pandas[request].to_dict()
             for key in response:
                 response = str(response)
 
 
-            MESSAGE = database_module.create_message(CORE_pyobj = {request : response}, MESSAGE_received = MESSAGE )
-            database_module.send(MESSAGE)
+            MESSAGE = database.create_message(CORE_pyobj = {request : response}, MESSAGE_received = MESSAGE )
+            database.send(MESSAGE)
 
 
         except KeyboardInterrupt:

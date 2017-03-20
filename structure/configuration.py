@@ -2,7 +2,7 @@ import os
 
 
 
-data_windows = {
+config_windows = {
 'HTTPIN': {'identity': b'httpin','url':'tcp://127.0.0.1:5555'},
 'HTTPOUT': {'identity': b'httpout','url': 'tcp://127.0.0.1:5556'},
 'DATABASE': {'identity': b'database','url': 'tcp://127.0.0.1:5557'},
@@ -11,7 +11,7 @@ data_windows = {
 'API_MAINTENANCE': {'identity': b'api_maintenance','url': 'tcp://127.0.0.1:6000'},
 }
 
-data_linux = {
+config_linux = {
 'HTTPIN': {'identity': b'httpin','url':'ipc://httpin.ipc'},
 'HTTPOUT': {'identity': b'httpout','url': 'ipc://httpout.ipc'},
 'DATABASE': {'identity': b'database','url': 'ipc://database.ipc'},
@@ -20,9 +20,9 @@ data_linux = {
 'API_MAINTENANCE': {'identity': b'api_maintenance','url': 'ipc://api_maintenance.ipc'},
 }
 
-data = {}
+config = {}
 
 if os.name == 'nt':
-    data=data_windows
+    config=config_windows
 else:
-    data=data_linux
+    config=config_linux

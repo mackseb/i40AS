@@ -5,17 +5,17 @@ import logging
 import sys
 
 
-class entity(object):
+class module(object):
 
 
 
-    def __init__(self, key, config):
+    def __init__(self, mod_name, config):
 
         self.context = zmq.Context()
         self.config = config
         logging.basicConfig(format='%(asctime)s %(message)s', filename='log/module.log', level=logging.INFO)
-        self.identity = self.config[key]['identity']
-        self.url_control = self.config[key]['url']
+        self.identity = self.config[mod_name]['identity']
+        self.url_control = self.config[mod_name]['url']
         self.socket_control = self.context.socket(zmq.DEALER)
         self.establish_connection()
         self.poller = zmq.Poller()

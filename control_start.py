@@ -1,14 +1,14 @@
 from multiprocessing import Process
 
-from structure import config
-from structure import broker
+from structure.configuration import config
+from structure.broker import broker
 
 
 
 def main():
 
-    control_broker = broker.entity(config.data)
-    control_broker.mediate()
+    control = broker(config)
+    control.mediate()
 
 
 

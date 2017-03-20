@@ -3,7 +3,7 @@ import zmq
 import logging
 
 
-class entity(object):
+class broker(object):
 
 
     def __init__(self, config):

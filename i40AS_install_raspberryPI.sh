@@ -2,10 +2,21 @@
 
 #install python3.5.2 on raspberry pi if necessary
 
-#sudo apt-get install build-essential libc6-dev
-#sudo apt-get install libncurses5-dev libncursesw5-dev libreadline6-dev
-#sudo apt-get install libdb5.3-dev libgdbm-dev libsqlite3-dev libssl-dev
-#sudo apt-get install libbz2-dev libexpat1-dev liblzma-dev zlib1g-dev
+#sudo apt-get install build-essential
+
+#sudo apt-get install libncurses5-dev
+#sudo apt-get libreadline6-dev
+#sudo apt-get libncursesw5-dev
+#sudo apt-get libssl-dev
+#sudo apt-get libgdbm-dev
+#sudo apt-get install libc6-dev
+#sudo apt-get libsqlite3-dev
+#sudo apt-get tk-dev
+#sudo apt-get libbz2-dev
+#sudo apt-get install libdb5.3-dev
+#sudo apt-get install libexpat1-dev
+#sudo apt-get liblzma-dev
+#sudo apt-get zlib1g-dev
 
 #cd $HOME
 #wget https://www.python.org/ftp/python/3.5.2/Python-3.5.2.tgz

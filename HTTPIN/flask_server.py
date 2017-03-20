@@ -1,12 +1,12 @@
 from flask import Flask, jsonify, request, render_template
 import json
 
-from structure import config
-from structure import module
+from structure.configuration import config
+from structure.module import module
 
 
 app = Flask(__name__)
-httpin_module = module.entity('HTTPIN',config.data)
+httpin = module('HTTPIN', config)
 
 
 
@@ -24,13 +24,13 @@ def apis():
             api_name = postjson['api_name']
             api_data = postjson['api_data']
 
-            if config.data.get(api_name, False):
+            if config.get(api_name, False):
                 try:
-                    MESSAGE = httpin_module.create_message(TO = config.data[api_name]['identity'], CORE_pyobj = api_data)
-                    httpin_module.send(MESSAGE)
-                    MESSAGE = httpin_module.receive()
+                    MESSAGE = httpin.create_message(TO = config[api_name]['identity'], CORE_pyobj = api_data)
+                    httpin.send(MESSAGE)
+                    MESSAGE = httpin.receive()
 
-                    return jsonify(httpin_module.extract_core(MESSAGE))
+                    return jsonify(httpin.extract_core(MESSAGE))
                 except NameError:
                     response = {'response' : 'unknown input'}
                     return jsonify(response)
@@ -52,14 +52,14 @@ def apis():
             api_name = postjson['api_name']
             api_data = postjson['api_data']
 
-            if config.data.get(api_name, False):
+            if config.get(api_name, False):
 
                 try:
-                    MESSAGE = httpin_module.create_message(TO = config.data[api_name]['identity'], CORE_pyobj = api_data)
-                    httpin_module.send(MESSAGE)
-                    MESSAGE = httpin_module.receive()
+                    MESSAGE = httpin.create_message(TO = config[api_name]['identity'], CORE_pyobj = api_data)
+                    httpin.send(MESSAGE)
+                    MESSAGE = httpin.receive()
 
-                    return jsonify(httpin_module.extract_core(MESSAGE))
+                    return jsonify(httpin.extract_core(MESSAGE))
                 except NameError:
                     response = {'response' : 'unknown input'}
                     return jsonify(response)
