@@ -18,21 +18,18 @@ class broker(object):
         self.socket_HTTPIN.bind(self.url_HTTPIN)
 
 
-        for key in self.config:
-            if key != 'HTTPIN':
-                exec('self.url_' + key + '=' + 'self.config[key][\'url\']')
-                exec('self.socket_' + key + '=' + 'self.context.socket(zmq.DEALER)')
-                exec('self.config[key][\'socket\']' + '=' + 'self.socket_' + key)
-                exec('self.socket_' + key + '.bind' + '(self.url_' + key + ')' )
+        for module in self.config:
+            if module != 'HTTPIN':
+                exec('self.url_' + module + '=' + 'self.config[module][\'url\']')
+                exec('self.socket_' + module + '=' + 'self.context.socket(zmq.DEALER)')
+                exec('self.config[module][\'socket\']' + '=' + 'self.socket_' + module)
+                exec('self.socket_' + module + '.bind' + '(self.url_' + module + ')' )
 
 
         self.poller = zmq.Poller()
-        for key in config:
-            exec('self.poller.register(self.socket_' + key + ', zmq.POLLIN)')
-
-
-        for key in self.config:
-            self.sysout('established socket', meta=self.config[key])
+        for module in self.config:
+            exec('self.poller.register(self.socket_' + module + ', zmq.POLLIN)')
+            self.sysout('established socket', meta=self.config[module])
 
 
     def mediate(self):
@@ -42,20 +39,20 @@ class broker(object):
                 self.sysout('completed loop', meta= count)
                 sockets = dict(self.poller.poll())
 
-                for key in self.config:
+                for module in self.config:
 
-                    if sockets.get(self.config[key]['socket']) == zmq.POLLIN:
+                    if sockets.get(self.config[module]['socket']) == zmq.POLLIN:
 
-                        MESSAGE = self.config[key]['socket'].recv_multipart()
-                        self.sysout('received message', current_socket=self.config[key]['socket'], meta = MESSAGE)
+                        MESSAGE = self.config[module]['socket'].recv_multipart()
+                        self.sysout('received message', current_socket=self.config[module]['socket'], meta = MESSAGE)
 
                         TO = MESSAGE[-3]
 
-                        for key in self.config:
-                            if TO == self.config[key]['identity']:
+                        for module in self.config:
+                            if TO == self.config[module]['identity']:
 
-                                self.config[key]['socket'].send_multipart(MESSAGE)
-                                self.sysout('send message', current_socket=self.config[key]['socket'], meta = MESSAGE)
+                                self.config[module]['socket'].send_multipart(MESSAGE)
+                                self.sysout('send message', current_socket=self.config[module]['socket'], meta = MESSAGE)
                 count += 1
 
             except KeyboardInterrupt:
