@@ -18,14 +18,14 @@ def main():
             if interface.socket_control in sockets:
 
                 MESSAGE = interface.receive()
-                CORE_pyobj = interface.extract_core(MESSAGE)
-
-                print(CORE_pyobj)
-                request = CORE_pyobj["request"]
+                CORE = interface.extract_core(MESSAGE)
 
 
-                MESSAGE = interface.create_message(CORE_pyobj = {"current position" : response, "current loop": count}, MESSAGE_received = MESSAGE )
-                interface.send(MESSAGE)
+                request = CORE["request"]
+
+
+                RESPONSE = interface.create_message(TO = MESSAGE, CORE = {"current position" : response, "current loop": count})
+                interface.send(RESPONSE)
 
 
             count += 1

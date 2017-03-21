@@ -51,23 +51,27 @@ class module(object):
         return CORE_pyobj
 
 
-    def create_message(self, TO = b'someone', CORE_pyobj = "no input", MESSAGE_received = False):
+    def create_message(self, TO = 'X', CORE = "no input"):
 
-        ADDRESS = []
-        TO = [TO]
-        FROM = [self.identity]
-        CORE_json = json.dumps(CORE_pyobj)
-        CORE = [CORE_json.encode('ascii')]
+        if type(TO) is str:
+            FROM = [self.identity]
+            CORE_json = json.dumps(CORE)
+            CORE_bytes = [CORE_json.encode('ascii')]
+            ADDRESS = []
+            TO = [self.config[TO]['identity']]
 
-        if MESSAGE_received:
-
+        elif type(TO) is list:
+            MESSAGE_received = TO
+            FROM = [self.identity]
+            CORE_json = json.dumps(CORE)
+            CORE_bytes = [CORE_json.encode('ascii')]
             MESSAGE_received.pop()
             TO = [MESSAGE_received.pop()]
             MESSAGE_received.pop()
             ADDRESS = MESSAGE_received
 
 
-        MESSAGE = ADDRESS + TO + FROM + CORE
+        MESSAGE = ADDRESS + TO + FROM + CORE_bytes
         return MESSAGE
 
 

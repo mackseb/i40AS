@@ -16,19 +16,19 @@ def main():
         try:
 
             MESSAGE = httpout.receive()
-            CORE_pyobj = httpout.extract_core(MESSAGE)
+            CORE = httpout.extract_core(MESSAGE)
 
 
-            request = CORE_pyobj["request"]
+            request = CORE["request"]
             main_api = request['main_api']
             address = request["address"]
             url = main_api + urllib.parse.urlencode({'address':address})
             response = requests.get(url).json()
-            print(response)
+            
 
 
-            MESSAGE = httpout.create_message(CORE_pyobj = response, MESSAGE_received = MESSAGE )
-            httpout.send(MESSAGE)
+            RESPONSE = httpout.create_message(TO= MESSAGE, CORE = response)
+            httpout.send(RESPONSE)
 
 
         except KeyboardInterrupt:

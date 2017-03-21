@@ -26,8 +26,8 @@ def apis():
 
             if config.get(api_name, False):
                 try:
-                    MESSAGE = httpin.create_message(TO = config[api_name]['identity'], CORE_pyobj = api_data)
-                    httpin.send(MESSAGE)
+                    REQUEST = httpin.create_message(TO = api_name, CORE = api_data)
+                    httpin.send(REQUEST)
                     MESSAGE = httpin.receive()
 
                     return jsonify(httpin.extract_core(MESSAGE))
@@ -55,8 +55,8 @@ def apis():
             if config.get(api_name, False):
 
                 try:
-                    MESSAGE = httpin.create_message(TO = config[api_name]['identity'], CORE_pyobj = api_data)
-                    httpin.send(MESSAGE)
+                    REQUEST = httpin.create_message(TO = api_name, CORE = api_data)
+                    httpin.send(REQUEST)
                     MESSAGE = httpin.receive()
 
                     return jsonify(httpin.extract_core(MESSAGE))

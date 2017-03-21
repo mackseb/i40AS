@@ -14,10 +14,10 @@ def main():
         try:
 
             MESSAGE = remote_maintenance.receive()
-            CORE_pyobj = remote_maintenance.extract_core(MESSAGE)
+            CORE = remote_maintenance.extract_core(MESSAGE)
 
 
-            request = CORE_pyobj["request"]
+            request = CORE["request"]
 
             if request == "run maintenance protocol A1":
 
@@ -25,16 +25,16 @@ def main():
 
             elif request == "run maintenance protocol C3":
 
-                MESSAGE_2 = remote_maintenance.create_message(TO = b'database', CORE_pyobj = {"request":"school"})
-                remote_maintenance.send(MESSAGE_2)
+                REQUEST = remote_maintenance.create_message(TO = 'DATABASE', CORE = {"request":"school"})
+                remote_maintenance.send(REQUEST)
 
                 MESSAGE_2 = remote_maintenance.receive()
 
                 response = remote_maintenance.extract_core(MESSAGE_2)
 
 
-            MESSAGE = remote_maintenance.create_message(CORE_pyobj = {request : response}, MESSAGE_received = MESSAGE)
-            remote_maintenance.send(MESSAGE)
+            RESPONSE = remote_maintenance.create_message(TO = MESSAGE, CORE = {request : response})
+            remote_maintenance.send(RESPONSE)
 
 
         except KeyboardInterrupt:

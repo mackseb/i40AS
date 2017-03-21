@@ -18,10 +18,10 @@ def main():
         try:
 
             MESSAGE = system.receive()
-            CORE_pyobj = system.extract_core(MESSAGE)
+            CORE = system.extract_core(MESSAGE)
 
 
-            request = CORE_pyobj["request"]
+            request = CORE["request"]
             if request == 'A':
                 sys_function_A.main()
             elif request == 'B':
@@ -32,8 +32,8 @@ def main():
             response = "function has been executed"
 
 
-            MESSAGE = system.create_message(CORE_pyobj = {request : response}, MESSAGE_received = MESSAGE )
-            system.send(MESSAGE)
+            RESPONSE = system.create_message(TO = MESSAGE, CORE = {request : response})
+            system.send(RESPONSE)
 
 
         except KeyboardInterrupt:

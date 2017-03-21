@@ -17,17 +17,17 @@ def main():
         try:
 
             MESSAGE = database.receive()
-            CORE_pyobj = database.extract_core(MESSAGE)
+            CORE = database.extract_core(MESSAGE)
 
 
-            request = CORE_pyobj["request"]
+            request = CORE["request"]
             response = db_pandas[request].to_dict()
             for key in response:
                 response = str(response)
 
 
-            MESSAGE = database.create_message(CORE_pyobj = {request : response}, MESSAGE_received = MESSAGE )
-            database.send(MESSAGE)
+            RESPONSE = database.create_message(TO = MESSAGE, CORE = {request : response})
+            database.send(RESPONSE)
 
 
         except KeyboardInterrupt:
