@@ -61,28 +61,12 @@ class broker(object):
 
     def sysout(self, action, current_socket=False, meta=False):
 
-        sys.stdout.write('\n')
-        sys.stdout.write('<> control   #')
-        sys.stdout.write(str(action))
-        if current_socket:
-            sys.stdout.write('\n')
-            sys.stdout.write('[')
-            sys.stdout.write(str(current_socket))
-            sys.stdout.write(']')
-        sys.stdout.write('\n')
+        sys.stdout.write('<> CONTROL   #'+(str(action)+'{}'.format('\n'+'['+str(current_socket)+']' if current_socket else '')+'\n'+'{}'.format(str(meta)+'\n' if meta else '')+'</>'+'\n'))
 
-        if meta:
-
-            sys.stdout.write(str(meta))
-            sys.stdout.write('\n')
-
-        sys.stdout.write('</>')
-        sys.stdout.write('\n')
         sys.stdout.flush()
 
 
-        logging.info('\n<> control   #{}\n   [{}]\n   {}\n</>'.format(str(action), str(current_socket) if current_socket else '', str(meta) if meta else ''))
-
+        logging.info('\n<> CONTROL   #{}\n   [{}]\n   {}\n</>'.format(str(action), str(current_socket) if current_socket else '', str(meta) if meta else ''))
 
     def destroy(self):
         self.socket.close()

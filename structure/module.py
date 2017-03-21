@@ -14,6 +14,7 @@ class module(object):
         self.context = zmq.Context()
         self.config = config
         logging.basicConfig(format='%(asctime)s %(message)s', filename='log/module.log', level=logging.INFO)
+        self.name = mod_name
         self.identity = self.config[mod_name]['identity']
         self.url_control = self.config[mod_name]['url']
         self.socket_control = self.context.socket(zmq.DEALER)
@@ -77,26 +78,13 @@ class module(object):
 
     def sysout(self, action, meta=False):
 
-        sys.stdout.write('\n')
-        sys.stdout.write('<> {}   #'.format(self.identity))
-        sys.stdout.write(str(action))
-        sys.stdout.write('\n')
-        sys.stdout.write('[')
-        sys.stdout.write(str(self.socket_control))
-        sys.stdout.write(']')
-        sys.stdout.write('\n')
+        sys.stdout.write('\n'+'<> {}   #'.format(self.name)+str(action)+'\n'+'['+str(self.socket_control)+']'+'\n'+'{}'.format(str(meta)+'\n' if meta else '')+'</>'+'\n')
 
-        if meta:
-
-            sys.stdout.write(str(meta))
-            sys.stdout.write('\n')
-
-        sys.stdout.write('</>')
-        sys.stdout.write('\n')
+        
         sys.stdout.flush()
 
 
-        logging.info('\n<> {}   #{}\n   [{}]\n   {}\n</>'.format(self.identity, str(action), str(self.socket_control),     str(meta) if meta else ''))
+        logging.info('\n<> {}   #{}\n   [{}]\n   {}\n</>'.format(self.name, str(action), str(self.socket_control),     str(meta) if meta else ''))
 
 
     def destroy(self):
