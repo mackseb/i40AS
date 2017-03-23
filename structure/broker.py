@@ -12,6 +12,7 @@ class broker(object):
         self.config = config
         logging.basicConfig(format='%(asctime)s %(message)s', filename='log/control.log', level=logging.INFO)
 
+
         self.url_HTTPIN = self.config['HTTPIN']['url']
         self.socket_HTTPIN = self.context.socket(zmq.ROUTER)
         self.config['HTTPIN']['socket'] = self.socket_HTTPIN

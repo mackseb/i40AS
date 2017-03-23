@@ -1,9 +1,10 @@
 [Unit]
-Description=wsgi
+Description=i40AS
 BindsTo=backend.service
 BindsTo=frontend.service
 BindsTo=control.service
 BindsTo=wsgi.service
+BindsTo=nginx.service
 
 [Service]
 User=USR

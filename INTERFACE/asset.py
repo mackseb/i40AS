@@ -30,8 +30,8 @@ def main():
 
             count += 1
             response = "{}°".format(randint(0,360))
-            time.sleep(2)
-            print(count)
+            time.sleep(5)
+
 
 
         except KeyboardInterrupt:

@@ -8,7 +8,6 @@ import sys
 class module(object):
 
 
-
     def __init__(self, mod_name, config):
 
         self.context = zmq.Context()
@@ -21,8 +20,6 @@ class module(object):
         self.establish_connection()
         self.poller = zmq.Poller()
         self.poller.register(self.socket_control, zmq.POLLIN)
-
-
 
 
     def establish_connection(self):
@@ -71,7 +68,6 @@ class module(object):
             MESSAGE_received.pop()
             ADDRESS = MESSAGE_received
 
-
         MESSAGE = ADDRESS + TO + FROM + CORE_bytes
         return MESSAGE
 
@@ -80,7 +76,7 @@ class module(object):
 
         sys.stdout.write('\n'+'<> {}   #'.format(self.name)+str(action)+'\n'+'['+str(self.socket_control)+']'+'\n'+'{}'.format(str(meta)+'\n' if meta else '')+'</>'+'\n')
 
-        
+
         sys.stdout.flush()
 
 
