@@ -70,5 +70,9 @@ class broker(object):
         logging.info('\n<> CONTROL   #{}\n   [{}]\n   {}\n</>'.format(str(action), str(current_socket) if current_socket else '', str(meta) if meta else ''))
 
     def destroy(self):
-        self.socket.close()
+
+        for module in self.config:
+
+                exec('self.socket_' + module + '.close()')
+        
         self.context.destroy()
