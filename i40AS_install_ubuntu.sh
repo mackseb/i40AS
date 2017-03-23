@@ -19,9 +19,6 @@ sed -i -e "s@USR@$SUDO_USER@g" install/wsgi.service
 sed -i -e "s@DIR@$PWD@g" install/module.service
 sed -i -e "s@USR@$SUDO_USER@g" install/module.service
 
-sed -i -e "s@DIR@$PWD@g" install/backend.service
-sed -i -e "s@USR@$SUDO_USER@g" install/backend.service
-
 sed -i -e "s@DIR@$PWD@g" install/nginx
 ADDRESS=`ifconfig eth0 2>/dev/null|awk '/inet addr:/ {print $2}'|sed 's/addr://'`
 sed -i -e "s@ADD@$ADDRESS@g" install/nginx
