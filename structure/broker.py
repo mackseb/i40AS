@@ -72,7 +72,6 @@ class broker(object):
     def destroy(self):
 
         for module in self.config:
+            exec('self.socket_' + module + '.close()')
 
-                exec('self.socket_' + module + '.close()')
-        
         self.context.destroy()
