@@ -1,5 +1,5 @@
 [Unit]
-Description=i40AScontrol
+Description=i40AS Control
 
 [Service]
 User=USR
