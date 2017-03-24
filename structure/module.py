@@ -1,8 +1,8 @@
-import zmq
-import time
-import json
-import logging
 import sys
+import zmq
+import logging
+import json
+
 
 
 class module(object):
