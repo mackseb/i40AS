@@ -34,30 +34,31 @@ class broker(object):
 
 
     def mediate(self):
-        count = 0
+        loop = 0
         while True:
             try:
-                self.sysout('completed loop', meta= count)
-                sockets = dict(self.poller.poll())
-
-                for module in self.config:
-
-                    if sockets.get(self.config[module]['socket']) == zmq.POLLIN:
-
-                        MESSAGE = self.config[module]['socket'].recv_multipart()
-                        self.sysout('received message', current_socket=self.config[module]['socket'], meta = MESSAGE)
-
-                        TO = MESSAGE[-3]
-
-                        for module in self.config:
-                            if TO == self.config[module]['identity']:
-
-                                self.config[module]['socket'].send_multipart(MESSAGE)
-                                self.sysout('send message', current_socket=self.config[module]['socket'], meta = MESSAGE)
-                count += 1
+                items = dict(self.poller.poll())
 
             except KeyboardInterrupt:
                 break
+
+            for module in self.config:
+
+                if items.get(self.config[module]['socket']) == zmq.POLLIN:
+
+                    MESSAGE = self.config[module]['socket'].recv_multipart()
+                    self.sysout('received message', current_socket=self.config[module]['socket'], meta = MESSAGE)
+
+                    TO = MESSAGE[-3]
+
+                    for module in self.config:
+                        if TO == self.config[module]['identity']:
+
+                            self.config[module]['socket'].send_multipart(MESSAGE)
+                            self.sysout('send message', current_socket=self.config[module]['socket'], meta = MESSAGE)
+            loop += 1
+            self.sysout('completed loop', meta= loop)
+
 
 
     def sysout(self, action, current_socket=False, meta=False):
