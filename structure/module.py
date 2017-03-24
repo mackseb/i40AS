@@ -13,11 +13,15 @@ class module(object):
         self.context = zmq.Context()
         self.config = config
         logging.basicConfig(format='%(asctime)s %(message)s', filename='log/module.log', level=logging.INFO)
+
+
         self.name = mod_name
         self.identity = self.config[mod_name]['identity']
         self.url_control = self.config[mod_name]['url']
         self.socket_control = self.context.socket(zmq.DEALER)
         self.establish_connection()
+
+
         self.poller = zmq.Poller()
         self.poller.register(self.socket_control, zmq.POLLIN)
 
