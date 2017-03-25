@@ -17,30 +17,30 @@ class module(object):
 
         self.name = mod_name
         self.identity = self.config[mod_name]['identity']
-        self.url_control = self.config[mod_name]['url']
-        self.socket_control = self.context.socket(zmq.DEALER)
+        self.url = self.config[mod_name]['url']
+        self.socket = self.context.socket(zmq.DEALER)
         self.establish_connection()
 
 
         self.poller = zmq.Poller()
-        self.poller.register(self.socket_control, zmq.POLLIN)
+        self.poller.register(self.socket, zmq.POLLIN)
 
 
     def establish_connection(self):
 
-        self.socket_control.connect(self.url_control)
+        self.socket.connect(self.url)
         self.sysout('established connection')
 
 
     def send(self, MESSAGE):
 
-        self.socket_control.send_multipart(MESSAGE)
+        self.socket.send_multipart(MESSAGE)
         self.sysout('send message', MESSAGE)
 
 
     def receive(self):
 
-        MESSAGE = self.socket_control.recv_multipart()
+        MESSAGE = self.socket.recv_multipart()
         self.sysout('receive message', MESSAGE)
 
         return MESSAGE
@@ -78,13 +78,13 @@ class module(object):
 
     def sysout(self, action, meta=False):
 
-        sys.stdout.write('\n'+'<> {}   #'.format(self.name)+str(action)+'\n'+'['+str(self.socket_control)+']'+'\n'+'{}'.format(str(meta)+'\n' if meta else '')+'</>'+'\n')
+        sys.stdout.write('\n'+'<> {}   #'.format(self.name)+str(action)+'\n'+'['+str(self.socket)+']'+'\n'+'{}'.format(str(meta)+'\n' if meta else '')+'</>'+'\n')
 
 
         sys.stdout.flush()
 
 
-        logging.info('\n<> {}   #{}\n   [{}]\n   {}\n</>'.format(self.name, str(action), str(self.socket_control),     str(meta) if meta else ''))
+        logging.info('\n<> {}   #{}\n   [{}]\n   {}\n</>'.format(self.name, str(action), str(self.socket),     str(meta) if meta else ''))
 
 
     def destroy(self):

@@ -15,7 +15,7 @@ def main():
     while True:
         try:
             sockets = dict(interface.poller.poll(10))
-            if interface.socket_control in sockets:
+            if interface.socket in sockets:
 
                 MESSAGE = interface.receive()
                 CORE = interface.extract_core(MESSAGE)
@@ -30,7 +30,7 @@ def main():
 
             count += 1
             response = "{}°".format(randint(0,360))
-            time.sleep(5)
+            time.sleep(0.5)
 
 
 
