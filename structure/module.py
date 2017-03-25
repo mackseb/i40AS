@@ -46,13 +46,6 @@ class module(object):
         return MESSAGE
 
 
-    def extract_core(self, MESSAGE):
-        CORE = MESSAGE[-1]
-        CORE_json = CORE.decode('ascii')
-        CORE_pyobj = json.loads(CORE_json)
-        return CORE_pyobj
-
-
     def create_message(self, TO = 'X', CORE = "no input"):
 
         if type(TO) is str:
@@ -76,6 +69,13 @@ class module(object):
         return MESSAGE
 
 
+    def extract_core(self, MESSAGE):
+        CORE = MESSAGE[-1]
+        CORE_json = CORE.decode('ascii')
+        CORE_pyobj = json.loads(CORE_json)
+        return CORE_pyobj
+
+
     def sysout(self, action, meta=False):
 
         sys.stdout.write('\n'+'<> {}   #'.format(self.name)+str(action)+'\n'+'['+str(self.socket)+']'+'\n'+'{}'.format(str(meta)+'\n' if meta else '')+'</>'+'\n')
@@ -88,4 +88,5 @@ class module(object):
 
 
     def destroy(self):
+        self.socket.close()
         self.context.destroy()
