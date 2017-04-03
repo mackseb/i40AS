@@ -1,5 +1,3 @@
-from multiprocessing import Process
-
 from structure.configuration import config
 from structure.broker import broker
 
